@@ -1,0 +1,11 @@
+using spikes.NRules.core.Support;
+using core.Utilities;
+
+rule "business.rule.person.name"
+when
+    var instance = RuleContent(x => x.Contents[0].ParseJsonString("Name") == "N1");
+    var result = RuleValidationResults();
+
+then
+    result.Errors.Add("Wrong Name.");
+    result.IsValid = false;

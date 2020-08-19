@@ -1,0 +1,19 @@
+
+
+Clusters:
+	.: Personnel :          . Personnel . Actors . Identities . Delegates . Passwords
+	.: Policies :           . Policies . Policy Groups
+	.: Leaves :             . Leaves . Attachments . Credits . Approval Steps
+	.: Excuses :            . Excuses . Attachments . Credits
+	.: Schedules :          . Schedules . Shifts . Shifts Templates . Calendar DTOs
+	.: Attendance :         . Attendance . Approval Steps . Raw . Grid DTOs
+	.: Departments :        . Departments
+	.: Security :           . Authorizations
+	.: Common :             . Att Codes . Web Parts . Report Definitions . System Codes
+	.: Reports :            . ( All the reports data )
+	.: Scheduled Reports :  . Scheduled Reports
+	.: Org. Details :       . Org Details
+	.: Holidays             . Native Holidays
+	
+	
+	

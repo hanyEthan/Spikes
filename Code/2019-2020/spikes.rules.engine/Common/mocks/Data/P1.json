@@ -1,0 +1,44 @@
+{
+  "Name": "N9",
+  "Email": "first.last@domain.com",
+  "Address": {
+    "City": "C9",
+    "AddressLine": "earth, universe"
+  },
+
+  "invoiceLines": [
+    {
+      "itemCode": "a.b.c",
+      "quantity": 0.9,
+      "unitValue": {
+        "currencySold": "EGP",
+        "currencyEGP": 10,
+        "currencyExchangeRate": 1
+      },
+      "total": 9,                  // G
+      "discountRate": 0,
+      "discountAmount": 0          // H
+    },
+    {
+      "itemCode": "d.e.f",
+      "quantity": 0.1,
+      "unitValue": {
+        "currencySold": "EGP",
+        "currencyEGP": 10,
+        "currencyExchangeRate": 1
+      },
+      "total": 1,                  // G
+      "discountRate": 0,
+      "discountAmount": 0          // H
+    }
+  ],
+
+  "Invoice": {
+    "totalSales": 10,              // A : [Sum(G)]
+    "totalDiscount": 0,            // B : [Sum(H)]
+    "netAmount": 10,               // C : [A - B]
+    "taxRate": 14,                 // D
+    "totalTax": 1.4,               // E : [C * D / 100]
+    "totalAmount": 11.4            // F : [C + E]
+  }
+}

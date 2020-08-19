@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A46D528-885A-4ECD-98C5-532B25DF7FCD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADS.Tamam.Modules.Attendance</RootNamespace>
+    <AssemblyName>ADS.Tamam.Modules.Attendance</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <EnhancerAssembly>$(SolutionDir)\packages\Telerik.DataAccess.Fluent.2016.2.822.1\tools\enhancer\enhancer.exe</EnhancerAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dependencies\Libraries\LinqKit\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.35.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.40.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.40.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events\ExcuseCreateEvent.cs" />
+    <Compile Include="Events\ExcuseEditEvent.cs" />
+    <Compile Include="Events\LeaveCreateEvent.cs" />
+    <Compile Include="Events\LeaveEditEvent.cs" />
+    <Compile Include="Events\LeaveRequestEvent.cs" />
+    <Compile Include="Events\ScheduleChangeStatusEvent.cs" />
+    <Compile Include="Events\ScheduleCreateEvent.cs" />
+    <Compile Include="Events\ScheduleEditEvent.cs" />
+    <Compile Include="Events\ScheduleTemplateEditEvent.cs" />
+    <Compile Include="Events\ShiftEditEvent.cs" />
+    <Compile Include="Handlers\AttendanceEngine.cs" />
+    <Compile Include="Handlers\AttendanceHandler.cs" />
+    <Compile Include="Handlers\AttendanceContext.cs" />
+    <Compile Include="Handlers\LeavesHandler.cs" />
+    <Compile Include="Handlers\SchedulesHandler.cs" />
+    <Compile Include="Handlers\AttendanceWorkers.cs" />
+    <Compile Include="NotificationHandlers\AttendanceManualEditNotificationTypeHandler.cs" />
+    <Compile Include="NotificationHandlers\AttendanceNotificationTypeHandler.cs" />
+    <Compile Include="NotificationHandlers\ExcuseNotificationTypeHandler.cs" />
+    <Compile Include="NotificationHandlers\LeaveNotificationTypeHandler.cs" />
+    <Compile Include="NotificationHandlers\NotificationReviewMetadata.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\ADS.Common\ADS.Common.csproj">
+      <Project>{cbf95a18-c007-4f1d-9499-53c3de8f3866}</Project>
+      <Name>ADS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\ADS.Tamam.Common.Data\ADS.Tamam.Common.Data.csproj">
+      <Project>{71d9e671-1a73-40ab-887b-91463073fa9f}</Project>
+      <Name>ADS.Tamam.Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\ADS.Tamam.Common\ADS.Tamam.Common.csproj">
+      <Project>{7aade513-4123-4d53-b694-87b51bd30db0}</Project>
+      <Name>ADS.Tamam.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\ADS.Tamam.Resources\ADS.Tamam.Resources.csproj">
+      <Project>{e4bd03ba-8cda-4564-8b69-66479712de9c}</Project>
+      <Name>ADS.Tamam.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\XCore\XCore.csproj">
+      <Project>{c26ccfc4-df96-4c50-90a5-ba07ad07a5bf}</Project>
+      <Name>XCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADS.Tamam.Modules.Organization\ADS.Tamam.Modules.Organization.csproj">
+      <Project>{5E788F92-8B25-4A13-A917-B68555A7EE62}</Project>
+      <Name>ADS.Tamam.Modules.Organization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="OpenAccessNuGet.targets" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="OpenAccessNuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

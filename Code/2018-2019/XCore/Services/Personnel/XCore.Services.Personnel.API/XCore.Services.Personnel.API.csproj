@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Remove="XCore.Services.Personnel.API.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="6.0.0" />
+    <PackageReference Include="MediatR" Version="8.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\XCore.Framework\XCore.Framework.csproj" />
+    <ProjectReference Include="..\..\..\Framework\XCore.Services.IntegrationModels\XCore.Services.IntegrationModels.csproj" />
+    <ProjectReference Include="..\..\..\XCore.Services.Personnel.Contracts\XCore.Services.Personnel.Contracts.csproj" />
+    <ProjectReference Include="..\XCore.Services.Personnel.Core\XCore.Services.Personnel.Core.csproj" />
+    <ProjectReference Include="..\XCore.Services.Personnel.Models.DTO\XCore.Services.Personnel.Models.DTO.csproj" />
+    <ProjectReference Include="..\XCore.Services.Personnel.Models\XCore.Services.Personnel.Models.csproj" />
+  </ItemGroup>
+
+</Project>

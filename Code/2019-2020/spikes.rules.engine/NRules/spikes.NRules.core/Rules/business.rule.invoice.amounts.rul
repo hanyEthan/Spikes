@@ -1,0 +1,26 @@
+using spikes.NRules.core.Support;
+using core.Utilities;
+
+rule "business.rule.invoice.amounts"
+when
+    var instance = RuleContent(x => x.Contents[0].ParseJsonDouble("Invoice.totalAmount")
+                                    !=
+                                    (
+                                        (
+                                            x.Contents[0].ParseJsonDouble("Invoice.totalSales")
+                                            -
+                                            x.Contents[0].ParseJsonDouble("Invoice.totalDiscount")
+                                        )
+                                        +
+                                        (
+                                            x.Contents[0].ParseJsonDouble("Invoice.netAmount")
+                                            *
+                                            x.Contents[0].ParseJsonDouble("Invoice.taxRate")
+                                            / 100.00
+                                        )
+                                    ) );
+    var result = RuleValidationResults();
+
+then
+    result.Errors.Add("Wrong Amounts.");
+    result.IsValid = false;

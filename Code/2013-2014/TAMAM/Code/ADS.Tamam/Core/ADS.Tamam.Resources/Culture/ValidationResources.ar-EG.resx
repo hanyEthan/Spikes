@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApprovalStepsUnique" xml:space="preserve">
+    <value>تسلسل الموافقات يجب ان لا يتكرر</value>
+  </data>
+  <data name="ArabicNameEmpty" xml:space="preserve">
+    <value>لم يتم توفير اسم العربية</value>
+  </data>
+  <data name="ArabicNameLength" xml:space="preserve">
+    <value>الاسم العربى لا يجب ان يتعدى 200 حرف</value>
+  </data>
+  <data name="AttendanceCodeIsCodeUnique" xml:space="preserve">
+    <value>هذا الكود مستخدم من قبل</value>
+  </data>
+  <data name="AttendanceCodeIsEmpty" xml:space="preserve">
+    <value>برجاء ادخال الكود</value>
+  </data>
+  <data name="AttendanceDateMissing" xml:space="preserve">
+    <value>التاريخ غير صحيح</value>
+  </data>
+  <data name="CommentIncorrect" xml:space="preserve">
+    <value>التعليق يجب ان لا يتعدي 100 حرف</value>
+  </data>
+  <data name="CommentMissing" xml:space="preserve">
+    <value>التعليق غير متاح</value>
+  </data>
+  <data name="DepartmentDeleteFailed" xml:space="preserve">
+    <value>لا يمكن حذف هذا القسم. بعض الاقسام او الاشخاص تعتمد عليه</value>
+  </data>
+  <data name="DepartmentDeleteFailed_RelatedSchedules" xml:space="preserve">
+    <value>لا يمكن حذف هذا القسم. بعض الجداول الزمنيه تعتمد عليه</value>
+  </data>
+  <data name="DepartmentNameCultureVariantEmpty" xml:space="preserve">
+    <value>برجاء إدخال اسم القسم العربى</value>
+  </data>
+  <data name="DepartmentParentEqSelf" xml:space="preserve">
+    <value>القسم التابع له لا يمكن ان يكون القسم نفسه</value>
+  </data>
+  <data name="DepartmentParentInvalid" xml:space="preserve">
+    <value>فقط يسمح بقسم رئيسى واحد</value>
+  </data>
+  <data name="DepartmentParentRecursive" xml:space="preserve">
+    <value>القسم التابع له لا يمكن ان يكون من الاقسام الفرعية التابعة له</value>
+  </data>
+  <data name="DepartmentUsedInPolicy" xml:space="preserve">
+    <value>لا يمكن حذف هذا القسم. لاستعمالها فى سياسات قواعد الاقسام</value>
+  </data>
+  <data name="DirectManagerSequanceEmpty" xml:space="preserve">
+    <value>تسلسل المدير المباشر غير صحيح</value>
+  </data>
+  <data name="EndTimeEmpty" xml:space="preserve">
+    <value>لم يتم توفير وقت النهاية</value>
+  </data>
+  <data name="ExcuseCanCancelled" xml:space="preserve">
+    <value>لا يمكن إلغاء الاذن ل{0}</value>
+  </data>
+  <data name="ExcuseCanReviewed" xml:space="preserve">
+    <value>لا يمكن مراجعة الاذن</value>
+  </data>
+  <data name="EditTakenExcuse" xml:space="preserve">
+    <value>عند تعديل اذن ماخوذ يمكنك تغيير الملاحظات او الملحقات فقط</value>
+  </data>
+  <data name="ExcuseDateEmpty" xml:space="preserve">
+    <value>برجاء إدخال تاريخ الاذن ل {0}</value>
+  </data>
+  <data name="ExcuseDurationForPersonNameEqualZero" xml:space="preserve">
+    <value>لا يوجد وردية فى هذا الوقت ل{0}</value>
+  </data>
+  <data name="ExcuseEndTimeEmpty" xml:space="preserve">
+    <value>برجاء إدخال وقت نهاية الاذن ل{0}</value>
+  </data>
+  <data name="ExcuseInvalidEndTime" xml:space="preserve">
+    <value>وقت نهاية {0} يجب ان يكون اكبر من بدايته ل {1}</value>
+  </data>
+  <data name="ExcusePersonEmpty" xml:space="preserve">
+    <value>اسم الموظف غير متوفر</value>
+  </data>
+  <data name="ExcuseStartTimeEmpty" xml:space="preserve">
+    <value>برجاء إدخال وقت بداية الاذن ل{0}</value>
+  </data>
+  <data name="ExcuseStatusEmpty" xml:space="preserve">
+    <value>برجاء اختيار حالة الاذن ل{0}</value>
+  </data>
+  <data name="ExcuseUnique" xml:space="preserve">
+    <value>هذا {0} للموظف {1} يتعارض مع اذن او مهام العمل اخر فى نفس الوقت</value>
+    <comment>هذا {0} للموظف {1} يتعارض مع اذن او مهام العمل اخر فى نفس الوقت</comment>
+  </data>
+  <data name="HRRoleEmpty" xml:space="preserve">
+    <value>يرجى إدخال صالح الموارد البشرية دور</value>
+  </data>
+  <data name="HRSequanceEmpty" xml:space="preserve">
+    <value>تسلسل الموارد البشرية غير صحيح</value>
+  </data>
+  <data name="InvalidCreateLeaveStatus" xml:space="preserve">
+    <value>حالة الاجازة ل{0} يجب ان تكون مخطط لها او تحت الموافقة</value>
+  </data>
+  <data name="InvalidDatesOrder" xml:space="preserve">
+    <value>ترتيب التواريخ غير صحيح</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>بريد الكترونى غير صحيح</value>
+  </data>
+  <data name="InvalidExcuseCreationDate" xml:space="preserve">
+    <value>تاريخ {0} يجب ان يكون فى الشهر الماضى او الحالى او القادم ل{1}</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerDay" xml:space="preserve">
+    <value>عدد الساعات المتاحة فى اليوم غير صحيح</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerDay_NoCredit" xml:space="preserve">
+    <value>لمهام العمل عدد الساعات المتاحة فى اليوم يجب ان تكون فارغه او صفر</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerMonth" xml:space="preserve">
+    <value>عدد الساعات المتاحة فى الشهر غير صحيح</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerMonth_NoCredit" xml:space="preserve">
+    <value>لمهام العمل عدد الساعات المتاحة فى الشهر يجب ان تكون فارغه او صفر</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerDay" xml:space="preserve">
+    <value>اعلى عدد استئذانات في اليوم غير صحيح</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerDay_NoCredit" xml:space="preserve">
+    <value>لمهام العمل اعلى عدد فى اليوم يجب ان يكون فارغ او صفر</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerMonth" xml:space="preserve">
+    <value>اعلى عدد فى الشهر غير صحيح</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerMonth_NoCredit" xml:space="preserve">
+    <value>لمهام العمل اعلى عدد فى الشهر يجب ان يكون فارغ او صفر</value>
+  </data>
+  <data name="InvalidExcusePolicyMinDurationPerExcuse" xml:space="preserve">
+    <value>اقل فترة مسموحة للإذن غير صحيحة</value>
+  </data>
+  <data name="InvalidExcusePolicyMinDurationPerExcuse_NoCredit" xml:space="preserve">
+    <value>لمهام العمل اقل فترة مسموحة للإذن يجب ان تكون فارغه او صفر</value>
+  </data>
+  <data name="InvalidExcuseRequestDate" xml:space="preserve">
+    <value>تاريخ {0} يجب ان يكون فى الايام المتبقية من الشهر الحالى او فى الشهر القادم</value>
+  </data>
+  <data name="InvalidFaxLength" xml:space="preserve">
+    <value>الفاكس يجب ان يكون 20 رقم على الاكثر</value>
+  </data>
+  <data name="InvalidLeavePolicyAmount" xml:space="preserve">
+    <value>الحد المسموح غير صحيح</value>
+  </data>
+  <data name="InvalidLeavePolicyCarryOver" xml:space="preserve">
+    <value>اعلى قيمة للترحيل غير صحيح</value>
+  </data>
+  <data name="InvalidLeavePolicyRequest" xml:space="preserve">
+    <value>عدد الايام قبل الطلب غير صحيح</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>رقم تليفون غير صحيح</value>
+  </data>
+  <data name="InvalidPhoneLength" xml:space="preserve">
+    <value>الهاتف يجب ان يكون 20 رقم على الاكثر</value>
+  </data>
+  <data name="InvalidSchedulePerson" xml:space="preserve">
+    <value>بعض الأشخاص المختارين متواجدين على جدول زمنى يتعارض مع هذا الجدول الزمنى</value>
+  </data>
+  <data name="InvalidScheduleDepartment_Overlap" xml:space="preserve">
+    <value>يوجد تداخل في اوقات الجدول الزمنى للاقسام</value>
+  </data>
+  <data name="InvalidScheduleDepartment_Duplicates" xml:space="preserve">
+    <value>يوجد تكرار في اوقات الجدول الزمنى للاقسام</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_Overlap" xml:space="preserve">
+    <value>يوجد تداخل في اوقات الجدول الزمنى للموظفيين</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_Duplicates" xml:space="preserve">
+    <value>يوجد تكرار في اوقات الجدول الزمنى للموظفيين</value>
+  </data>
+  <data name="InvalidScheduleDepartment_OverlapWithOtherSchedules" xml:space="preserve">
+    <value>يوجد تداخل في اوقات الجدول الزمنى للاقسام مع جداول زمنيه اخري</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_OverlapWithOtherSchedules" xml:space="preserve">
+    <value>يوجد تداخل في اوقات الجدول الزمنى للموظفيين مع جداول زمنيه اخري</value>
+  </data>
+  <data name="InvalidScheduleDepartment_StartDateEndDate" xml:space="preserve">
+    <value>تاريخ نهايه الجدول الزمنى للاقسام يجب ان يكون اكبر من او يساوي تاريخ بدايه الجدول الزمنى</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_StartDateEndDate" xml:space="preserve">
+    <value>تاريخ نهايه الجدول الزمنى للموظفيين يجب ان يكون اكبر من او يساوي تاريخ بدايه الجدول الزمنى</value>
+  </data>
+  <data name="InvalidScheduleDepartment_ScheduleDateRange" xml:space="preserve">
+    <value>الجدول الزمنى للاقسام يجب ان يكون في الفتره الزمنيه المحدده للجدول الزمني</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_ScheduleDateRange" xml:space="preserve">
+    <value>الجدول الزمنى للموظفيين يجب ان يكون في الفتره الزمنيه المحدده للجدول الزمني</value>
+  </data>
+  <data name="InvalidShiftTimes" xml:space="preserve">
+    <value>توقيت بداية الوردية او نهاية الوردية غير صحيح</value>
+  </data>
+  <data name="LeaveCanCancelled" xml:space="preserve">
+    <value>لا يمكن إلغاء هذه الاجازة ل {0}</value>
+  </data>
+  <data name="LeaveCanEdit" xml:space="preserve">
+    <value>لا يمكن تعديل هذه الاجازة ل{0} </value>
+  </data>
+  <data name="LeaveCanReviewed" xml:space="preserve">
+    <value>لا يمكن مراجعة هذه الاجازة</value>
+  </data>
+  <data name="LeaveEffectiveDaysEqualZero" xml:space="preserve">
+    <value>لا يوجد ايام شغل فى هذه الفترة ل{0}</value>
+  </data>
+  <data name="LeaveEndDateEmpty" xml:space="preserve">
+    <value>برجاء ادخال تاريخ نهاية الاجازة</value>
+  </data>
+  <data name="LeaveInvalidStartAndEndDate" xml:space="preserve">
+    <value>تاريخ نهاية الاجاة ل{0} يجب ان يكون اكبر من او يساوى تاريخ بدايتها</value>
+  </data>
+  <data name="LeaveOutCredit" xml:space="preserve">
+    <value>الاجازة ل{0} خارج نطاق رصيد الاجازات الحالى</value>
+  </data>
+  <data name="PersonIdEmpty" xml:space="preserve">
+    <value>اسم الموظف غير متوفر</value>
+  </data>
+  <data name="DuplicatePersonId" xml:space="preserve">
+    <value>يوجد بعض التكرار في بينات الموظفين</value>
+  </data>
+  <data name="LeavePersonNotActive" xml:space="preserve">
+    <value>الموظف {0} غير مفعل</value>
+  </data>
+  <data name="LeaveRequestDaysBefore" xml:space="preserve">
+    <value>تحتاج  {0} أيام قبل طلب الاجازة</value>
+  </data>
+  <data name="LeaveRequestNotAllowed" xml:space="preserve">
+    <value>لا يمكنك طلب أجازة</value>
+  </data>
+  <data name="LeaveRequestOldDate" xml:space="preserve">
+    <value>لا يمكن طلب أجازة فى تاريخ قديم</value>
+  </data>
+  <data name="LeaveStartDateEmpty" xml:space="preserve">
+    <value> برجاء إدخال تاريخ بداية الاجازة ل{0} </value>
+  </data>
+  <data name="LeaveStartDateInvalid" xml:space="preserve">
+    <value>تاريخ بداية الأجازة ل{0} يسبق تاريخ بداية رصيد الاجازات</value>
+  </data>
+  <data name="EditCanceledLeaveWithUnexpectedValues" xml:space="preserve">
+    <value>عند تعديل اجازه ماخوذه يمكنك تغيير الملاحظات او الملحقات فقط</value>
+  </data>
+  <data name="LeaveStatusIdEmpty" xml:space="preserve">
+    <value>برجاء إدخال حالة الاجازة ل{0}</value>
+  </data>
+  <data name="LeaveTypeHasNoCredit" xml:space="preserve">
+    <value>لا يوجد رصيد كافى لهذه الاجازة ل {0}</value>
+  </data>
+  <data name="PersonHasNoPolicyForExcuseType" xml:space="preserve">
+    <value>{0} لا توجد لديه سياسه لهذا النوع من الاستئذانات</value>
+  </data>
+  <data name="LeaveTypeIdEmpty" xml:space="preserve">
+    <value>برجاء إدخال نوع الاجازة ل{0} </value>
+  </data>
+  <data name="LeaveUnique" xml:space="preserve">
+    <value>يوجد أجازة فى نفس التاريخ ل{0}</value>
+  </data>
+  <data name="NameArabicEmpty" xml:space="preserve">
+    <value>الاسم (عربى) غير متوفر</value>
+  </data>
+  <data name="NameCultureVariantNotUnique" xml:space="preserve">
+    <value>الاسم (عربى) مستخدم من قبل</value>
+  </data>
+  <data name="NameEmpty" xml:space="preserve">
+    <value>لم يتم توفير اسم</value>
+  </data>
+  <data name="NameLength" xml:space="preserve">
+    <value>الاسم لا يجب ان يتعدى 200 حرف</value>
+  </data>
+  <data name="NameNotUnique" xml:space="preserve">
+    <value>الاسم مستخدم من قبل</value>
+  </data>
+  <data name="OrganizationDetailCodeEmpty" xml:space="preserve">
+    <value>كود الوزارة غير محدد</value>
+  </data>
+  <data name="OrganizationDetailNameCultureVariantEmpty" xml:space="preserve">
+    <value>اسم الوزارة (عربى) غير محدد</value>
+  </data>
+  <data name="OrganizationDetailNameEmpty" xml:space="preserve">
+    <value>اسم الوزارة غير محدد</value>
+  </data>
+  <data name="PersonAddressLength" xml:space="preserve">
+    <value>العنوان لا يجب ان يتخطى 200 حرف</value>
+  </data>
+  <data name="PersonBirthDateEmpty" xml:space="preserve">
+    <value>تاريخ الميلاد غير محدد</value>
+  </data>
+  <data name="PersonBirthDateInvalid" xml:space="preserve">
+    <value>عمر الموظف غير مناسب عند الالتحاق بالوزارة</value>
+  </data>
+  <data name="PersonCodeEmpty" xml:space="preserve">
+    <value>رقم الموظف غير محدد</value>
+  </data>
+  <data name="PersonCodeLength" xml:space="preserve">
+    <value>الكود يجب ان يكون مابين 1 الى 50 حرف</value>
+  </data>
+  <data name="PersonCodeUnique" xml:space="preserve">
+    <value>رقم الموظف لا يمكن ان يتكرر</value>
+  </data>
+  <data name="PersonEmailUnique" xml:space="preserve">
+    <value>البريد الالكتروني للموظف لا يمكن ان يتكرر</value>
+  </data>
+  <data name="IdentifierUnique" xml:space="preserve">
+    <value> الكود, البريد الالكترونى, اسم المستخدم للموظف يجب الا تتكرر</value>
+  </data>
+  <data name="PersonDepartmentEmpty" xml:space="preserve">
+    <value>القسم غير محدد</value>
+  </data>
+  <data name="PersonEmailLength" xml:space="preserve">
+    <value>البريد الالكترونى لا يمكن ان يتخطى 50 حرف</value>
+  </data>
+  <data name="PersonFullNameCultureVariantEmpty" xml:space="preserve">
+    <value>اسم الموظف (عربى) غير محدد</value>
+  </data>
+  <data name="PersonFullNameCultureVariantLength" xml:space="preserve">
+    <value>الاسم (عربى) يجب ان يكون مابين 4 الى 100 حرف</value>
+  </data>
+  <data name="PersonFullNameEmpty" xml:space="preserve">
+    <value>اسم الموظف غير محدد</value>
+  </data>
+  <data name="PersonFullNameLength" xml:space="preserve">
+    <value>الاسم يجب ان يكون مابين 4 الى 100 حرف</value>
+  </data>
+  <data name="PersonInvalidUserId" xml:space="preserve">
+    <value>المستخدم غير صحيح</value>
+  </data>
+  <data name="PersonIsManager" xml:space="preserve">
+    <value>هذا الشخص لا يمكن تعطيله لأن هناك اشخاص اخرون يقدمون تقارير اليه</value>
+  </data>
+  <data name="PersonJoinDateEmpty" xml:space="preserve">
+    <value>تاريخ الالتحاق بالعمل غير محدد</value>
+  </data>
+  <data name="PersonJoinDateGreaterThanBirthDate" xml:space="preserve">
+    <value>تاريخ الالتحاق غير منسب بالنسبة لتاريخ الميلاد أو بالنسبة لتاريخ التسجيل</value>
+  </data>
+  <data name="PersonMissing" xml:space="preserve">
+    <value>Invalid Person</value>
+  </data>
+  <data name="PersonPassportNumberLength" xml:space="preserve">
+    <value>رقم جواز السفر لا يجب ان يتخطى ال 40 رقم</value>
+  </data>
+  <data name="PersonSSNLength" xml:space="preserve">
+    <value>الرقم القومى يجب ان يكون ما بين 6 و 40 حرف</value>
+  </data>
+  <data name="PersonUserIdIsUnique" xml:space="preserve">
+    <value>هذا المستخدم غير صحيح</value>
+  </data>
+  <data name="PersonUsernameUnique" xml:space="preserve">
+    <value>اسم المستخدم لايمكن ان يتكرر</value>
+  </data>
+  <data name="PolicyAssociationsCheck" xml:space="preserve">
+    <value>هذه السياسة مرتبطة بمجموعة سياسات</value>
+  </data>
+  <data name="PolicyCodeEmpty" xml:space="preserve">
+    <value>برجاء إدخال كود السياسة</value>
+  </data>
+  <data name="PolicyCodeLength" xml:space="preserve">
+    <value>طول الكود غير صحيح</value>
+  </data>
+  <data name="PolicyCodeUnique" xml:space="preserve">
+    <value>هذا الكود مستخدم من قبل</value>
+  </data>
+  <data name="PolicyDeleteFail" xml:space="preserve">
+    <value>لا يمكن حذف هذه السياسة لأن يرتبط بعض السياسات الاخرى معها</value>
+  </data>
+  <data name="PolicyFieldDataTypeEmpty" xml:space="preserve">
+    <value>لم يتم توفير البيانات التصنيف</value>
+  </data>
+  <data name="PolicyFieldReferenceIdInvalid" xml:space="preserve">
+    <value>لم يتم توفير مرجع معرف</value>
+  </data>
+  <data name="PolicyFieldReferenceTypeInvalid" xml:space="preserve">
+    <value>غير صالح نوع مرجع. لقائمة نوع البيانات مرجع نوع لا يمكن أن تكون فارغة</value>
+  </data>
+  <data name="PolicyFieldSequanceInValid" xml:space="preserve">
+    <value>تسلسل غير صالح</value>
+  </data>
+  <data name="PolicyGroupArabicNameEmpty" xml:space="preserve">
+    <value>لم يتم توفير نهج المجموعة اسم العربية</value>
+  </data>
+  <data name="PolicyGroupHaveAssociations" xml:space="preserve">
+    <value>لا يمكن تعطيل هذه المجموعة لأنها مرتبطه بموظفين او اقسام او سياسات</value>
+  </data>
+  <data name="PolicyGroupNameEmpty" xml:space="preserve">
+    <value>لم يتم توفير سياسة اسم المجموعة</value>
+  </data>
+  <data name="PolicyNameCultureVariantLength" xml:space="preserve">
+    <value>إسم السياسة العربى لايمكن ان يتعدى 200</value>
+  </data>
+  <data name="PolicyNameCultureVariantUnique" xml:space="preserve">
+    <value>إسم السياسة العربى مستخدم من قبل</value>
+  </data>
+  <data name="PolicyNameLength" xml:space="preserve">
+    <value>إسم السياسة لايمكن ان يتخطى 200</value>
+  </data>
+  <data name="PolicyNameUnique" xml:space="preserve">
+    <value>إسم السياسة مستخدم من قبل</value>
+  </data>
+  <data name="PolicyTypeNotValid" xml:space="preserve">
+    <value>نوع السياسة غير صحيح</value>
+  </data>
+  <data name="PolicyValuesCheck" xml:space="preserve">
+    <value>قيم السياسة غير صحيحة</value>
+  </data>
+  <data name="ScheduleEventMissing" xml:space="preserve">
+    <value>Invalid Attendance Event</value>
+  </data>
+  <data name="ScheduleTemplateEmpty" xml:space="preserve">
+    <value>القالب غير محدد</value>
+  </data>
+  <data name="ScheduleTemplateMonthRepeat" xml:space="preserve">
+    <value>تفاصيل الجدول الزمنى الشهرى لا يمكن ان يتكرر اكثر او اقل من مرة واحدة</value>
+  </data>
+  <data name="ScheduleTemplateNameNotValid" xml:space="preserve">
+    <value>اسم القالب غير صالح</value>
+  </data>
+  <data name="ScheduleTemplateNoDetails" xml:space="preserve">
+    <value>تفاصيل الجدول الزمنى يجب ان تحتوى على وردية واحد على الاقل</value>
+  </data>
+  <data name="ScheduleTemplateMoreThanOneFlexible" xml:space="preserve">
+    <value>تفاصيل الجدول الزمنى يجب ان لا تحتوي علي اكثر من ورديه في حاله ان احدها ورديه مرنه</value>
+  </data>
+  <data name="ScheduleTemplatePersonAndDepartmentEmpty" xml:space="preserve">
+    <value>يجب اختيار الموظفين او الاقسام</value>
+  </data>
+  <data name="ScheduleTemplateRepeatEmpty" xml:space="preserve">
+    <value>يتكرر كل غير متوفر</value>
+  </data>
+  <data name="ScheduleTemplateRepeatTypeEmpty" xml:space="preserve">
+    <value>لم يتم توفير تكرار نوع</value>
+  </data>
+  <data name="ScheduleTemplateWeekRepeat" xml:space="preserve">
+    <value>الأسبوع كرر غير قادر تتجاوز 6</value>
+  </data>
+  <data name="SecurityIdLength" xml:space="preserve">
+    <value>رقم الحضور لا يمكن ان يتخطى 100 رقم او حرف</value>
+  </data>
+  <data name="ShiftHaveTemplates" xml:space="preserve">
+    <value>لا يمكن حذف او تعطيل الوردية لإرتباطها بتفاصيل جدول زمنى</value>
+  </data>
+  <data name="ShiftInTemplatesOverlap" xml:space="preserve">
+    <value>أوقات الوردية الجديدة تتعارض مع اوقات الوردية التى معه فى نفس تفاصيل الجدول</value>
+  </data>
+  <data name="StartDateEmpty" xml:space="preserve">
+    <value>لم يتم توفير تاريخ بدء</value>
+  </data>
+  <data name="StartDateLessEndDate" xml:space="preserve">
+    <value>تاريخ بداية الجدول  يجب أن يكون أقل أو يساوى تاريخ الانتهاء</value>
+  </data>
+  <data name="StartTimeEmpty" xml:space="preserve">
+    <value>لم يتم توفير وقت البدء</value>
+  </data>
+  <data name="SuperManagerSequanceEmpty" xml:space="preserve">
+    <value>تسلسل المدير الاعلى غير صحيح</value>
+  </data>
+  <data name="TemplateHaveSchedule" xml:space="preserve">
+    <value>لا يمكن حذف التفاصيل أو تعطيلها لأنها مرتبطة مع جدول زمنى</value>
+  </data>
+  <data name="LeaveHalfDayInvalid" xml:space="preserve">
+    <value>نصف يوم اجازة يجب ان يطبق على يوم واحد فقط ل{0}</value>
+  </data>
+  <data name="LeaveHalfDayNotAllowed" xml:space="preserve">
+    <value>لا يمكن طلب اجازة لهذا النوع من الاجازات ا {0}</value>
+  </data>
+  <data name="EndDateShouldGreaterThanStartDate" xml:space="preserve">
+    <value>تاريخ الانتهاء يجب ان يكون اكبر من تاريخ البداية</value>
+  </data>
+  <data name="ScheduleRequired" xml:space="preserve">
+    <value>الجدول الزمنى غير متوفر</value>
+  </data>
+  <data name="TransferScheduleInvalidDate" xml:space="preserve">
+    <value>فترة النقل خارج الفترة المتاحة فى الجدول الزمنى</value>
+  </data>
+  <data name="EndDateEmpty" xml:space="preserve">
+    <value>لم يتم توفير وقت الانتهاء</value>
+  </data>
+  <data name="HolidayCodeEmpty" xml:space="preserve">
+    <value>الكود غير محدد</value>
+  </data>
+  <data name="HolidayCodeLength" xml:space="preserve">
+    <value>الكود يجب ان يكون مابين 1 الى 50 حرف</value>
+  </data>
+  <data name="HolidayCodeUnique" xml:space="preserve">
+    <value>الكود لا يمكن ان يتكرر</value>
+  </data>
+  <data name="DepartmentDescriptionLength" xml:space="preserve">
+    <value>الوصف يجب الا يتعدي 200 حرف</value>
+  </data>
+  <data name="InvalidGenderId" xml:space="preserve">
+    <value>الجنس غير صحيح</value>
+  </data>
+  <data name="InvalidTitleId" xml:space="preserve">
+    <value>المسمى الوظيفى غير صحيح</value>
+  </data>
+  <data name="InvalidSystemCreateLeaveStatus" xml:space="preserve">
+    <value>Leave status must be Approved</value>
+  </data>
+  <data name="InvalidExcuseStatusIntegrationMode" xml:space="preserve">
+    <value>Invalid Excuse Status for Integration Mode</value>
+  </data>
+  <data name="ExcuseTypeEmpty" xml:space="preserve">
+    <value>نوع الاذن غير متوفر</value>
+  </data>
+  <data name="IsNative" xml:space="preserve">
+    <value>[IsNative] قيمه الحقل غير صحيحه</value>
+  </data>
+  <data name="ExcuseDurationEqualZero" xml:space="preserve">
+    <value>لا يوجد وردية فى هذا الوقت لك</value>
+  </data>
+  <data name="DelegateIdEmpty" xml:space="preserve">
+    <value>المندوب غير متوفر</value>
+  </data>
+  <data name="InvalidDay" xml:space="preserve">
+    <value>اليوم غير صحيح</value>
+  </data>
+  <data name="ReportIdEmpty" xml:space="preserve">
+    <value>التقرير غير محدد</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_HireDate" xml:space="preserve">
+    <value>تاريخ بدايه الجدول الزمني يجب ان يكون اكبر من تاريخ الالتحاق بالعمل</value>
+  </data>
+  <data name="InvalidPersonReportPrivilage" xml:space="preserve">
+    <value>هذا الموظف ليس لديه الصلاحيه لرؤيه هذا التقرير</value>
+  </data>
+  <data name="InvalidCCs" xml:space="preserve">
+    <value>صيغة البريد الالكترونى غير صحيحة</value>
+  </data>
+  <data name="EmptyPersonAndEmail" xml:space="preserve">
+    <value>اما الموظف او البريد الالكتروني يجب ان يكون محدد</value>
+  </data>
+  <data name="InvalidIncludeSupervisor" xml:space="preserve">
+    <value>القسم يجب ان يكون محدد لتتمكن من الارسال الي المشرف</value>
+  </data>
+  <data name="InvalidTarget" xml:space="preserve">
+    <value>يجب ان يكون هناك مستهدف واحد علي الاقل للتقرير</value>
+  </data>
+  <data name="DepartmentIdEmpty" xml:space="preserve">
+    <value>القسم غير متوفر</value>
+  </data>
+  <data name="InValidDuration" xml:space="preserve">
+    <value>مده الورديه يجب ان تكون اكبر من صفر و اقل من 24 ساعه ( او اقل من 48 ساعه في حاله الورديه الليليه )</value>
+  </data>
+  <data name="InValidNightFlexibleCombination" xml:space="preserve">
+    <value>الورديه المرنه لا يمكن ان تكون ليليه</value>
+  </data>
+  <data name="InvalidEndTime" xml:space="preserve">
+    <value>وقت البدايه غير صحيح</value>
+  </data>
+  <data name="InvalidStartTime" xml:space="preserve">
+    <value>وقت النهايه غير صحيح</value>
+  </data>
+  <data name="InvalidEditAttendanceEvent" xml:space="preserve">
+    <value>لا يمكن قبول اكثر من تعديل يدوى للحضور و الانصراف فى نفس الوقت</value>
+  </data>
+  <data name="LeaveAttachmentRequired" xml:space="preserve">
+    <value>هذا النوع من الاجازات {0} تشترط المرفقات</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvalidShiftPolicy" xml:space="preserve">
+    <value>سياسة الوردية غير صحيحة</value>
+  </data>
+  <data name="PolicyAssociationsWithShift" xml:space="preserve">
+    <value>هذه السياسة مرتبطة بورديات</value>
+  </data>
+  <data name="LeaveStartDateExceedsOldLeavesDaysLimit" xml:space="preserve">
+    <value>تاريخ بداية الأجازة ل{0} يتعدى الحد المسموح للاجازات القديمة</value>
+  </data>
+  <data name="EmploymentTypeEmpty" xml:space="preserve">
+    <value>نوع التوظيف غير متوفر</value>
+  </data>
+  <data name="JobTitleEmpty" xml:space="preserve">
+    <value>المسمى الوظيفى غير متوفر</value>
+  </data>
+  <data name="LeaveInvalidLeaveTypePolicy" xml:space="preserve">
+    <value>{0} لا يوجد لديه نوع الإجازة المطلوبة</value>
+  </data>
+  <data name="ArabicNameLengthInvalid" xml:space="preserve">
+    <value>الاسم العربى يجب ان لا يتعدى {0} حرف</value>
+  </data>
+  <data name="NameLengthInvalid" xml:space="preserve">
+    <value>الاسم يجب ان لا يتعدي {0} حرف</value>
+  </data>
+  <data name="LeaveEffectiveDayNotVaild" xml:space="preserve">
+    <value>عدد أيام الأجازة يجب أن لا يتعدي {0}</value>
+  </data>
+  <data name="PlannedLeavesNotAllow" xml:space="preserve">
+    <value>الأجازات المخطط لها غير مسموح بها في هذا النوع من الأجازات</value>
+  </data>
+  <data name="PersonCodeEmailInvalid" xml:space="preserve">
+    <value>رقم الموظف و البريد الإلكتروني يجب أن يكونوا مختلفين</value>
+  </data>
+  <data name="PersonCodeUsernameInvalid" xml:space="preserve">
+    <value>رقم الموظف و أسم المستخدم يجب أن يكونوا مختلفين</value>
+  </data>
+  <data name="PersonUsernameEmailInvalid" xml:space="preserve">
+    <value>أسم المستخدم و البريد الإلكتروني يجب أن يكونوا مختلفين</value>
+  </data>
+  <data name="PersonUsernameUniqueEditMode" xml:space="preserve">
+    <value>اسم المستخدم لايمكن ان يتكرر, لا يمكن تعديل بيانات الشخص بينما هويته غير صحيحة</value>
+  </data>
+  <data name="PolicyFieldDataTypeInvalid" xml:space="preserve">
+    <value>النوع غير صالح</value>
+  </data>
+  <data name="DepartmentDeleteFailed_RelatedScheduledReports" xml:space="preserve">
+    <value>لا يمكن حذف هذا القسم. بعض التقارير المجدولة تعتمد عليه</value>
+  </data>
+  <data name="ExcuseForPersonConflictWithLeave" xml:space="preserve">
+    <value>{0} لديه اجازة فى نفس اليوم. لا ندعم اجازة و اذن فى نفس اليوم</value>
+    <comment>{0} has a leave in this day. It is not supported to have a leave and an excuse in the same day.</comment>
+  </data>
+  <data name="ShiftHavePolicies" xml:space="preserve">
+    <value>لا يمكن حذف او تعطيل الوردية لإرتباطها بسياسة</value>
+  </data>
+</root>

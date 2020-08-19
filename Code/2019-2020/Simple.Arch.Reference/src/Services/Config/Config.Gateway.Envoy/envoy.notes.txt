@@ -1,0 +1,2 @@
+$ docker build -t mcs.invoicing.services.config/envoy -f ./envoy.Dockerfile .
+$ docker run -d -p 8080:8080 -p 9901:9901 mcs.invoicing.services.config/envoy

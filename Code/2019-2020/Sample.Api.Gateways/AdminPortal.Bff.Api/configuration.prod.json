@@ -1,0 +1,168 @@
+{
+  "ReRoutes": [
+    // Documents State Manager
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-state-manager-api.dev",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/state/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Package Producer
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-package-producer-api.dev",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Publisher
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.dev",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.dev",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    // Documents Receiver
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-submission-receiver-api.dev",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions",
+      "UpstreamHttpMethod": [ "Post" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents validation pipeline
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-pipelinevalidation-api.dev",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/pipeline/validations/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-pipelinevalidation-api.dev",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/pipeline/validations/documenttypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    }
+
+
+  ]
+}

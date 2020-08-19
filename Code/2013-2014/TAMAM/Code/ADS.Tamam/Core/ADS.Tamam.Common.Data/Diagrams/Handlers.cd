@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ADS.Tamam.Common.Data.Handlers.PersonnelDataHandler">
+    <Position X="5.25" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAEAAAARAAAABAAg4AAQAAoAAAAFBAAACABCA=</HashCode>
+      <FileName>Handlers\PersonnelDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.LeavesDataHandler">
+    <Position X="9.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AGACEhAIACAQEygAQCABAQQAEBAACACQAwEAAgAgAAE=</HashCode>
+      <FileName>Handlers\LeavesDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IPersonnelHandler">
+    <Position X="1" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAIAAAAAIAIAAEAAAACAAAA=</HashCode>
+      <FileName>Contracts\IPersonnelHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

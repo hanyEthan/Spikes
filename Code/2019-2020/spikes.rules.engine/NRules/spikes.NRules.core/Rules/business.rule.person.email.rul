@@ -1,0 +1,11 @@
+using spikes.NRules.core.Support;
+using core.Utilities;
+
+rule "business.rule.person.email"
+when
+    var instance = RuleContent(x => !StringUtilities.MatchPattern(x.Contents[0].ParseJsonString("Email") , @"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"));
+    var result = RuleValidationResults();
+
+then
+    result.Errors.Add("Wrong Email.");
+    result.IsValid = false;

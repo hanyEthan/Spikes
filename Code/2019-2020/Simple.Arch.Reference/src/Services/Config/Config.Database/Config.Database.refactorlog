@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="35a54376-8d1f-4abd-b431-7bca3e50f2f3" ChangeDateTime="03/31/2020 06:25:04">
+    <Property Name="ElementName" Value="[Config].[Configs].[IsActive]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Configs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsDeleted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2df52f35-c4c5-4149-adc6-ba43cd0f65df" ChangeDateTime="03/31/2020 06:25:37">
+    <Property Name="ElementName" Value="[Config].[Configs].[DateCreated]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Configs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreationDateTimeUtc" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b797a15b-7e19-411a-a097-737670ffbffb" ChangeDateTime="03/31/2020 06:25:58">
+    <Property Name="ElementName" Value="[Config].[Configs].[DateModified]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Configs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastModificationDateTimeUtc" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f519ff57-18d5-4c0b-9716-68357781c32a" ChangeDateTime="03/31/2020 06:26:21">
+    <Property Name="ElementName" Value="[Config].[Configs].[CreatedBy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Configs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedByUserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="215aa02f-2ca3-49e6-9e12-31551ff606ea" ChangeDateTime="03/31/2020 06:26:35">
+    <Property Name="ElementName" Value="[Config].[Configs].[ModifiedBy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Configs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastModifiedByUserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9584a22e-2460-4c78-ac41-a40144adf333" ChangeDateTime="03/31/2020 06:28:57">
+    <Property Name="ElementName" Value="[Config].[Modules].[IsActive]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Modules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsDeleted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5d0debed-6ef8-40f0-8acb-51146de1a6cd" ChangeDateTime="03/31/2020 06:29:10">
+    <Property Name="ElementName" Value="[Config].[Modules].[DateCreated]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Modules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreationDateTimeUtc" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bf919623-8588-4687-bc2c-58baaca80895" ChangeDateTime="03/31/2020 06:29:25">
+    <Property Name="ElementName" Value="[Config].[Modules].[DateModified]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Modules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastModificationDateTimeUtc" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3c9d0ee5-fd3c-41d9-ad08-f959c9798443" ChangeDateTime="03/31/2020 06:29:35">
+    <Property Name="ElementName" Value="[Config].[Modules].[CreatedBy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Modules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedByUserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="be6fbc25-a3c5-4f2c-99d6-2d28c224f051" ChangeDateTime="03/31/2020 06:29:44">
+    <Property Name="ElementName" Value="[Config].[Modules].[ModifiedBy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Modules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastModifiedByUserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5177f81c-f729-42de-aa53-c08c157d6410" ChangeDateTime="03/31/2020 06:30:03">
+    <Property Name="ElementName" Value="[Config].[Modules].[MetaData]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Config].[Modules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeletionDateTimeUtc" />
+  </Operation>
+</Operations>

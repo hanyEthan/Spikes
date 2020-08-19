@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="XCore.Services.Audit.Test.Console.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\XCore.Services.Clients\XCore.Services.Clients.csproj" />
+    <ProjectReference Include="..\..\Configurations\XCore.Services.Configurations.SDK\XCore.Services.Configurations.SDK.csproj" />
+    <ProjectReference Include="..\XCore.Services.Audit.API\XCore.Services.Audit.API.csproj" />
+    <ProjectReference Include="..\XCore.Services.Audit.Core\XCore.Services.Audit.Core.csproj" />
+    <ProjectReference Include="..\XCore.Services.Audit.SDK\XCore.Services.Audit.SDK.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Rules\business.rule.person.amounts.rul~RF14c4e609.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NRules" Version="0.9.0" />
+    <PackageReference Include="NRules.RuleSharp" Version="0.0.5" />
+    <PackageReference Include="NRules.Runtime" Version="0.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\application\application.csproj" />
+    <ProjectReference Include="..\..\Common\core\core.csproj" />
+    <ProjectReference Include="..\..\Common\infrastructure\infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Rules\business.rule.invoice.totals.rul">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Rules\business.rule.invoice.amounts.rul">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Rules\business.rule.person.city.rul">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Rules\business.rule.person.email.rul">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Rules\business.rule.person.name.rul">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApprovalStepsUnique" xml:space="preserve">
+    <value>Approval Steps Sequance should be Unique</value>
+  </data>
+  <data name="ArabicNameEmpty" xml:space="preserve">
+    <value>Arabic Name is not provided</value>
+  </data>
+  <data name="ArabicNameLength" xml:space="preserve">
+    <value>Arabic Name Should not Exceed 200</value>
+  </data>
+  <data name="AttendanceCodeIsCodeUnique" xml:space="preserve">
+    <value>This Code is already used in another one</value>
+  </data>
+  <data name="AttendanceCodeIsEmpty" xml:space="preserve">
+    <value>Code cannot be null or empty</value>
+  </data>
+  <data name="AttendanceDateMissing" xml:space="preserve">
+    <value>Invalid Date</value>
+  </data>
+  <data name="CommentIncorrect" xml:space="preserve">
+    <value>Comment length should not exceed 100</value>
+  </data>
+  <data name="CommentMissing" xml:space="preserve">
+    <value>Invalid Comment</value>
+  </data>
+  <data name="DepartmentCodeUnique" xml:space="preserve">
+    <value>Department Code should be unique</value>
+  </data>
+  <data name="DepartmentDeleteFailed" xml:space="preserve">
+    <value>This department can not be deleted. It has other departments or people</value>
+  </data>
+  <data name="DepartmentDeleteFailed_RelatedSchedules" xml:space="preserve">
+    <value>This department can not be deleted. It has one or more schedules</value>
+  </data>
+  <data name="DepartmentNameCultureVariantEmpty" xml:space="preserve">
+    <value>Department Name (Culture Variant) is not provided</value>
+  </data>
+  <data name="DepartmentNameEmpty" xml:space="preserve">
+    <value>Department Name is not provided</value>
+  </data>
+  <data name="DepartmentNameUnique" xml:space="preserve">
+    <value>Department Name should be unique for every level</value>
+  </data>
+  <data name="DepartmentParentEqSelf" xml:space="preserve">
+    <value>Department Parent Can not be the department itself</value>
+  </data>
+  <data name="DepartmentParentInvalid" xml:space="preserve">
+    <value>Parent department is not provided</value>
+  </data>
+  <data name="DepartmentParentRecursive" xml:space="preserve">
+    <value>Parent department cant be a child of the same department</value>
+  </data>
+  <data name="DepartmentUsedInPolicy" xml:space="preserve">
+    <value>Department Cannot be deleted, It's being used in Department Rule Policy</value>
+  </data>
+  <data name="DirectManagerSequanceEmpty" xml:space="preserve">
+    <value>Direct Manager Sequance is not valid</value>
+  </data>
+  <data name="EndTimeEmpty" xml:space="preserve">
+    <value>End time is not provided</value>
+  </data>
+  <data name="ExcuseCanCancelled" xml:space="preserve">
+    <value>Excuse for {0} can not to be cancelled</value>
+  </data>
+  <data name="ExcuseCanReviewed" xml:space="preserve">
+    <value>Excuse for {0} can not be reviewed</value>
+  </data>
+  <data name="EditTakenExcuse" xml:space="preserve">
+    <value>When editing taken excuse you can only edit it's notes or attachments</value>
+  </data>
+  <data name="ExcuseDateEmpty" xml:space="preserve">
+    <value>Excuse for {0} Date is not provided</value>
+  </data>
+  <data name="ExcuseDurationForPersonNameEqualZero" xml:space="preserve">
+    <value>No shifts for {0} in this time frame</value>
+  </data>
+  <data name="ExcuseEndTimeEmpty" xml:space="preserve">
+    <value>Excuse for {0} End Time is not provided</value>
+  </data>
+  <data name="ExcuseInvalidEndTime" xml:space="preserve">
+    <value>{0} for {1} End Time must be greater than Start Time</value>
+  </data>
+  <data name="ExcusePersonEmpty" xml:space="preserve">
+    <value>Person name is not provided</value>
+  </data>
+  <data name="ExcuseStartTimeEmpty" xml:space="preserve">
+    <value>Excuse for {0} Start Time is not provided</value>
+  </data>
+  <data name="ExcuseStatusEmpty" xml:space="preserve">
+    <value>Excuse for {0} Status is not provided</value>
+  </data>
+  <data name="ExcuseUnique" xml:space="preserve">
+    <value>This {0} for person {1} overlaps with another excuse or away</value>
+    <comment>This {0} for person {1} overlaps with another excuse or away</comment>
+  </data>
+  <data name="HRRoleEmpty" xml:space="preserve">
+    <value>Kindly Enter Valid HR Role</value>
+  </data>
+  <data name="HRSequanceEmpty" xml:space="preserve">
+    <value>HR Sequance is not valid</value>
+  </data>
+  <data name="InvalidApprovalPolicy" xml:space="preserve">
+    <value>Invalid Approval Policy</value>
+  </data>
+  <data name="InvalidCreateLeaveStatus" xml:space="preserve">
+    <value>Leave for {0} status must be Pending or Planned</value>
+  </data>
+  <data name="InvalidDatesOrder" xml:space="preserve">
+    <value>Dates orders are invalid</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Invalid Email Address Format</value>
+  </data>
+  <data name="InvalidExcuseCreationDate" xml:space="preserve">
+    <value>{0} for {1} date must be in the previous, current or next month</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerDay" xml:space="preserve">
+    <value>Allowed hours per day is not valid</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerDay_NoCredit" xml:space="preserve">
+    <value>For excuse that has no credit Allowed hours per day must be empty or zero</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerMonth" xml:space="preserve">
+    <value>Allowed hours per month is not valid</value>
+  </data>
+  <data name="InvalidExcusePolicyAllowedHoursPerMonth_NoCredit" xml:space="preserve">
+    <value>For excuse that has no credit Allowed hours per month must be empty or zero</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerDay" xml:space="preserve">
+    <value>Maximum excuses per day is not valid</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerDay_NoCredit" xml:space="preserve">
+    <value>For excuse that has no credit Maximum excuses per day must be empty or zero</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerMonth" xml:space="preserve">
+    <value>Maximum excuses per month is not valid</value>
+  </data>
+  <data name="InvalidExcusePolicyMaxExcusesPerMonth_NoCredit" xml:space="preserve">
+    <value>For excuse that has no credit Maximum excuses per month must be empty or zero</value>
+  </data>
+  <data name="InvalidExcusePolicyMinDurationPerExcuse" xml:space="preserve">
+    <value>Minimum duration per excuse is not valid</value>
+  </data>
+  <data name="InvalidExcusePolicyMinDurationPerExcuse_NoCredit" xml:space="preserve">
+    <value>For excuse that has no credit Minimum duration per excuse must be empty or zero</value>
+  </data>
+  <data name="InvalidExcuseRequestDate" xml:space="preserve">
+    <value>{0} date must be in the remaining days of the current month or in the next month</value>
+  </data>
+  <data name="InvalidFaxLength" xml:space="preserve">
+    <value>Fax must be at maximum 20 number</value>
+  </data>
+  <data name="InvalidLeavePolicyAmount" xml:space="preserve">
+    <value>Allowed Amount is not valid</value>
+  </data>
+  <data name="InvalidLeavePolicyCarryOver" xml:space="preserve">
+    <value>Max Carry Over Days is not valid</value>
+  </data>
+  <data name="InvalidLeavePolicyRequest" xml:space="preserve">
+    <value>Days Before request is not valid</value>
+  </data>
+  <data name="InvalidLeaveType" xml:space="preserve">
+    <value>Invalid Leave Type</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Invalid Phone Number</value>
+  </data>
+  <data name="InvalidPhoneLength" xml:space="preserve">
+    <value>Phone must be at maximum 20 number</value>
+  </data>
+  <data name="InvalidSchedulePerson" xml:space="preserve">
+    <value>Some of the selected persons have a schedule overlapping with this schedule</value>
+  </data>
+  <data name="InvalidScheduleDepartment_Overlap" xml:space="preserve">
+    <value>There are some overlaps in schedule times for departments</value>
+  </data>
+  <data name="InvalidScheduleDepartment_Duplicates" xml:space="preserve">
+    <value>There are some duplicates in schedule times for departments</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_Overlap" xml:space="preserve">
+    <value>There are some overlaps in schedule times for personnel</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_Duplicates" xml:space="preserve">
+    <value>There are some duplicates in schedule times for personnel</value>
+  </data>
+  <data name="InvalidScheduleDepartment_OverlapWithOtherSchedules" xml:space="preserve">
+    <value>There are some overlaps in schedule times for departments with other schedules</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_OverlapWithOtherSchedules" xml:space="preserve">
+    <value>There are some overlaps in schedule times for personnel with other schedules</value>
+  </data>
+  <data name="InvalidScheduleDepartment_StartDateEndDate" xml:space="preserve">
+    <value>End date for departments schedules should be greater than or equal start date</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_StartDateEndDate" xml:space="preserve">
+    <value>End date for personnel schedules should be greater than or equal start date</value>
+  </data>
+  <data name="InvalidScheduleDepartment_ScheduleDateRange" xml:space="preserve">
+    <value>Schedules dates for departments should be in schedule date range</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_ScheduleDateRange" xml:space="preserve">
+    <value>Schedules dates for personnel should be in schedule date range</value>
+  </data>
+  <data name="InvalidShiftTimes" xml:space="preserve">
+    <value>Shift start or end time is not valid</value>
+  </data>
+  <data name="LeaveCanCancelled" xml:space="preserve">
+    <value>This leave for {0} can not to be cancelled</value>
+  </data>
+  <data name="LeaveCanEdit" xml:space="preserve">
+    <value>Leave for {0} can not to be edited</value>
+  </data>
+  <data name="LeaveCanReviewed" xml:space="preserve">
+    <value>Leave can not to be reviewed</value>
+  </data>
+  <data name="LeaveEffectiveDaysEqualZero" xml:space="preserve">
+    <value>No working days in this time frame for {0}</value>
+  </data>
+  <data name="LeaveEndDateEmpty" xml:space="preserve">
+    <value>Leave End Date for {0} is not provided</value>
+  </data>
+  <data name="LeaveInvalidStartAndEndDate" xml:space="preserve">
+    <value>Leave End Date for {0} must be greater than or equal to Leave Start Date</value>
+  </data>
+  <data name="LeaveOutCredit" xml:space="preserve">
+    <value>Leave for {0} is outside current credit year</value>
+  </data>
+  <data name="PersonIdEmpty" xml:space="preserve">
+    <value>Person name is not provided</value>
+  </data>
+  <data name="DuplicatePersonId" xml:space="preserve">
+    <value>There are some duplicates in people data</value>
+  </data>
+  <data name="LeavePersonNotActive" xml:space="preserve">
+    <value>Person {0} is not active</value>
+  </data>
+  <data name="LeaveRequestDaysBefore" xml:space="preserve">
+    <value>You need {0} days before leave start date</value>
+  </data>
+  <data name="LeaveRequestNotAllowed" xml:space="preserve">
+    <value>You are not allowed to request leave</value>
+  </data>
+  <data name="LeaveRequestOldDate" xml:space="preserve">
+    <value>You can not request leave for old dates</value>
+  </data>
+  <data name="LeaveStartDateEmpty" xml:space="preserve">
+    <value>Leave for {0} Start Date is not provided</value>
+  </data>
+  <data name="LeaveStartDateInvalid" xml:space="preserve">
+    <value>Leave for {0} Start is before Leave credit effective date.</value>
+  </data>
+  <data name="EditCanceledLeaveWithUnexpectedValues" xml:space="preserve">
+    <value>When editing taken leave you can only edit it's notes or attachments</value>
+  </data>
+  <data name="LeaveStatusIdEmpty" xml:space="preserve">
+    <value>Leave Status for {0} is not provided</value>
+  </data>
+  <data name="LeaveTypeHasNoCredit" xml:space="preserve">
+    <value>No Credit available for this leave type for {0}</value>
+  </data>
+  <data name="PersonHasNoPolicyForExcuseType" xml:space="preserve">
+    <value>{0} has no policy for this excuse type</value>
+  </data>
+  <data name="LeaveTypeIdEmpty" xml:space="preserve">
+    <value>Leave Type for {0} is not provided</value>
+  </data>
+  <data name="LeaveUnique" xml:space="preserve">
+    <value>Leave dates for {0} overlaps with another one</value>
+  </data>
+  <data name="NameArabicEmpty" xml:space="preserve">
+    <value>Name (Arabic) is not provided</value>
+  </data>
+  <data name="NameCultureVariantNotUnique" xml:space="preserve">
+    <value>Name (Arabic) should be Unique</value>
+  </data>
+  <data name="NameEmpty" xml:space="preserve">
+    <value>Name is not provided</value>
+  </data>
+  <data name="NameLength" xml:space="preserve">
+    <value>Name Should not Exceed 200</value>
+  </data>
+  <data name="NameNotUnique" xml:space="preserve">
+    <value>Name should be Unique</value>
+  </data>
+  <data name="OrganizationDetailCodeEmpty" xml:space="preserve">
+    <value>Organization Code is not provided</value>
+  </data>
+  <data name="OrganizationDetailNameCultureVariantEmpty" xml:space="preserve">
+    <value>Organization Name (Culture Variant) is not provided</value>
+  </data>
+  <data name="OrganizationDetailNameEmpty" xml:space="preserve">
+    <value>Organization Name is not provided</value>
+  </data>
+  <data name="PersonAddressLength" xml:space="preserve">
+    <value>Address length should not exceed 200 characters</value>
+  </data>
+  <data name="PersonBirthDateEmpty" xml:space="preserve">
+    <value>Birth Date is not provided</value>
+  </data>
+  <data name="PersonBirthDateInvalid" xml:space="preserve">
+    <value>Employee age is not valid when joining the company</value>
+  </data>
+  <data name="PersonCodeEmpty" xml:space="preserve">
+    <value>Person Code is not provided</value>
+  </data>
+  <data name="PersonCodeLength" xml:space="preserve">
+    <value>Code should be within 1 and 50 letters</value>
+  </data>
+  <data name="PersonCodeUnique" xml:space="preserve">
+    <value>Person Code Should be Unique</value>
+  </data>
+  <data name="PersonEmailUnique" xml:space="preserve">
+    <value>Person Email Should be Unique</value>
+  </data>
+  <data name="IdentifierUnique" xml:space="preserve">
+    <value>Code, Email, or Username need to be Unique</value>
+  </data>
+  <data name="PersonDepartmentEmpty" xml:space="preserve">
+    <value>Person Department is not provided</value>
+  </data>
+  <data name="PersonEmailLength" xml:space="preserve">
+    <value>Email should not exceed 50 characters</value>
+  </data>
+  <data name="PersonFullNameCultureVariantEmpty" xml:space="preserve">
+    <value>Full Name (Arabic) is not provided</value>
+  </data>
+  <data name="PersonFullNameCultureVariantLength" xml:space="preserve">
+    <value>Full Name (Arabic) should be within 4 and 100 letters</value>
+  </data>
+  <data name="PersonFullNameEmpty" xml:space="preserve">
+    <value>Full Name is not provided</value>
+  </data>
+  <data name="PersonFullNameLength" xml:space="preserve">
+    <value>Full Name should be within 4 and 100 letters</value>
+  </data>
+  <data name="PersonInvalidUserId" xml:space="preserve">
+    <value>Invalid User Id</value>
+  </data>
+  <data name="PersonIsManager" xml:space="preserve">
+    <value>This Person Cannot be deactivated because someone else is reporting to him</value>
+  </data>
+  <data name="PersonJoinDateEmpty" xml:space="preserve">
+    <value>Person Join Date is not provided</value>
+  </data>
+  <data name="PersonJoinDateGreaterThanBirthDate" xml:space="preserve">
+    <value>Join Date is not valid in regards to the Birthdate or the Creation Date</value>
+  </data>
+  <data name="PersonMissing" xml:space="preserve">
+    <value>Invalid Person</value>
+  </data>
+  <data name="PersonPassportNumberLength" xml:space="preserve">
+    <value>Passport number length should not exceed 40 digits</value>
+  </data>
+  <data name="PersonSSNLength" xml:space="preserve">
+    <value>Person Civil No. should be between 6 and 40 characters</value>
+  </data>
+  <data name="PersonUserIdIsUnique" xml:space="preserve">
+    <value>User Id already associated with another Person</value>
+  </data>
+  <data name="PersonUsernameUnique" xml:space="preserve">
+    <value>Username should be unique</value>
+  </data>
+  <data name="PolicyAssociationsCheck" xml:space="preserve">
+    <value>Policy is being associated with Policy Groups</value>
+  </data>
+  <data name="PolicyCodeEmpty" xml:space="preserve">
+    <value>Policy Code is not provided</value>
+  </data>
+  <data name="PolicyCodeLength" xml:space="preserve">
+    <value>Code length is not valid</value>
+  </data>
+  <data name="PolicyCodeUnique" xml:space="preserve">
+    <value>Policy Code Should be Unique</value>
+  </data>
+  <data name="PolicyDeleteFail" xml:space="preserve">
+    <value>This policy cannot be deleted because some other policy is associated with it</value>
+  </data>
+  <data name="PolicyFieldDataTypeEmpty" xml:space="preserve">
+    <value>Data Type is not provided</value>
+  </data>
+  <data name="PolicyFieldDataTypeInvalid" xml:space="preserve">
+    <value>Data Type Invalid</value>
+  </data>
+  <data name="PolicyFieldReferenceIdInvalid" xml:space="preserve">
+    <value>Reference Id is not provided</value>
+  </data>
+  <data name="PolicyFieldReferenceTypeInvalid" xml:space="preserve">
+    <value>Invalid Reference Type. For List Data Type Reference Type can not be empty</value>
+  </data>
+  <data name="PolicyFieldSequanceInValid" xml:space="preserve">
+    <value>Sequence is not valid</value>
+  </data>
+  <data name="PolicyGroupArabicNameEmpty" xml:space="preserve">
+    <value>Policy Group Arabic Name is not provided</value>
+  </data>
+  <data name="PolicyGroupHaveAssociations" xml:space="preserve">
+    <value>Policy Group can not be Deleted, because it may be associated with personnel or departments or policies</value>
+  </data>
+  <data name="PolicyGroupNameEmpty" xml:space="preserve">
+    <value>Policy Group Name is not provided</value>
+  </data>
+  <data name="PolicyNameCultureVariantLength" xml:space="preserve">
+    <value>Policy Name (Arabic) Should not Exceed 200</value>
+  </data>
+  <data name="PolicyNameCultureVariantUnique" xml:space="preserve">
+    <value>Policy Name (Arabic) Should be Unique</value>
+  </data>
+  <data name="PolicyNameLength" xml:space="preserve">
+    <value>Policy Name Should not Exceed 200</value>
+  </data>
+  <data name="PolicyNameUnique" xml:space="preserve">
+    <value>Policy Name Should be Unique</value>
+  </data>
+  <data name="PolicyTypeNotValid" xml:space="preserve">
+    <value>Policy Type is Not Valid</value>
+  </data>
+  <data name="PolicyValuesCheck" xml:space="preserve">
+    <value>Policy Values are not valid</value>
+  </data>
+  <data name="ScheduleEventMissing" xml:space="preserve">
+    <value>Invalid Attendance Event</value>
+  </data>
+  <data name="ScheduleTemplateEmpty" xml:space="preserve">
+    <value>Schedule Template is not provided</value>
+  </data>
+  <data name="ScheduleTemplateMonthRepeat" xml:space="preserve">
+    <value>Monthly template can not repeat greater or less than one time</value>
+  </data>
+  <data name="ScheduleTemplateNameNotValid" xml:space="preserve">
+    <value>Template Name is not valid</value>
+  </data>
+  <data name="ScheduleTemplateNoDetails" xml:space="preserve">
+    <value>A template must have at least one detail with shift</value>
+  </data>
+  <data name="ScheduleTemplateMoreThanOneFlexible" xml:space="preserve">
+    <value>A template must have at most one flexible shift per day</value>
+  </data>
+  <data name="ScheduleTemplatePersonAndDepartmentEmpty" xml:space="preserve">
+    <value>Personnel or department should be provided</value>
+  </data>
+  <data name="ScheduleTemplateRepeatEmpty" xml:space="preserve">
+    <value>Repeat is not provided</value>
+  </data>
+  <data name="ScheduleTemplateRepeatTypeEmpty" xml:space="preserve">
+    <value>Repeat Type is not provided</value>
+  </data>
+  <data name="ScheduleTemplateWeekRepeat" xml:space="preserve">
+    <value>Week Repeat cant exceed 6</value>
+  </data>
+  <data name="SecurityIdLength" xml:space="preserve">
+    <value>Security Id Should not Exceed 100</value>
+  </data>
+  <data name="ShiftHaveTemplates" xml:space="preserve">
+    <value>Shift can not be deleted or deactivated because it has been associated with a schedule template</value>
+  </data>
+  <data name="ShiftInTemplatesOverlap" xml:space="preserve">
+    <value>The new shift time Overlap with another shift time associated in the same Schedule Template</value>
+  </data>
+  <data name="ShiftOverlap" xml:space="preserve">
+    <value>Some of the selected shifts overlap in times</value>
+  </data>
+  <data name="ShiftStartEqEnd" xml:space="preserve">
+    <value>Shift start cant be equal to shift end</value>
+  </data>
+  <data name="StartDateEmpty" xml:space="preserve">
+    <value>Start Date is not provided</value>
+  </data>
+  <data name="StartDateLessEndDate" xml:space="preserve">
+    <value>Start Date must be less than or equal to end date</value>
+  </data>
+  <data name="StartTimeEmpty" xml:space="preserve">
+    <value>Start time is not provided</value>
+  </data>
+  <data name="SuperManagerSequanceEmpty" xml:space="preserve">
+    <value>Super Manager Sequance is not valid</value>
+  </data>
+  <data name="SupervisorNotVaild" xml:space="preserve">
+    <value>Department Supervisor Must be from the same department</value>
+  </data>
+  <data name="TemplateHaveSchedule" xml:space="preserve">
+    <value>Template can not be deleted or deactivated because it has been associated with a schedule</value>
+  </data>
+  <data name="LeaveHalfDayInvalid" xml:space="preserve">
+    <value>Half Day Leave for {0} should be applied on only one single day</value>
+  </data>
+  <data name="LeaveHalfDayNotAllowed" xml:space="preserve">
+    <value>Can't request half day for this leave type for {0}</value>
+  </data>
+  <data name="EndDateShouldGreaterThanStartDate" xml:space="preserve">
+    <value>End Date should be greater than Start Date</value>
+  </data>
+  <data name="ScheduleRequired" xml:space="preserve">
+    <value>Schedule is not provided</value>
+  </data>
+  <data name="TransferScheduleInvalidDate" xml:space="preserve">
+    <value>Transfer period is out of the schedule available period</value>
+  </data>
+  <data name="EndDateEmpty" xml:space="preserve">
+    <value>End Date is not provided</value>
+  </data>
+  <data name="HolidayCodeEmpty" xml:space="preserve">
+    <value>Code is not provided</value>
+  </data>
+  <data name="HolidayCodeLength" xml:space="preserve">
+    <value>Code should be within 1 and 50 letters</value>
+  </data>
+  <data name="HolidayCodeUnique" xml:space="preserve">
+    <value>Code Should be Unique</value>
+  </data>
+  <data name="DepartmentDescriptionLength" xml:space="preserve">
+    <value>Description should not exceed 200 character</value>
+  </data>
+  <data name="InvalidGenderId" xml:space="preserve">
+    <value>Invalid Gender</value>
+  </data>
+  <data name="InvalidTitleId" xml:space="preserve">
+    <value>Invalid job title</value>
+  </data>
+  <data name="InvalidSystemCreateLeaveStatus" xml:space="preserve">
+    <value>Leave status must be Approved</value>
+  </data>
+  <data name="InvalidExcuseStatusIntegrationMode" xml:space="preserve">
+    <value>Invalid Excuse Status for Integration Mode</value>
+  </data>
+  <data name="ExcuseTypeEmpty" xml:space="preserve">
+    <value>Excuse type not provided</value>
+  </data>
+  <data name="IsNative" xml:space="preserve">
+    <value>[IsNative] value invalid</value>
+  </data>
+  <data name="ExcuseDurationEqualZero" xml:space="preserve">
+    <value>No shifts for you in this time frame</value>
+  </data>
+  <data name="DelegateIdEmpty" xml:space="preserve">
+    <value>Person is not provided</value>
+  </data>
+  <data name="InvalidDay" xml:space="preserve">
+    <value>Invalid Day</value>
+  </data>
+  <data name="ReportIdEmpty" xml:space="preserve">
+    <value>Report is not provided</value>
+  </data>
+  <data name="InvalidSchedulePersonnel_HireDate" xml:space="preserve">
+    <value>You can only assign a schedule to personnel after their joining date. Please select a start date &gt; joining date</value>
+  </data>
+  <data name="InvalidPersonReportPrivilage" xml:space="preserve">
+    <value>selected person doesn't have that report privileges</value>
+  </data>
+  <data name="InvalidCCs" xml:space="preserve">
+    <value>Invalid CCs Email Address Format</value>
+  </data>
+  <data name="EmptyPersonAndEmail" xml:space="preserve">
+    <value>Either person or email should be provided</value>
+  </data>
+  <data name="InvalidIncludeSupervisor" xml:space="preserve">
+    <value>Department should be selected to be able to send to the supervisor</value>
+  </data>
+  <data name="InvalidTarget" xml:space="preserve">
+    <value>Should be one target at least for the report</value>
+  </data>
+  <data name="DepartmentIdEmpty" xml:space="preserve">
+    <value>Department is not provided</value>
+  </data>
+  <data name="InValidDuration" xml:space="preserve">
+    <value>Shift duration should be greater than 0 and less than 24 hour ( or less than 48 for night shifts )</value>
+  </data>
+  <data name="InValidNightFlexibleCombination" xml:space="preserve">
+    <value>Night shift cannot be flexible</value>
+  </data>
+  <data name="InvalidEndTime" xml:space="preserve">
+    <value>Invalid end time</value>
+  </data>
+  <data name="InvalidStartTime" xml:space="preserve">
+    <value>Invalid start time</value>
+  </data>
+  <data name="InvalidEditAttendanceEvent" xml:space="preserve">
+    <value>Cannot apply multiple pending manual attendance at the same time</value>
+  </data>
+  <data name="LeaveAttachmentRequired" xml:space="preserve">
+    <value>Attachments required for this leave type for {0}</value>
+  </data>
+  <data name="InvalidShiftPolicy" xml:space="preserve">
+    <value>Shift Policy is not valid</value>
+  </data>
+  <data name="PolicyAssociationsWithShift" xml:space="preserve">
+    <value>Policy is being associated with Shifts</value>
+  </data>
+  <data name="LeaveStartDateExceedsOldLeavesDaysLimit" xml:space="preserve">
+    <value>Leave for {0} Start exceeds days limit for old leaves</value>
+  </data>
+  <data name="EmploymentTypeEmpty" xml:space="preserve">
+    <value>Employment Type is not provided</value>
+  </data>
+  <data name="JobTitleEmpty" xml:space="preserve">
+    <value>Job Title is not provided</value>
+  </data>
+  <data name="LeaveInvalidLeaveTypePolicy" xml:space="preserve">
+    <value>{0} has no association to the requested leave type</value>
+  </data>
+  <data name="ArabicNameLengthInvalid" xml:space="preserve">
+    <value>Arabic Name length should not exceed {0}</value>
+  </data>
+  <data name="NameLengthInvalid" xml:space="preserve">
+    <value>Name length should not exceed {0}</value>
+  </data>
+  <data name="LeaveEffectiveDayNotVaild" xml:space="preserve">
+    <value>Leave days should not exceed {0}</value>
+  </data>
+  <data name="PlannedLeavesNotAllow" xml:space="preserve">
+    <value>Planned leaves not allowed for this leave type.</value>
+  </data>
+  <data name="PersonCodeEmailInvalid" xml:space="preserve">
+    <value>Code and Email should not be the same</value>
+  </data>
+  <data name="PersonCodeUsernameInvalid" xml:space="preserve">
+    <value>Code and username should not be the same</value>
+  </data>
+  <data name="PersonUsernameEmailInvalid" xml:space="preserve">
+    <value>Username and Email should not be the same</value>
+  </data>
+  <data name="PersonUsernameUniqueEditMode" xml:space="preserve">
+    <value>Username should be unique, Person cannot be edited while his identity is not valid</value>
+  </data>
+  <data name="DepartmentDeleteFailed_RelatedScheduledReports" xml:space="preserve">
+    <value>This department can not be deleted. It has one or more scheduled reports</value>
+  </data>
+  <data name="ExcuseForPersonConflictWithLeave" xml:space="preserve">
+    <value>{0} has a leave in this day. It is not supported to have a leave and an excuse in the same day.</value>
+  </data>
+  <data name="ShiftHavePolicies" xml:space="preserve">
+    <value>Shift can not be deleted or deactivated because it has been associated with a policy</value>
+  </data>
+</root>

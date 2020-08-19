@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>غير مسموح</value>
+  </data>
+  <data name="Active_Ar" xml:space="preserve">
+    <value>مفعل</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>اضافة</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>يوم</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>أيام</value>
+  </data>
+  <data name="DeleteFailed" xml:space="preserve">
+    <value>لا يمكن الحذف</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>تم الحذف بنجاح</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>قسم</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>أشهر</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="NotActive_Ar" xml:space="preserve">
+    <value>غير مفعل</value>
+  </data>
+  <data name="SavedFailed" xml:space="preserve">
+    <value>عملية الحفظ فشلت</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>العملية قد نجحت</value>
+  </data>
+  <data name="SelectItem" xml:space="preserve">
+    <value>برجاء الاختيار</value>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>خطأ فى النظام</value>
+  </data>
+  <data name="ValidationError" xml:space="preserve">
+    <value>خطأ فى التحقيق</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>إسبوع</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>أسابيع</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>تفعيل</value>
+  </data>
+  <data name="Deactivate" xml:space="preserve">
+    <value>تعطيل</value>
+  </data>
+  <data name="UnauthorizedDashboard" xml:space="preserve">
+    <value>غير مصرح بها للوصول إلى لوحة التحكم الرئيسية</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>عطلة</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="ShiftActivatedSuccess" xml:space="preserve">
+    <value>تم تفعيل الوردية بنجاح</value>
+  </data>
+  <data name="ShiftDeactivatedSuccess" xml:space="preserve">
+    <value>تم تعطيل الوردية بنجاح</value>
+  </data>
+  <data name="UnauthorizedHolidays" xml:space="preserve">
+    <value>غير مصرح بها للوصول إلى الاجازات</value>
+  </data>
+  <data name="Justified" xml:space="preserve">
+    <value>مبررة</value>
+  </data>
+  <data name="Unjustified" xml:space="preserve">
+    <value>غير مبررة</value>
+  </data>
+  <data name="Away" xml:space="preserve">
+    <value>مهام العمل</value>
+  </data>
+  <data name="Excuse" xml:space="preserve">
+    <value>الاذن</value>
+  </data>
+  <data name="MultipleDepartments_Ar" xml:space="preserve">
+    <value>العديد من الاقسام</value>
+  </data>
+  <data name="MultipleEmploymentTypes_Ar" xml:space="preserve">
+    <value>العديد من انواع التوظيف</value>
+  </data>
+  <data name="MultipleGenders_Ar" xml:space="preserve">
+    <value>العديد من الاجناس</value>
+  </data>
+  <data name="MultipleJobTitles_Ar" xml:space="preserve">
+    <value>العديد من المسميات الوظيفية</value>
+  </data>
+  <data name="MultiplePersonnel_Ar" xml:space="preserve">
+    <value>العديد من الموظفين</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>مفعل</value>
+  </data>
+  <data name="Active_En" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="All_Ar" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+  <data name="All_En" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="MultipleDepartments_En" xml:space="preserve">
+    <value>Multiple Departments</value>
+  </data>
+  <data name="MultipleEmploymentTypes_En" xml:space="preserve">
+    <value>Multiple Employment Types</value>
+  </data>
+  <data name="MultipleGenders_En" xml:space="preserve">
+    <value>Multiple Genders</value>
+  </data>
+  <data name="MultipleJobTitles_En" xml:space="preserve">
+    <value>Multiple Job Titles</value>
+  </data>
+  <data name="NotActive" xml:space="preserve">
+    <value>غير مفعل</value>
+  </data>
+  <data name="NotActive_En" xml:space="preserve">
+    <value>Not Active</value>
+  </data>
+  <data name="MultiplePersonnel_En" xml:space="preserve">
+    <value>Multiple Personnel</value>
+  </data>
+  <data name="MultipleAttendanceStatuses_Ar" xml:space="preserve">
+    <value>العديد من حالات الحضور و الانصراف</value>
+  </data>
+  <data name="MultipleAttendanceStatuses_En" xml:space="preserve">
+    <value>Multiple Attendance Statuses</value>
+  </data>
+  <data name="MultipleShifts_Ar" xml:space="preserve">
+    <value>العديد من الورديات</value>
+  </data>
+  <data name="MultipleShifts_En" xml:space="preserve">
+    <value>Multiple Shifts</value>
+  </data>
+  <data name="Attended_Ar" xml:space="preserve">
+    <value>حضر</value>
+  </data>
+  <data name="Attended_En" xml:space="preserve">
+    <value>Attended</value>
+  </data>
+  <data name="CurrentlyIn_Ar" xml:space="preserve">
+    <value>داخل العمل حاليا</value>
+  </data>
+  <data name="CurrentlyIn_En" xml:space="preserve">
+    <value>Currently In</value>
+  </data>
+  <data name="MissedInPunch_Ar" xml:space="preserve">
+    <value>تسجيل الدخول مفقود</value>
+  </data>
+  <data name="MissedInPunch_En" xml:space="preserve">
+    <value>Missed In Punch</value>
+  </data>
+  <data name="MissedOutPunch_Ar" xml:space="preserve">
+    <value>تسجيل الخروج مفقود</value>
+  </data>
+  <data name="MissedOutPunch_En" xml:space="preserve">
+    <value>Missed Out Punch</value>
+  </data>
+  <data name="UnScheduled_Ar" xml:space="preserve">
+    <value>غير مجدول</value>
+  </data>
+  <data name="UnScheduled_En" xml:space="preserve">
+    <value>UnScheduled</value>
+  </data>
+  <data name="WorkOnHoliday_Ar" xml:space="preserve">
+    <value>العمل فى عطلة</value>
+  </data>
+  <data name="WorkOnHoliday_En" xml:space="preserve">
+    <value>Work On Holiday</value>
+  </data>
+  <data name="WorkOnLeave_Ar" xml:space="preserve">
+    <value>العمل فى اجازة</value>
+  </data>
+  <data name="WorkOnLeave_En" xml:space="preserve">
+    <value>Work On Leave</value>
+  </data>
+  <data name="WorkOnWeekend_Ar" xml:space="preserve">
+    <value>العمل فى نهاية الاسبوع</value>
+  </data>
+  <data name="WorkOnWeekend_En" xml:space="preserve">
+    <value>Work on Weekend</value>
+  </data>
+  <data name="EarlyCome_Ar" xml:space="preserve">
+    <value>الحضور مبكر</value>
+  </data>
+  <data name="EarlyCome_En" xml:space="preserve">
+    <value>Early Come</value>
+  </data>
+  <data name="ComeOnGrace_Ar" xml:space="preserve">
+    <value>حضور فى الوقت المسموح</value>
+  </data>
+  <data name="ComeOnGrace_En" xml:space="preserve">
+    <value>Come On Grace</value>
+  </data>
+  <data name="LateAbsent_Ar" xml:space="preserve">
+    <value>غياب للتأخير</value>
+  </data>
+  <data name="LateAbsent_En" xml:space="preserve">
+    <value>Late Absent</value>
+  </data>
+  <data name="EarlyLeave_Ar" xml:space="preserve">
+    <value>انصراف مبكر</value>
+  </data>
+  <data name="EarlyLeave_En" xml:space="preserve">
+    <value>Early Leave</value>
+  </data>
+  <data name="LateLeave_Ar" xml:space="preserve">
+    <value>خروج متأخر</value>
+  </data>
+  <data name="LateLeave_En" xml:space="preserve">
+    <value>Late Leave</value>
+  </data>
+  <data name="CameLate_Ar" xml:space="preserve">
+    <value>الحضور متأخر</value>
+  </data>
+  <data name="CameLate_En" xml:space="preserve">
+    <value>Late Come</value>
+  </data>
+  <data name="MultipleStatuses_Ar" xml:space="preserve">
+    <value>العديد من الحالات</value>
+  </data>
+  <data name="MultipleStatuses_En" xml:space="preserve">
+    <value>Multiple Statuses</value>
+  </data>
+  <data name="LeaveOnGrace_Ar" xml:space="preserve">
+    <value>غادر فى الوقت المسموح</value>
+  </data>
+  <data name="LeaveOnGrace_En" xml:space="preserve">
+    <value>Leave On Grace</value>
+  </data>
+  <data name="LicenseError" xml:space="preserve">
+    <value>خطأ فى ترخيص التطبيق</value>
+  </data>
+</root>

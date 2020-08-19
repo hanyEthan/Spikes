@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.OverTimePolicy">
+    <Position X="15" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAKAAAAACCAAAAAACAAAAAAAAAAAAABAAAAAAEAEA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\OverTimePolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.PermissionPolicy">
+    <Position X="17.75" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAABAAAAAAAAACAAAAAAAAAEAACAAAAABAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\PermissionPolicy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.ShiftPolicy">
+    <Position X="20.5" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAABBAAAAIAAAAAAgAAAAEAAAAAgAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\ShiftPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.AccrualPolicy">
+    <Position X="23.75" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAABAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\AccrualPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.ApprovalPolicy">
+    <Position X="26.5" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAiACAAAAAAIACAAAAAAAACEABAAAAAAACAAABAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\ApprovalPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.DepartmentRulePolicy">
+    <Position X="29.25" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\DepartmentRulePolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.ExcusePolicy">
+    <Position X="32" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAAAAAAAAAAAAEAAAABgDAAAAEAACAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\ExcusePolicy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.HolidayPolicy">
+    <Position X="34.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\HolidayPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.LeavePolicy">
+    <Position X="37" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAAAAAAAAAAAgAAAAABBRAAAAAAAiAAAAAAgA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\LeavePolicy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.AbstractSpecialPolicy">
+    <Position X="26.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACFAAAAAAAIgAASAAAAAAAAAAAQAAACAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\AbstractSpecialPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

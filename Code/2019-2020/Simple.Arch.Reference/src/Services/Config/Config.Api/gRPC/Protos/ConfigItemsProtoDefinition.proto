@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option csharp_namespace = "Mcs.Invoicing.Services.Config.Api.gRPC.Protos";
+
+package ConfigItemsProtoDefinition;
+
+// =============================================================================================
+
+// api definition : ConfigItems
+service ConfigItemsProtoAPI {
+
+  // action : audit : create.
+  rpc Create (CreateConfigItemCommandProto) returns (CreateConfigItemResponseProto);
+}
+
+// =============================================================================================
+
+// model : request : [config create command]
+message CreateConfigItemCommandProto {
+  string Key = 1;
+  string Value = 2;
+  string Description = 3;
+  int32 ModuleId = 4;
+}
+
+// model : response : [config create response]
+message CreateConfigItemResponseProto {
+  BaseResponseContextProto Header = 1;
+  int32 EntityId = 2;
+}
+
+// model : response : [Base Response Context]
+message BaseResponseContextProto {
+  int32 Code = 1;
+  string StatusCode = 2;
+  string Messages = 3;
+  string CorrelationId = 4;
+  string RequestTimeUTC = 5;
+  int64 ResponseProcessingTimeInTicks = 6;
+}
+
+// =============================================================================================

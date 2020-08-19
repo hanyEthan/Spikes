@@ -1,0 +1,15 @@
+[
+  {
+    "WorkflowName": "person.insert",
+    "Rules": [
+      {
+        "RuleName": "person.name",
+        "SuccessEvent": "10",
+        "ErrorMessage": "One or more business rules failed.",
+        "ErrorType": "Error",
+        "RuleExpressionType": "LambdaExpression",
+        "Expression": "input1.Name != \"N1\" AND input1.Name != \"N2\""
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+1)npx create-react-app  react-redux-demo         >> to create a react app and instal all needed react libraries
+2)npm install --save-dev --save-exact prettier   >> An opinionated code formatter; Supports many languages
+3)npm install axios                              >> request an api to end point
+4)npm install react-router-dom                   >> to instal the routing Package
+5)npm install @material-ui/core                  >> grid,autocomplete , drop down list,inlineedit,pagging server side,breadcrumb
+6)npm install --save bootstrap                   >> to style the pages
+7)npm install react-hook-form                    >> for make form validation
+8)npm install redux                              >> work as store management for the application
+9)npm install react-redux                        >> work as connector between react and redux   
+10)npm install redux-logger                      >>  to log what is happening in the application
+11)npm install redux-saga                        >> middleware for handling  async calls  with await and handling effects
+12)npm install --save redux-thunk                >> middleware for handling  async calls    without affects but work with promises    
+13)npm start                                     >> to start your app in loacalhost with default port 3000
+14)npm install --save font-awesome               >> to use font awesome
+15)npm i history                                 >> to  interact with browser history  >> session history anywhere JavaScript runs
+16)npm install --save typescript @types/node @types/react @types/react-dom @types/jest  >> to support typescript code
+17)npm install @material-ui/styles               >> to material ui  styles
+18)npm  install @material-ui/core                >> to material ui table
+19)npm i react-bootstrap                         >> to use react  bootstrap  like breadcrumb

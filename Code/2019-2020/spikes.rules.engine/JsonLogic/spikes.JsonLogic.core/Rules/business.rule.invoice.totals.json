@@ -1,0 +1,22 @@
+{
+  "==": [
+    {
+      "reduce": [
+        {
+          "map": [
+            { "var": "invoiceLines" },
+            { "var": "total" }
+          ]
+        },
+        { 
+          "+": [
+            { "var": "current" },
+            { "var": "accumulator" }
+          ]
+        },
+        0
+      ]
+    },
+    { "var": "Invoice.totalSales" }
+  ]
+}

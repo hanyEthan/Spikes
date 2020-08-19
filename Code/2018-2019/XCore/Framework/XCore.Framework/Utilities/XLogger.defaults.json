@@ -1,0 +1,43 @@
+{
+  "XLogger": {
+    "Mode": 0
+  },
+
+  "Serilog": {
+    "MinimumLevel": "Verbose",
+    "Enrich": [
+      "FromLogContext",
+      "WithMachineName",
+      "WithProcessId",
+      "WithThreadId"
+    ],
+    "WriteTo": [
+      {
+        "Name": "Async",
+        "Args": {
+          "configure": [
+            {
+              "Name": "RollingFile",
+              "Args": {
+                "pathFormat": "Logs\\log.{Date}.json",
+                "outputTemplate": "[{Timestamp:yyyy.MM.dd HH:mm:ss.fff zzz}] [{Level}] [{SourceContext}] [{EventId}] {Message}{NewLine}{Exception}",
+                "fileSizeLimitBytes": 104857600,
+                "retainedFileCountLimit": null
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "ServiceBus": {
+    "EndPointName": ".",
+    "TransportType": 1, // RabbitMQ
+    "Transport": {
+      "Uri": "rabbitmq://localhost/",
+      "CredentialsUsername": "guest",
+      "CredentialsPassword": "guest"
+    }
+  }
+}

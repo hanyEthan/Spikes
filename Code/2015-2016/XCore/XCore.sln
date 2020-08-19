@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XCore", "XCore", "{9C644488-5257-4930-BB6F-0D9D3D9D3FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCore.Utilities", "XCore\XCore.Utilities\XCore.Utilities.csproj", "{C3868EC3-1607-4550-BC35-3BE3F689E739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCore.Framework", "XCore\XCore.Framework\XCore.Framework.csproj", "{C67E2DC0-04F3-4C9C-8CAF-934EEB182EA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9C861C4E-D2BD-4771-8066-9134AEEE6487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCore.Tests", "Tests\XCore.Tests\XCore.Tests.csproj", "{CE85493C-B274-4AC6-9EA9-4314CBB47103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCore.Utilities.Logger", "XCore\XCore.Utilities.Logger\XCore.Utilities.Logger.csproj", "{6E2B6A84-7C4F-4E4E-AD7F-DEB1683F8AF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3868EC3-1607-4550-BC35-3BE3F689E739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3868EC3-1607-4550-BC35-3BE3F689E739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3868EC3-1607-4550-BC35-3BE3F689E739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3868EC3-1607-4550-BC35-3BE3F689E739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67E2DC0-04F3-4C9C-8CAF-934EEB182EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67E2DC0-04F3-4C9C-8CAF-934EEB182EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67E2DC0-04F3-4C9C-8CAF-934EEB182EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67E2DC0-04F3-4C9C-8CAF-934EEB182EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE85493C-B274-4AC6-9EA9-4314CBB47103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE85493C-B274-4AC6-9EA9-4314CBB47103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE85493C-B274-4AC6-9EA9-4314CBB47103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE85493C-B274-4AC6-9EA9-4314CBB47103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2B6A84-7C4F-4E4E-AD7F-DEB1683F8AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2B6A84-7C4F-4E4E-AD7F-DEB1683F8AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2B6A84-7C4F-4E4E-AD7F-DEB1683F8AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2B6A84-7C4F-4E4E-AD7F-DEB1683F8AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3868EC3-1607-4550-BC35-3BE3F689E739} = {9C644488-5257-4930-BB6F-0D9D3D9D3FDB}
+		{C67E2DC0-04F3-4C9C-8CAF-934EEB182EA4} = {9C644488-5257-4930-BB6F-0D9D3D9D3FDB}
+		{CE85493C-B274-4AC6-9EA9-4314CBB47103} = {9C861C4E-D2BD-4771-8066-9134AEEE6487}
+		{6E2B6A84-7C4F-4E4E-AD7F-DEB1683F8AF0} = {9C644488-5257-4930-BB6F-0D9D3D9D3FDB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7B2A028-111B-4ECA-8648-B6ED058D9A4B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.1.2.30:8080/tfs/products
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = XCore\\XCore.Utilities\\XCore.Utilities.csproj
+		SccProjectTopLevelParentUniqueName1 = XCore.sln
+		SccProjectName1 = XCore/XCore.Utilities
+		SccLocalPath1 = XCore\\XCore.Utilities
+		SccProjectUniqueName2 = XCore\\XCore.Framework\\XCore.Framework.csproj
+		SccProjectTopLevelParentUniqueName2 = XCore.sln
+		SccProjectName2 = XCore/XCore.Framework
+		SccLocalPath2 = XCore\\XCore.Framework
+		SccProjectUniqueName3 = Tests\\XCore.Tests\\XCore.Tests.csproj
+		SccProjectTopLevelParentUniqueName3 = XCore.sln
+		SccProjectName3 = Tests/XCore.Tests
+		SccLocalPath3 = Tests\\XCore.Tests
+		SccProjectUniqueName4 = XCore\\XCore.Utilities.Logger\\XCore.Utilities.Logger.csproj
+		SccProjectTopLevelParentUniqueName4 = XCore.sln
+		SccProjectName4 = XCore/XCore.Utilities.Logger
+		SccLocalPath4 = XCore\\XCore.Utilities.Logger
+	EndGlobalSection
+EndGlobal

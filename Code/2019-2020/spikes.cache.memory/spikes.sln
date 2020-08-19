@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core", "core\core.csproj", "{6386F999-C353-449D-88C9-18043090A27D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spike.01", "spike.01\spike.01.csproj", "{B86263A0-6E18-4629-9DA4-B031B85D4FB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6386F999-C353-449D-88C9-18043090A27D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6386F999-C353-449D-88C9-18043090A27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6386F999-C353-449D-88C9-18043090A27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6386F999-C353-449D-88C9-18043090A27D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86263A0-6E18-4629-9DA4-B031B85D4FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86263A0-6E18-4629-9DA4-B031B85D4FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86263A0-6E18-4629-9DA4-B031B85D4FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86263A0-6E18-4629-9DA4-B031B85D4FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F1C4CED-5525-45C5-ADB8-E1E32C2620C8}
+	EndGlobalSection
+EndGlobal

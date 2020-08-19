@@ -1,0 +1,82 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: audit-api-appsettings
+data:
+  appsettings.json: |-
+    {
+      "ConnectionStrings": {
+        "AuditDbConnection": "__DBCONNECTIONSTRING__"
+      },
+      "Serilog": {
+        "Using": [],
+        "MinimumLevel": {
+          "Default": "Information",
+          "Override": {
+            "Microsoft.AspNetCore": "Warning",
+            "System": "Warning",
+            "Microsoft.EntityFrameworkCore": "Warning"
+          }
+        },
+        "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId", "WithExceptionDetails" ],
+        "WriteTo": [
+          { "Name": "Debug" },
+          { "Name": "Console" },
+          {
+            "Name": "Elasticsearch",
+            "Args": {
+              "nodeUris": "__ElasticSearchUri__",
+              "indexFormat": "mcs-invoicing-{0:yyyy.MM}",
+              "autoRegisterTemplate": true,
+              "autoRegisterTemplateVersion": "ESv6"
+
+            }
+          }
+        ]
+      },
+      "SearchLimits": {
+        "MaxPageSize": 100,
+        "TimeWindowIntervalInHrs": 120
+      },
+      "AllowedHosts": "*"
+    }
+
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: audit-api
+  labels:    
+    app: audit-api
+spec:
+  selector:
+    matchLabels:
+      app: audit-api
+  template:
+    metadata:
+      labels:
+        app: audit-api
+    spec:
+      containers:
+      - name: audit-api
+        image: __ACR__/audit.api:__BUILDID__
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+          name: http
+        volumeMounts:
+        - name: config-volume
+          mountPath: /app/appsettings.json
+          subPath: appsettings.json
+      volumes:
+      - name: config-volume
+        configMap:
+          name: audit-api-appsettings

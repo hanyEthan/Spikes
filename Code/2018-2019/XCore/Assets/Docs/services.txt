@@ -1,0 +1,38 @@
+Gateway        : https://localhost:44300/swagger/
+
+Configurations : https://localhost:44302/swagger/
+Audit          : https://localhost:44304/swagger/
+Attachments    : https://localhost:44319/swagger/
+Documents      : https://localhost:44305/swagger/
+Caching        : 
+Geo            : 
+Identities     : 
+Jobs           : 
+Logging        : 
+Lookups        : 
+Notifications  : 
+Organizations  : https://localhost:44322/swagger/
+Personnel      : 
+Security       : https://localhost:44308/swagger/
+Hiring         : https://localhost:44316/swagger/
+
+-------------------------------------------------------
+-------------------------------------------------------
+
+Gateway        : http://localhost:14300/swagger/
+
+Configurations : http://localhost:14302/swagger/
+Audit          : http://localhost:14304/swagger/
+Attachments    : http://localhost:14319/swagger/
+Documents      : http://localhost:14305/swagger/
+Caching        : 
+Geo            : 
+Identities     : 
+Jobs           : 
+Logging        : 
+Lookups        : 
+Notifications  : 
+Organizations  : http://localhost:14322/swagger/
+Personnel      : 
+Security       : http://localhost:14308/swagger/
+Hiring         : http://localhost:44316/swagger/

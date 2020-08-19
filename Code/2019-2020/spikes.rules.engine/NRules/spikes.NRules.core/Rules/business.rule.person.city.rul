@@ -1,0 +1,11 @@
+using spikes.NRules.core.Support;
+using core.Utilities;
+
+rule "business.rule.person.city"
+when
+    var instance = RuleContent(x => x.Contents[0].ParseJsonString("Address.City") == "C1" && true);
+    var result = RuleValidationResults();
+
+then
+    result.Errors.Add("Wrong City.");
+    result.IsValid = false;

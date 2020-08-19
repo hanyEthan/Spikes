@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Mcs.Invoicing.Services.Config.Client.Sdk</RootNamespace>
+    <AssemblyName>Mcs.Invoicing.Services.Config.Client.Sdk</AssemblyName>
+    <Authors>Mcs</Authors>
+    <Product>Mcs.Invoicing</Product>
+    <PackageTags>client sdk config</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.0.2</Version>
+    <IncludeReferencedProjects>true</IncludeReferencedProjects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Clients\gRPC\Protos\ConfigItemsProtoDefinition.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.11.4" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.27.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.27.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\Core.Framework\Core.Framework.csproj" />
+    <ProjectReference Include="..\Config.Messaging.Contracts\Config.Messaging.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Clients\gRPC\Protos\ConfigItemsProtoDefinition.proto">
+      <GrpcServices>Client</GrpcServices>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

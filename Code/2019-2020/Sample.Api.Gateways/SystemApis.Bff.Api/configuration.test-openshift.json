@@ -1,0 +1,348 @@
+{
+  "ReRoutes": [
+    // Documents State Manager
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-state-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/state/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    // Documents State Manager : swagger
+    {
+      "DownstreamPathTemplate": "/documents.state.swagger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-state-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.state.swagger/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/documents.state.swagger/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-state-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.state.swagger/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+
+    // Documents Package Producer
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-package-producer-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    // Documents Package Producer : swagger
+    {
+      "DownstreamPathTemplate": "/documents.packager.swagger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-package-producer-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.packager.swagger/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/documents.packager.swagger/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-package-producer-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.packager.swagger/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+
+    // Documents Publisher
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    // Documents Publisher : swagger
+    {
+      "DownstreamPathTemplate": "/documents.publisher.swagger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.publisher.swagger/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/documents.publisher.swagger/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.publisher.swagger/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+
+    // Documents Receiver
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-submission-receiver-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions",
+      "UpstreamHttpMethod": [ "Post" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    // Documents Receiver : swagger
+    {
+      "DownstreamPathTemplate": "/documents.receiver.swagger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-submission-receiver-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.receiver.swagger/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/documents.receiver.swagger/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-submission-receiver-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documents.receiver.swagger/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+
+    //notifications (/taxpayer)
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/notifications/taxpayer?{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "notification-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/notifications/taxpayer?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // document type service route
+    {
+      "DownstreamPathTemplate": "/documenttypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documenttypes",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/documenttypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documenttypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    }
+
+  ]
+}

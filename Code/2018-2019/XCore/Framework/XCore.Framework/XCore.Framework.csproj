@@ -1,0 +1,251 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extensions\CMD\**" />
+    <Compile Remove="Framework\**" />
+    <Compile Remove="Infrastructure\**" />
+    <Compile Remove="Utilities\**" />
+    <EmbeddedResource Remove="Extensions\CMD\**" />
+    <EmbeddedResource Remove="Framework\**" />
+    <EmbeddedResource Remove="Infrastructure\**" />
+    <EmbeddedResource Remove="Utilities\**" />
+    <None Remove="Extensions\CMD\**" />
+    <None Remove="Framework\**" />
+    <None Remove="Infrastructure\**" />
+    <None Remove="Utilities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="XCore.Framework.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Framework\Captcha\Handlers\CaptchaHandler.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaSettings.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV2Request.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV2Response.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV3Request.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV3Response.cs" />
+    <Compile Include="Framework\Captcha\Models\JSON.cs" />
+    <Compile Include="Framework\Entities\Constants\XCoreConstants.cs" />
+    <Compile Include="Framework\Entities\Mappers\DateMapper.cs" />
+    <Compile Include="Framework\Entities\Versioning\IVersionable.cs" />
+    <Compile Include="Framework\Entities\Versioning\Versioning.cs" />
+    <Compile Include="Framework\Geo\Models\GeoLocation.cs" />
+    <Compile Include="Framework\Hosts\Generic\ServiceBaseLifetime.cs" />
+    <Compile Include="Framework\Hosts\Generic\ServiceBaseLifetimeHostExtensions.cs" />
+    <Compile Include="Framework\License\Contracts\IDataProvider.cs" />
+    <Compile Include="Framework\License\Contracts\IFeaturesDefinition.cs" />
+    <Compile Include="Framework\License\Contracts\IKey.cs" />
+    <Compile Include="Framework\License\Contracts\ILicenseDataHandler.cs" />
+    <Compile Include="Framework\License\Contracts\ILicenseHandler.cs" />
+    <Compile Include="Framework\License\Contracts\ILicenseValidator.cs" />
+    <Compile Include="Framework\License\Contracts\IOrgDataProvider.cs" />
+    <Compile Include="Framework\License\Contracts\ITimeLicense.cs" />
+    <Compile Include="Framework\License\Handler\LicenseHandler.cs" />
+    <Compile Include="Framework\License\Models\Feature.cs" />
+    <Compile Include="Framework\License\Models\InfinitTimeLicense.cs" />
+    <Compile Include="Framework\License\Models\LicenseKey.cs" />
+    <Compile Include="Framework\License\Models\LicenseKeyContext.cs" />
+    <Compile Include="Framework\License\Models\LicenseKeyContextMode.cs" />
+    <Compile Include="Framework\License\Models\LicenseModel.cs" />
+    <Compile Include="Framework\License\Models\OrganizationLicense.cs" />
+    <Compile Include="Framework\License\Models\PeriodicTimeLicense.cs" />
+    <Compile Include="Framework\License\Models\TrialTimeLicense.cs" />
+    <Compile Include="Framework\Scheduler\Contracts\IScheduledJob.cs" />
+    <Compile Include="Framework\Scheduler\Handlers\JobsScheduler.cs" />
+    <Compile Include="Framework\Scheduler\Models\DefaultJobConcurrent.cs" />
+    <Compile Include="Framework\Scheduler\Models\Interval.cs" />
+    <Compile Include="Framework\Scheduler\Models\XLogProvider.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Contracts\IServiceBus.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Contracts\IServiceBusTransportConfigurator.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Handlers\ServiceBus.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Host\ServiceBusHostedService.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Models\TransportType.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Support\RabbitMQServiceBusTransportConfigurator.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Support\ServiceBusConfiguration.cs" />
+    <Compile Include="Framework\ServiceBus\MST\Support\ServiceBusLocalConfigProvider.cs" />
+    <Compile Include="Framework\ServiceBus\NSB\Contracts\IServiceBus.cs" />
+    <Compile Include="Framework\ServiceBus\NSB\Handlers\ServiceBus.cs" />
+    <Compile Include="Framework\ServiceBus\NSB\Models\Constants.cs" />
+    <Compile Include="Framework\ServiceBus\NSB\Models\NSXLogger.cs" />
+    <Compile Include="Framework\ServiceBus\NSB\Models\NSXLoggerDefinition.cs" />
+    <Compile Include="Framework\ServiceBus\NSB\Models\NSXLoggerFactory.cs" />
+    <Compile Include="Framework\ServiceBus\NSB\Settings\NSBSqlPersistenceSettings.cs" />
+    <Compile Include="Framework\Services\Rest\HttpMethod.cs" />
+    <Compile Include="Framework\Services\Rest\IRestHandler.cs" />
+    <Compile Include="Framework\Services\Rest\RestHandler.cs" />
+    <Compile Include="Framework\Services\Rest\RestResponse.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityCluster.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityConfigurationsBuilder.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityConfigurationsProvider.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityService.cs" />
+    <Compile Include="Framework\Unity\Handlers\Configurations\XUnityConfigurationsBuilder.cs" />
+    <Compile Include="Framework\Unity\Handlers\Configurations\XUnityConfigurationsProvider.cs" />
+    <Compile Include="Framework\Unity\Handlers\XUnity.cs" />
+    <Compile Include="Framework\Unity\Models\UnityCluster.cs" />
+    <Compile Include="Framework\Unity\Models\UnityConfig.cs" />
+    <Compile Include="Framework\Unity\Models\UnityService.cs" />
+    <Compile Include="Framework\Unity\Models\UnityServiceParameter.cs" />
+    <Compile Include="Infrastructure\Config\Contracts\IConfigData.cs" />
+    <Compile Include="Infrastructure\Config\Contracts\IConfigProvider.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Contracts\IActionContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Contracts\IContextStep.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Contracts\IResponse.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Extensions\AuditingContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Extensions\AuthorizationContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Extensions\LogicContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Extensions\ValidationContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Extensions\ValidationContextBase.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Handler\ExecutionContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Models\MetaPair.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Models\ResponseState.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Support\ActionContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Support\ExecutionResponse.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Support\ExecutionResponseBasic.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Support\RequestContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Support\SecurityContextBase.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Support\SystemRequestContext.cs" />
+    <Compile Include="Infrastructure\Context\Execution\Support\SystemSecurityContext.cs" />
+    <Compile Include="Infrastructure\Context\Services\Contracts\IModelMapper.cs" />
+    <Compile Include="Infrastructure\Context\Services\Contracts\IServiceExecutionContent.cs" />
+    <Compile Include="Infrastructure\Context\Services\Handlers\ServiceExecutionContext.cs" />
+    <Compile Include="Infrastructure\Context\Services\Mappers\ServiceExecutionMappers.cs" />
+    <Compile Include="Infrastructure\Context\Services\Models\Enums\ResponseCode.cs" />
+    <Compile Include="Infrastructure\Context\Services\Models\IServiceExecutionRequest.cs" />
+    <Compile Include="Infrastructure\Context\Services\Models\ServiceExecutionRequest.cs" />
+    <Compile Include="Infrastructure\Context\Services\Models\ServiceExecutionRequestDTO.cs" />
+    <Compile Include="Infrastructure\Context\Services\Models\ServiceExecutionResponse.cs" />
+    <Compile Include="Infrastructure\Context\Services\Models\ServiceExecutionResponseDTO.cs" />
+    <Compile Include="Infrastructure\Entities\Events\Domain\IDomainEvent.cs" />
+    <Compile Include="Infrastructure\Entities\Events\Domain\DomainEventBase.cs" />
+    <Compile Include="Infrastructure\Entities\Mappers\NativeMapper.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Handlers\IRepository.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Handlers\IRepositoryBase.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Handlers\IRepositoryRead.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Handlers\Repository.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Handlers\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Handlers\RepositoryRead.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Helpers\BaseEntityTypeConfiguration.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Models\Entity.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Models\IEntity.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Models\SearchCriteria.cs" />
+    <Compile Include="Infrastructure\Entities\Repositories\Models\SearchResults.cs" />
+    <Compile Include="Infrastructure\Entities\Validation\Contracts\IModelValidator.cs" />
+    <Compile Include="Infrastructure\Entities\Validation\Handlers\AbstractModelValidator.cs" />
+    <Compile Include="Infrastructure\Entities\Validation\Handlers\CommonValidators.cs" />
+    <Compile Include="Infrastructure\Entities\Validation\Models\ValidationMode.cs" />
+    <Compile Include="Infrastructure\Entities\Validation\Models\ValidationResponse.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Contracts\IMessagePoolReader.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Contracts\IMessagePoolRepository.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Contracts\IMessagePoolSender.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Contracts\IPoolDataUnitySettings.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Handlers\MessagePoolHandler.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Models\Enums\PoolMessageStatus.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Models\PoolMessage.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Models\PoolMessageSearchCriteria.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Repositories\Context\PoolDataContext.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Repositories\Context\PoolDataContextConfigurations.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Repositories\MessagePoolRepository.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Repositories\Unity\PoolDataUnity.cs" />
+    <Compile Include="Infrastructure\Messaging\Pools\Repositories\Unity\PoolDataUnitySettings.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Contracts\IQueueDataUnitySettings.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Contracts\IQueueListener.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Contracts\IQueueManager.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Contracts\IQueueRepository.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Contracts\IQueueSender.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Contracts\IQueueSubscriber.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Handlers\QueueHandler.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Handlers\QueueManager.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\Enums\MQListenerStatus.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\Enums\MQMessageComplexity.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\Enums\MQMessagePriority.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\Enums\MQMessageStatus.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\Enums\QueueMessageType.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\Enums\SubscriberStatus.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\MQCriteria.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Models\MQMessage.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Repositories\Context\QueueDataContext.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Repositories\Context\QueueDataContextConfigurations.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Repositories\QueueRepository.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Repositories\Unity\QueueDataUnity.cs" />
+    <Compile Include="Infrastructure\Messaging\Queues\Repositories\Unity\QueueDataUnitySettings.cs" />
+    <Compile Include="Utilities\XConfig.cs" />
+    <Compile Include="Utilities\XConvert.cs" />
+    <Compile Include="Utilities\XCrypto.cs" />
+    <Compile Include="Utilities\XCSV.cs" />
+    <Compile Include="Utilities\XDate.cs" />
+    <Compile Include="Utilities\XDB.cs" />
+    <Compile Include="Utilities\XFormat.cs" />
+    <Compile Include="Utilities\XIntervals.cs" />
+    <Compile Include="Utilities\XIntervals2.cs" />
+    <Compile Include="Utilities\XList.cs" />
+    <Compile Include="Utilities\XLogger.cs" />
+    <Compile Include="Utilities\XLoggerLegacy.cs" />
+    <Compile Include="Utilities\XMath.cs" />
+    <Compile Include="Utilities\XModel.cs" />
+    <Compile Include="Utilities\XReflector.cs" />
+    <Compile Include="Utilities\XSerialize.cs" />
+    <Compile Include="Utilities\XString.cs" />
+    <Compile Include="Utilities\XWeb.cs" />
+    <Compile Include="Utilities\XWebLegacy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Utilities\XLogger.defaults.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="FluentValidation" Version="8.6.0" />
+    <PackageReference Include="Flurl" Version="2.8.2" />
+    <PackageReference Include="Flurl.Http" Version="2.4.2" />
+    <PackageReference Include="LinqKit.Core" Version="1.1.17" />
+    <PackageReference Include="MassTransit" Version="6.0.0" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.0" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
+    <PackageReference Include="RestSharp" Version="106.6.10" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.3" />
+    <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.1" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+    <PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0" />
+    <PackageReference Include="Serilog.Formatting.Compact.Reader" Version="1.0.3" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.Observable" Version="2.0.2" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
+    <PackageReference Include="System.Reactive.Core" Version="4.3.1" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.7.0" />
+    <PackageReference Include="UAParser" Version="3.1.43" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Framework\Geo\Handlers\" />
+  </ItemGroup>
+
+</Project>

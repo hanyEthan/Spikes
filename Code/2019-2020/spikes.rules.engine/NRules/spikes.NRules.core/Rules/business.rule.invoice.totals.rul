@@ -1,0 +1,13 @@
+using spikes.NRules.core.Support;
+using core.Utilities;
+
+rule "business.rule.invoice.totals"
+when
+    var instance = RuleContent(x => x.Contents[0].ParseJsonDoubleList("$.invoiceLines[*].total").SumList()
+                                    !=
+                                    x.Contents[0].ParseJsonDouble("Invoice.totalSales") );
+    var result = RuleValidationResults();
+
+then
+    result.Errors.Add("Wrong Totals.");
+    result.IsValid = false;

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="XCore.Services.Audit.SDK.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\XCore.Framework\XCore.Framework.csproj" />
+    <ProjectReference Include="..\..\..\Framework\XCore.Services.Clients.Common\XCore.Services.Clients.Common.csproj" />
+    <ProjectReference Include="..\..\Configurations\XCore.Services.Configurations.SDK\XCore.Services.Configurations.SDK.csproj" />
+    <ProjectReference Include="..\XCore.Services.Audit.Models\XCore.Services.Audit.Models.csproj" />
+  </ItemGroup>
+
+</Project>

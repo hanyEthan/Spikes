@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71D9E671-1A73-40AB-887B-91463073FA9F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADS.Tamam.Common.Data</RootNamespace>
+    <AssemblyName>ADS.Tamam.Common.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <EnhancerAssembly>$(SolutionDir)\packages\Telerik.DataAccess.Fluent.2016.2.822.1\tools\enhancer\enhancer.exe</EnhancerAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\Dependencies\Libraries\AutoMapper\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>..\..\..\Dependencies\Libraries\Fluent\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dependencies\Libraries\LinqKit\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dependencies\Libraries\Oracle\x64\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.35.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.40.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.40.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\SecurityContext.cs" />
+    <Compile Include="Context\SystemSecurityContext.cs" />
+    <Compile Include="Context\SystemRequestContext.cs" />
+    <Compile Include="Context\RequestContext.cs" />
+    <Compile Include="Contracts\IAnalysisHandler.cs" />
+    <Compile Include="Contracts\IApprovalPolicySource.cs" />
+    <Compile Include="Contracts\IAttendanceDataHandler.cs" />
+    <Compile Include="Contracts\IDynamicValuesProvider.cs" />
+    <Compile Include="Contracts\IInternalServiceHandler.cs" />
+    <Compile Include="Contracts\IReportingHandler.cs" />
+    <Compile Include="Contracts\IReadOnlyAttendanceHandler.cs" />
+    <Compile Include="Contracts\ISystemAttendanceHandler.cs" />
+    <Compile Include="Contracts\IReadOnlyLeavesHandler.cs" />
+    <Compile Include="Contracts\IReadOnlyOrganizationHandler.cs" />
+    <Compile Include="Contracts\ISystemOrganizationHandler.cs" />
+    <Compile Include="Contracts\ISystemLeavesHandler.cs" />
+    <Compile Include="Contracts\ILeavesHandler.cs" />
+    <Compile Include="Contracts\ISchedulesHandler.cs" />
+    <Compile Include="Contracts\IIntegrationHandler.cs" />
+    <Compile Include="Contracts\IOrganizationHandler.cs" />
+    <Compile Include="Contracts\IAttendanceHandler.cs" />
+    <Compile Include="Contracts\IReadOnlyPersonnelHandler.cs" />
+    <Compile Include="Contracts\ISystemPersonnelHandler.cs" />
+    <Compile Include="Contracts\IReadOnlyReportingHandler.cs" />
+    <Compile Include="Contracts\ISystemReportingHandler.cs" />
+    <Compile Include="Contracts\IReadOnlySchedulesHandler.cs" />
+    <Compile Include="Contracts\ISystemSchedulesHandler.cs" />
+    <Compile Include="Contracts\IUsersHandler.cs" />
+    <Compile Include="Contracts\IPersonnelHandler.cs" />
+    <Compile Include="Contracts\IWorkFlowTarget.cs" />
+    <Compile Include="Mappers\ModelMapper.cs" />
+    <Compile Include="Model\Domain\AttendanceStatistics\AttendanceDivisionSummary.cs" />
+    <Compile Include="Model\Domain\AttendanceStatistics\AttendanceDivisionLostWorkingHoursStatistics.cs" />
+    <Compile Include="Model\Domain\AttendanceStatistics\AttendanceNotification.cs" />
+    <Compile Include="Model\Domain\AttendanceStatistics\AttendanceStats.cs" />
+    <Compile Include="Model\Domain\AttendanceStatistics\AttendanceStatsByTerminalIds.cs" />
+    <Compile Include="Model\Domain\Attendance\AttendanceFilters.cs" />
+    <Compile Include="Model\Domain\Attendance\AttendanceManualEditReview.cs" />
+    <Compile Include="Model\Domain\Attendance\AttendanceRawDataFilters.cs" />
+    <Compile Include="Model\Domain\Attendance\AttendanceViolationReview.cs" />
+    <Compile Include="Model\Domain\Attendance\TestEngine\ScheduleEventDetails.cs" />
+    <Compile Include="Model\Domain\Leaves\ExcuseCredit.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveCredit.cs" />
+    <Compile Include="Model\Domain\Leaves\LeavePreCredit.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveDetails.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveTypePreCredit.cs" />
+    <Compile Include="Model\Domain\Organization\Holiday.cs" />
+    <Compile Include="Model\Domain\Organization\Terminal.cs" />
+    <Compile Include="Model\Domain\PersonnelPrivileges\PersonnelPrivilege.cs" />
+    <Compile Include="Model\Domain\Personnel\DelegateSearchCriteria.cs" />
+    <Compile Include="Model\Domain\Personnel\DelegateSearchResult.cs" />
+    <Compile Include="Model\Domain\Personnel\PersonDelegates.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\AttendancePolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\IslamicPolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\NotificationsPolicy.cs" />
+    <Compile Include="Model\Domain\Reports\PendingNotificationsPerson.cs" />
+    <Compile Include="Model\Domain\Reports\PendingNotificationsManager.cs" />
+    <Compile Include="Model\Domain\Reports\Repeates.cs" />
+    <Compile Include="Model\Domain\Reports\ScheduledReportEvent.cs" />
+    <Compile Include="Model\Domain\Reports\ScheduledReportEventsSearchCriteria.cs" />
+    <Compile Include="Model\Domain\Schedules\IEffectiveSchedule.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleDaysGrouped.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleEventsDetails.cs" />
+    <Compile Include="Model\Domain\Schedules\SchedulesSearchCriteria.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleEventSearchCriteria.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleEventSearchResult.cs" />
+    <Compile Include="Model\Domain\Security\AuthenticationResponse.cs" />
+    <Compile Include="Model\Domain\Terminal\TerminalLocations.cs" />
+    <Compile Include="Model\Domain\Terminal\TerminalStatsComposite.cs" />
+    <Compile Include="Model\DTO\Composite\LeaveDTO.cs" />
+    <Compile Include="Model\DTO\Composite\ScheduleEventCurrentlyInDTO.cs" />
+    <Compile Include="Model\DTO\Composite\ScheduleEventHighLightDTO.cs" />
+    <Compile Include="Model\DTO\ScheduleDetailDTO.cs" />
+    <Compile Include="Model\DTO\Services\DetailedLeaveCreditDTO.cs" />
+    <Compile Include="Model\Enums\AuthenticationStatus.cs" />
+    <Compile Include="Model\Enums\JustificationStatus.cs" />
+    <Compile Include="Model\Enums\LeaveMode.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveTypeCarryOverCredit.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveTypeCredit.cs" />
+    <Compile Include="Model\Domain\Leaves\Excuse.cs" />
+    <Compile Include="Model\Domain\Leaves\ExcuseAttachment.cs" />
+    <Compile Include="Model\Domain\Leaves\ExcuseAttachmentData.cs" />
+    <Compile Include="Model\Domain\Leaves\ExcuseReview.cs" />
+    <Compile Include="Model\Domain\Leaves\ExcuseSearchCriteria.cs" />
+    <Compile Include="Model\Domain\Leaves\ExcuseSearchResult.cs" />
+    <Compile Include="Model\Domain\Leaves\Leave.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveAttachment.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveAttachmentData.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveReview.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveSearchCriteria.cs" />
+    <Compile Include="Model\Domain\Leaves\LeaveSearchResult.cs" />
+    <Compile Include="Model\Domain\Organization\AttendanceCode.cs" />
+    <Compile Include="Model\Domain\Organization\DashboardWebPart.cs" />
+    <Compile Include="Model\Domain\Organization\Department.cs" />
+    <Compile Include="Model\Domain\Organization\OrganizationDetail.cs" />
+    <Compile Include="Model\Domain\Organization\ReportCategory.cs" />
+    <Compile Include="Model\Domain\Organization\ReportCategoryFilters.cs" />
+    <Compile Include="Model\Domain\Organization\ReportDefinition.cs" />
+    <Compile Include="Model\Domain\Personnel\Person.cs" />
+    <Compile Include="Model\Domain\Personnel\PersonAuthenticationInfo.cs" />
+    <Compile Include="Model\Domain\Personnel\PersonEmploymentInfo.cs" />
+    <Compile Include="Model\Domain\Personnel\PersonContactInfo.cs" />
+    <Compile Include="Model\Domain\Personnel\PersonInfo.cs" />
+    <Compile Include="Model\Domain\Personnel\PersonSearchCriteria.cs" />
+    <Compile Include="Model\Domain\Personnel\PersonSearchResult.cs" />
+    <Compile Include="Model\Domain\Personnel\User.cs" />
+    <Compile Include="Model\Domain\Personnel\UserSecurityQuestion.cs" />
+    <Compile Include="Model\Domain\Policy\Policy.cs" />
+    <Compile Include="Model\Domain\Policy\PolicyField.cs" />
+    <Compile Include="Model\Domain\Policy\PolicyFieldValue.cs" />
+    <Compile Include="Model\Domain\Policy\PolicyFilters.cs" />
+    <Compile Include="Model\Domain\Policy\PolicyGroup.cs" />
+    <Compile Include="Model\Domain\Policy\PolicyRules.cs" />
+    <Compile Include="Model\Domain\Policy\PolicyType.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\ApprovalPolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\HRPolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\ExcusePolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\OverTimePolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\ShiftPolicy.cs" />
+    <Compile Include="Model\Domain\Schedules\AttendanceEvent.cs" />
+    <Compile Include="Model\Domain\Schedules\AttendanceEventMetadata.cs" />
+    <Compile Include="Model\Domain\Schedules\AttendanceRawDataHistoryItem.cs" />
+    <Compile Include="Model\Domain\Schedules\EffectiveScheduleDepartment.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleDepartment.cs" />
+    <Compile Include="Model\Domain\Schedules\EffectiveSchedulePerson.cs" />
+    <Compile Include="Model\Domain\Schedules\SchedulePerson.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleTemplateDayShifts.cs" />
+    <Compile Include="Model\Domain\Schedules\TimeEvent.cs" />
+    <Compile Include="Model\Domain\WorkFlow\Request.cs" />
+    <Compile Include="Model\Domain\Schedules\AttendanceRawData.cs" />
+    <Compile Include="Model\Domain\Schedules\Location.cs" />
+    <Compile Include="Model\Domain\Schedules\Schedule.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleDay.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleEvent.cs" />
+    <Compile Include="Model\Domain\Schedules\ScheduleTemplate.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="Model\Domain\Schedules\ScheduleTemplateDays.cs" />
+    <Compile Include="Model\Domain\Schedules\Shift.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="Model\Domain\Policy\Specialized\AbstractSpecialPolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\AccrualPolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\HolidayPolicy.cs" />
+    <Compile Include="Model\Domain\Policy\Specialized\LeavePolicy.cs" />
+    <Compile Include="Model\Domain\WorkFlow\RequestDetail.cs" />
+    <Compile Include="Model\Enums\AnnualAccrualType.cs" />
+    <Compile Include="Model\Enums\AttendanceCodes.cs" />
+    <Compile Include="Model\Enums\AttendanceCodesImportance.cs" />
+    <Compile Include="Model\Enums\AttendanceEventStatus.cs" />
+    <Compile Include="Model\Enums\AttendanceEventType.cs" />
+    <Compile Include="Model\Enums\AuthorizationVisibilityMode.cs" />
+    <Compile Include="Model\Enums\ExcuseStatus.cs" />
+    <Compile Include="Model\Enums\ExcuseTypes.cs" />
+    <Compile Include="Model\Enums\FilterDirection.cs" />
+    <Compile Include="Model\Enums\LeaveModePeriod.cs" />
+    <Compile Include="Model\Enums\LeaveStatus.cs" />
+    <Compile Include="Model\Enums\LeaveTypes.cs" />
+    <Compile Include="Model\Enums\ManualAttendanceStatus.cs" />
+    <Compile Include="Model\Enums\PersonActiveStatus.cs" />
+    <Compile Include="Model\Enums\PersonGender.cs" />
+    <Compile Include="Model\Enums\PersonMaritalStatus.cs" />
+    <Compile Include="Model\Enums\PersonMilitaryStatus.cs" />
+    <Compile Include="Model\Enums\PolicyFieldDataType.cs" />
+    <Compile Include="Model\Enums\PolicyFields.cs" />
+    <Compile Include="Model\Enums\PolicyTypes.cs" />
+    <Compile Include="Model\Enums\ReviewExcuseStatus.cs" />
+    <Compile Include="Model\Enums\ReviewAttendanceStatus.cs" />
+    <Compile Include="Model\Enums\ReviewLeaveStatus.cs" />
+    <Compile Include="Model\Enums\SelfServiceMode.cs" />
+    <Compile Include="Model\Enums\ShiftType.cs" />
+    <Compile Include="Model\Enums\TamamCacheClusters.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TamamConstants.cs" />
+    <Compile Include="Validation\AttendanceCodeValidator.cs" />
+    <Compile Include="Validation\DelegateValidator.cs" />
+    <Compile Include="Validation\HRPolicyValidator.cs" />
+    <Compile Include="Validation\ExcusesPolicyValidator.cs" />
+    <Compile Include="Validation\HolidayValidator.cs" />
+    <Compile Include="Validation\LeavesPolicyValidator.cs" />
+    <Compile Include="Validation\HolidaysPolicyValidator.cs" />
+    <Compile Include="Validation\ApprovalPolicyValidator.cs" />
+    <Compile Include="Validation\DeleteShiftValidator.cs" />
+    <Compile Include="Validation\ExcuseValidator.cs" />
+    <Compile Include="Validation\LeaveValidator.cs" />
+    <Compile Include="Validation\NotificationsPolicyValidator.cs" />
+    <Compile Include="Validation\OrganizationDetailValidator.cs" />
+    <Compile Include="Validation\OrganizationValidator.cs" />
+    <Compile Include="Validation\AttendanceValidator.cs" />
+    <Compile Include="Validation\PolicyFieldValidator.cs" />
+    <Compile Include="Validation\PolicyGroupRulesValidator.cs" />
+    <Compile Include="Validation\PolicyGroupValidator.cs" />
+    <Compile Include="Validation\PolicyValidator.cs" />
+    <Compile Include="Validation\PersonValidator.cs" />
+    <Compile Include="Validation\ReviewLeaveValidator.cs" />
+    <Compile Include="Validation\ScheduledReportEventValidator.cs" />
+    <Compile Include="Validation\SchedulePersonValidator.cs" />
+    <Compile Include="Validation\ScheduleTemplateValidator.cs" />
+    <Compile Include="Validation\ScheduleValidator.cs" />
+    <Compile Include="Validation\ShiftValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADS.Common\ADS.Common.csproj">
+      <Project>{cbf95a18-c007-4f1d-9499-53c3de8f3866}</Project>
+      <Name>ADS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADS.Tamam.Resources\ADS.Tamam.Resources.csproj">
+      <Project>{e4bd03ba-8cda-4564-8b69-66479712de9c}</Project>
+      <Name>ADS.Tamam.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XCore\XCore.csproj">
+      <Project>{c26ccfc4-df96-4c50-90a5-ba07ad07a5bf}</Project>
+      <Name>XCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Diagrams\ADS.Tamam.Common.Data.cd" />
+    <None Include="Diagrams\Handlers.cd" />
+    <None Include="Diagrams\Polices.cd" />
+    <None Include="Diagrams\Validators.cd" />
+    <None Include="OpenAccessNuGet.targets" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="OpenAccessNuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

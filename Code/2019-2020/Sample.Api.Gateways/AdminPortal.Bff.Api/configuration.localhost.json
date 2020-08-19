@@ -1,0 +1,212 @@
+{
+  "ReRoutes": [
+    // Documents State Manager
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/state/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Package Producer
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Publisher
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    // Documents validation pipeline
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/pipeline/validations/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/pipeline/validations/documenttypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+
+
+    // audit service route
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/audit/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44342
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/audit/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    // code management service route
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/codetypes/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44384
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/codetypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+
+    },
+    // notification service  route
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/notifications/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44336
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/notifications/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/core/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44308
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/core/{everything}",
+      "UpstreamHttpMethod": [ "GET" ]
+
+    }
+
+
+  ]
+}

@@ -1,0 +1,1227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ADS.Tamam.Common.Data.Context.RequestContext">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQIAAAEAACAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context\RequestContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Context.SystemRequestContext">
+    <Position X="4.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Context\SystemRequestContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.AnalysisDataHandler" BaseTypeListCollapsed="true">
+    <Position X="22" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\AnalysisDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.AttendanceDataHandler" BaseTypeListCollapsed="true">
+    <Position X="182.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AACAEAAAgAAAIAACAACAAAQABgAAAEhAADEEAAgBABg=</HashCode>
+      <FileName>Handlers\AttendanceDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.IntegrationDataHandler" BaseTypeListCollapsed="true">
+    <Position X="86.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\IntegrationDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.LeavesDataHandler" BaseTypeListCollapsed="true">
+    <Position X="228.25" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AGACEhAIACAQEygAQCABAQQAEBAACACQAwEAAgAgAAE=</HashCode>
+      <FileName>Handlers\LeavesDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.OrganizationDataHandler" BaseTypeListCollapsed="true">
+    <Position X="253.25" Y="3.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>KAgYMAGPk8AAIIAksckAgISgQSIDqAIAQAYjIATgoFs=</HashCode>
+      <FileName>Handlers\OrganizationDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.PersonnelDataHandler" BaseTypeListCollapsed="true">
+    <Position X="258" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAEAAAARAAAABAAg4AAQAAoAAAAFBAAACABCA=</HashCode>
+      <FileName>Handlers\PersonnelDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.SchedulesDataHandler" BaseTypeListCollapsed="true">
+    <Position X="186.25" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>YRCAlACAISIAAAAKAAAiQAQQBAAEAAAAABAACABACQA=</HashCode>
+      <FileName>Handlers\SchedulesDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Handlers.UsersDataHandler" BaseTypeListCollapsed="true">
+    <Position X="67.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Handlers\UsersDataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Mappers.ModelMapper" Collapsed="true">
+    <Position X="279.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Mappers.ModelMapper.MapProfile">
+        <TypeIdentifier>
+          <NewMemberFileName>Mappers\ModelMapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Mappers\ModelMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Attendance.AttendanceFilters">
+    <Position X="262" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgABAAAAAAACAgEACAAAAQgAAAAAAAAAAAAEEAAAAA=</HashCode>
+      <FileName>Model\Domain\Attendance\AttendanceFilters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Attendance.AttendanceRawDataFilters">
+    <Position X="43" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Model\Domain\Attendance\AttendanceRawDataFilters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Attendance.TestEngine.ScheduleEventDetails">
+    <Position X="137.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAhACAIAAgQQQAEAAAAAAAQAQAADAAAAgAAACQEIAA=</HashCode>
+      <FileName>Model\Domain\Attendance\TestEngine\ScheduleEventDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.AttendanceStatistics.AttendanceStats">
+    <Position X="112.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAEAAgAAEAAAABAAAAAAAAAAAABAAADIAAAA=</HashCode>
+      <FileName>Model\Domain\AttendanceStatistics\AttendanceStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.Excuse" BaseTypeListCollapsed="true">
+    <Position X="114.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AoEiAAAABQACAAEEAAAAAAAAIAAigAAgoAAEgAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\Excuse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseAttachment">
+    <Position X="140" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAARAAAQAAQAAAAAAACAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\ExcuseAttachment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseAttachmentData">
+    <Position X="161.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\ExcuseAttachmentData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseReview">
+    <Position X="190.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAABAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\ExcuseReview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseSearchCriteria">
+    <Position X="205.5" Y="3.75" Width="2.75" />
+    <NestedTypes>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseSearchCriteria.OrderByExpression" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Leaves\ExcuseSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseSearchCriteria.OrderDirection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Leaves\ExcuseSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseSearchCriteria.OrderByCulture" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Leaves\ExcuseSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAAACAAAAAAAAQCAAEEAgAAAAAAAAAAAAkEEAACA=</HashCode>
+      <FileName>Model\Domain\Leaves\ExcuseSearchCriteria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseSearchResult">
+    <Position X="231.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\ExcuseSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.ExcuseStatistics">
+    <Position X="24.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\ExcuseSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.Leave" BaseTypeListCollapsed="true">
+    <Position X="117.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIEiAAAABQAAAAkEAAAAABAgAAACgAAAoAAGgEAAAgA=</HashCode>
+      <FileName>Model\Domain\Leaves\Leave.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveAttachment">
+    <Position X="142.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAABAAAAAAAAQAAAUAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveAttachment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveAttachmentData">
+    <Position X="164.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveAttachmentData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveCredit" BaseTypeListCollapsed="true">
+    <Position X="192.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIASAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAQEBAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveCredit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveReview">
+    <Position X="209" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAABQAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveReview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveSearchCriteria">
+    <Position X="264.25" Y="3.75" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveSearchCriteria.OrderByExpression" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Leaves\LeaveSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveSearchCriteria.OrderDirection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Leaves\LeaveSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveSearchCriteria.OrderByCulture" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Leaves\LeaveSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAABAACAAAAAAAAQSAAUEAgAAAAAAAAAAAAkEAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveSearchCriteria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveSearchResult">
+    <Position X="26.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAEAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeavesStatistics">
+    <Position X="70" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.StatisticalItem">
+    <Position X="211.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAECAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveTypeCarryOverCredit">
+    <Position X="89.25" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAEAAAABEAAAABAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveTypeCarryOverCredit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Leaves.LeaveTypeCredit">
+    <Position X="120.25" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAIAAEAIAABCAAAAAAEAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Domain\Leaves\LeaveTypeCredit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Organization.AttendanceCode" BaseTypeListCollapsed="true">
+    <Position X="93" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAIBACAAAEAAkAAQIAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Domain\Organization\AttendanceCode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Organization.DashboardWebPart" BaseTypeListCollapsed="true">
+    <Position X="233.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAGCAAAAAAAAAGIACAAAAAAAAAAAAIAAAAAAAAEIAAA=</HashCode>
+      <FileName>Model\Domain\Organization\DashboardWebPart.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Organization.Department" BaseTypeListCollapsed="true">
+    <Position X="19" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAIBgAACAAAAgAAQAAEAQAAAAAQAAACABAAA=</HashCode>
+      <FileName>Model\Domain\Organization\Department.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Organization.OrganizationDetail">
+    <Position X="29" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAgCBAgAIAAAAgAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Model\Domain\Organization\OrganizationDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Organization.ReportCategory" BaseTypeListCollapsed="true">
+    <Position X="195.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Model\Domain\Organization\ReportCategory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Organization.ReportCategoryFilters">
+    <Position X="214" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Model\Domain\Organization\ReportCategoryFilters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Organization.ReportDefinition" BaseTypeListCollapsed="true">
+    <Position X="236.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAAAACAAAgAQAEAAABAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Organization\ReportDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.Person" BaseTypeListCollapsed="true">
+    <Position X="96" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>FAASSAgEFOEcjMLcwQIiQE8CPMGBEEQCIFEiIDgRDLQ=</HashCode>
+      <FileName>Model\Domain\Personnel\Person.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonContactInfo" BaseTypeListCollapsed="true">
+    <Position X="145" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAABAAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Model\Domain\Personnel\PersonContactInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonEmploymentInfo" BaseTypeListCollapsed="true">
+    <Position X="198" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQQAAEAIAAgEBUAQAAABkAGAABAAAAAAAAADAAABA=</HashCode>
+      <FileName>Model\Domain\Personnel\PersonEmploymentInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonInfo" BaseTypeListCollapsed="true">
+    <Position X="216.5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAAAgABAAEBACAAAgAABQCIAAAEAQAAEAAAAAACIA=</HashCode>
+      <FileName>Model\Domain\Personnel\PersonInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonSearchCriteria">
+    <Position X="31.75" Y="3.75" Width="2" />
+    <NestedTypes>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonSearchCriteria.OrderByExpression" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Personnel\PersonSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonSearchCriteria.OrderDirection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Personnel\PersonSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonSearchCriteria.OrderByCulture" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Personnel\PersonSearchCriteria.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAAACAAAAAEAEQCAgEERgAAAAAAIIAAEAkAAAAAA=</HashCode>
+      <FileName>Model\Domain\Personnel\PersonSearchCriteria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.PersonSearchResult" BaseTypeListCollapsed="true">
+    <Position X="45.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\Domain\Personnel\PersonSearchResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.User">
+    <Position X="48.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AUBCCAAAAAAAAAAAMAAAAAAAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Personnel\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Personnel.UserSecurityQuestion">
+    <Position X="99.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAAgAAAAA=</HashCode>
+      <FileName>Model\Domain\Personnel\UserSecurityQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Policy" BaseTypeListCollapsed="true">
+    <Position X="147.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAABABAAAAAAgAAQgAAAAAAAgAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Policy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.PolicyField" BaseTypeListCollapsed="true">
+    <Position X="166.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAIIAIEBAAACAAAAIQgAEAAAAAggAAAAAkAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\PolicyField.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.PolicyFieldValue" BaseTypeListCollapsed="true">
+    <Position X="239" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAQAAAAAAAIAAAQgAAAAAEAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\PolicyFieldValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.PolicyFilters">
+    <Position X="267.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAEAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\PolicyFilters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.PolicyGroup" BaseTypeListCollapsed="true">
+    <Position X="34.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAABgAAAAECAAAAQAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Model\Domain\Policy\PolicyGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.PolicyRule" BaseTypeListCollapsed="true">
+    <Position X="101.75" Y="3.75" Width="2" />
+    <NestedTypes>
+      <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Policy.PolicyRule.PolicyRulesConditions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Domain\Policy\PolicyRules.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAACAAAACACABAAAAAAgAAAgAAAAAIAAAAAAAAAAgAA=</HashCode>
+      <FileName>Model\Domain\Policy\PolicyRules.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.PolicyType" BaseTypeListCollapsed="true">
+    <Position X="123.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QgACAAAAAAAkAAAAAAAgAAQgABAAAAAgAAAAAAAAgAA=</HashCode>
+      <FileName>Model\Domain\Policy\PolicyType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.ApprovalStep">
+    <Position X="72.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\ApprovalPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.AttendanceEvent" BaseTypeListCollapsed="true">
+    <Position X="219.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAEAQCJAABACgAAAAAAAAKAAAAAAAAAAwAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\AttendanceEvent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.AttendanceEventMetadata">
+    <Position X="242.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAIAAAABEAAAAAAgAAAAAAAABAAAAAAAAAQA=</HashCode>
+      <FileName>Model\Domain\Schedules\AttendanceEventMetadata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.AttendanceRawData">
+    <Position X="37.5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QIACAEAgARAAAAAEAAAMAAgAAAAAAAAAAQCAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\AttendanceRawData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.AttendanceRawDataHistoryItem">
+    <Position X="74.5" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAABAQAAAAAACAEAAAAAAAAAAAAAIBAAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\AttendanceRawDataHistoryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.Location">
+    <Position X="169.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.Schedule" BaseTypeListCollapsed="true">
+    <Position X="104.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAAAAACAAAAQkACAAAAAgAAAAAEEBAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\Schedule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.ScheduleDay">
+    <Position X="13.5" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\ScheduleDay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.ScheduleEvent" BaseTypeListCollapsed="true">
+    <Position X="126.25" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAjAGEAAAgQBQhEgCgAAAAAA0AACAAAAgAhKABAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\ScheduleEvent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.ScheduleTemplate" BaseTypeListCollapsed="true">
+    <Position X="245" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEACAAAAAABgAAAAMAAAAEQAAEAAAAAAAAIAAIABAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\ScheduleTemplate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.ScheduleTemplateDays">
+    <Position X="13.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAEAAAAAAAAAAAAABACAAAAAAAAAAAAEBAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\ScheduleTemplateDays.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.ScheduleTemplateDayShifts" BaseTypeListCollapsed="true">
+    <Position X="270.5" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAgAAAAAAAAgAgAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\ScheduleTemplateDayShifts.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.Shift" BaseTypeListCollapsed="true">
+    <Position X="129.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEACAAAAAIBChAAAEAAUAAQhIAAgEAAAAAIAAAABAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\Shift.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.Schedules.TimeEvent">
+    <Position X="40.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Schedules\TimeEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.WorkFlow.Request">
+    <Position X="274.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAoAAAAAAAAAAAAAAAAAAAAAAAgAAAAAABBQAA=</HashCode>
+      <FileName>Model\Domain\WorkFlow\Request.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Domain.WorkFlow.RequestDetail">
+    <Position X="16.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAIAAAAAAQEgAAAAAAAAAAAgAAAAAAAAAAAEQA=</HashCode>
+      <FileName>Model\Domain\WorkFlow\RequestDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.AttendanceCodeServiceDTO">
+    <Position X="150" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAgAAAEAAkAAQAAAAAAAAAAAAAACAAAgA=</HashCode>
+      <FileName>Model\DTO\Services\AttendanceCodeServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.AttendanceServiceDTO">
+    <Position X="107.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAAAAAAEAAgAAAAAAAAAQAQAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\AttendanceServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.AttendanceStatusServiceDTO">
+    <Position X="153" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\AttendanceStatusServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.AttendanceTypeServiceDTO">
+    <Position X="172" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\AttendanceTypeServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.DepartmentServiceDTO">
+    <Position X="51" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAACAAAAAAAQAAAAQAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\DepartmentServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.DetailCodeDTO">
+    <Position X="78.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAEAAAAEAAgAAQIQAACAAAAKgAAAQAACAE=</HashCode>
+      <FileName>Model\DTO\Services\DetailCodeDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.LocationServiceDTO">
+    <Position X="200.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\LocationServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.PersonAccountInfoDTO">
+    <Position X="132.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAEAAAAgEBUAAAAAAAAGAABAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\PersonAccountInfoDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.PersonContactInfoDTO">
+    <Position X="175" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\PersonContactInfoDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.PersonInfoDTO">
+    <Position X="248" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>FAAAAAgABAAEAACAAAAAAAQCIAAAEAQAAAAQAAAACIA=</HashCode>
+      <FileName>Model\DTO\Services\PersonInfoDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.PersonSearchResultDTO">
+    <Position X="81" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\DTO\Services\PersonSearchResultDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.PersonServiceDTO">
+    <Position X="110.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAEAAAIAAAAAgQAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\PersonServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ResponseDTO&lt;T&gt;">
+    <Position X="53.75" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ResponseDTO&lt;T&gt;.ModelMetaPair" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\DTO\Services\ResponseDTO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAQBAIAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\ResponseDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ScheduleEventServiceDTO">
+    <Position X="177.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AKAiACAAAAgAAQBEgAAAAAAAAUAABAABAAAAAAQAAAA=</HashCode>
+      <FileName>Model\DTO\Services\ScheduleEventServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ScheduleServiceDTO">
+    <Position X="223" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAKAAAABAAAAAAEAAIAAAAkACAAAAAgAAAAAEAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\ScheduleServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ScheduleTemplateServiceDTO">
+    <Position X="56" Y="3.75" Width="2.25" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ScheduleTemplateServiceDTO.MonthlyTemplatePattern" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\DTO\Services\ScheduleTemplateServiceDTO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ScheduleTemplateServiceDTO.WeeklyTemplatePattern" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\DTO\Services\ScheduleTemplateServiceDTO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ScheduleTemplateServiceDTO.YearlyTemplatePattern" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\DTO\Services\ScheduleTemplateServiceDTO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAAAAwIAAAAAAQAAkAAEAAAIAAAAAAICAA=</HashCode>
+      <FileName>Model\DTO\Services\ScheduleTemplateServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ShiftPolicyServiceDTO">
+    <Position X="156" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAECAAEAAAAAAAgAAAAAIAQAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\ShiftPolicyServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.DTO.Services.ShiftServiceDTO">
+    <Position X="180.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAIAAgEAAAACMAAAAAAAA=</HashCode>
+      <FileName>Model\DTO\Services\ShiftServiceDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Enums.AttendanceCodes">
+    <Position X="135.25" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.AttendanceCodes.ScheduleEventStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\AttendanceCodes.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.AttendanceCodes.AttendanceEventStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\AttendanceCodes.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.AttendanceCodes.PayCodeStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\AttendanceCodes.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\AttendanceCodes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields">
+    <Position X="203.25" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.ShiftPolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.LeavePolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.ApprovalsPolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.DepartmentRulePolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.AccrualPolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.HolidayPolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.ExcusePolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.OvertimePolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFields.ExcusesPolicy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Enums\PolicyFields.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\PolicyFields.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Enums.PolicyTypes">
+    <Position X="158.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIQAgAAAAABAAAAAAABAAgAAAIAAAAggAAAAAAIAAAA=</HashCode>
+      <FileName>Model\Enums\PolicyTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Model.Enums.TamamCacheClusters">
+    <Position X="250.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEAAEAAgAAAQAAAAAAAAEFEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\TamamCacheClusters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.ORM.DomainDataContext">
+    <Position X="0.5" Y="18.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAyAAAkFaEwQAhQgCoAAAAUAFEAEIAAAAAIADABAAA=</HashCode>
+      <FileName>ORM\DomainDataContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.ORM.MetaDataFactory">
+    <Position X="225.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ORM\DomainDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.ORM.DomainMetadataSource">
+    <Position X="7.5" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>SIAgIBAAgAAAIKSqEEABBEAEIAABUDIAAACFAABhAEA=</HashCode>
+      <FileName>ORM\DomainMetadataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.ORM.TamamBaseContext">
+    <Position X="0.75" Y="16.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\TamamBaseContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.TamamConstants" Collapsed="true">
+    <Position X="281.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.TamamConstants.MasterCodes">
+        <TypeIdentifier>
+          <NewMemberFileName>TamamConstants.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ADS.Tamam.Common.Data.TamamConstants.AuthorizationConstants">
+        <TypeIdentifier>
+          <NewMemberFileName>TamamConstants.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ADS.Tamam.Common.Data.TamamConstants.ValidationMode">
+        <TypeIdentifier>
+          <NewMemberFileName>TamamConstants.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAEAAAAACIAAAAAEACCACggAAgAACAAAAASA=</HashCode>
+      <FileName>TamamConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ApprovalPolicyValidator" BaseTypeListCollapsed="true">
+    <Position X="59" Y="3.75" Width="2" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.ApprovalPolicyValidator.ValidationContext" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ApprovalPolicyValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAQAAAAgACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ApprovalPolicyValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ExcusesPolicyValidator" BaseTypeListCollapsed="true">
+    <Position X="276.5" Y="3.75" Width="2" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.ExcusesPolicyValidator.ValidationContext" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ExcusesPolicyValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAQAAAAgACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ExcusesPolicyValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.HolidaysPolicyValidator" BaseTypeListCollapsed="true">
+    <Position X="83.75" Y="3.75" Width="2" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.HolidaysPolicyValidator.ValidationContext" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\HolidaysPolicyValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAQAAAAgACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\HolidaysPolicyValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.LeavesPolicyValidator" BaseTypeListCollapsed="true">
+    <Position X="61.75" Y="3.75" Width="1.75" />
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.LeavesPolicyValidator.ValidationContext" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\LeavesPolicyValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAQAAAAgACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\LeavesPolicyValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.PolicyGroupRulesValidator">
+    <Position X="64.25" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQAAACAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\PolicyGroupRulesValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.OpenAccess.Metadata.Fluent.FluentMetadataSource">
+    <Position X="7.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object">
+    <Position X="145.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Telerik.OpenAccess.OpenAccessContext">
+    <Position X="0.5" Y="13.5" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Telerik.OpenAccess.OpenAccessContextBase">
+    <Position X="0.5" Y="1.5" Width="3" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Common.Context.RequestContextBase">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IAnalysisHandler" Collapsed="true">
+    <Position X="279.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IAnalysisHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IApprovalPolicySource" Collapsed="true">
+    <Position X="281.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IApprovalPolicySource.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IAttendanceDataHandler" Collapsed="true">
+    <Position X="283" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAAAIAACAACAAAAABgAAAEhAADEEAAgAABg=</HashCode>
+      <FileName>Contracts\IAttendanceDataHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IAttendanceHandler" Collapsed="true">
+    <Position X="284.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAgAgAIAAKAAAAASAABgAAEEgIQBAAAAgABBg=</HashCode>
+      <FileName>Contracts\IAttendanceHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IDynamicValuesProvider" Collapsed="true">
+    <Position X="279.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Contracts\IDynamicValuesProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IIntegrationHandler" Collapsed="true">
+    <Position X="281.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IIntegrationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IInternalServiceHandler" Collapsed="true">
+    <Position X="283" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IInternalServiceHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.ILeavesHandler" Collapsed="true">
+    <Position X="284.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAiApEAACAwcyAQAAAAAAAQEBAAAAAAAwEgAgAgAQE=</HashCode>
+      <FileName>Contracts\ILeavesHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IOrganizationHandler" Collapsed="true">
+    <Position X="286.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgMIAGFgYAAIAAkkUgAgAAgSSIDqQABA4IhIASAoAk=</HashCode>
+      <FileName>Contracts\IOrganizationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IPersonnelHandler" Collapsed="true">
+    <Position X="279.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAIAAAAAIAIAAEAAAACAAAA=</HashCode>
+      <FileName>Contracts\IPersonnelHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.ISchedulesHandler" Collapsed="true">
+    <Position X="281.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAAgAEEASIAAAAIAAAgQAQQBAAAAAAAAAACAABACQA=</HashCode>
+      <FileName>Contracts\ISchedulesHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IUsersHandler" Collapsed="true">
+    <Position X="283" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Contracts\IUsersHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.Contracts.IWorkFlowTarget" Collapsed="true">
+    <Position X="284.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIECAAAAAQAAAAAEAAAAAAAAAAAAAAAAgAAAgAAAAAA=</HashCode>
+      <FileName>Contracts\IWorkFlowTarget.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ADS.Tamam.Common.Data.ORM.IDomainModelUnitOfWork" Collapsed="true">
+    <Position X="286.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAyAAAkFYEwQAhQgCoAAAAUAFEAEIAAAAAAADABAAA=</HashCode>
+      <FileName>ORM\DomainDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ADS.Tamam.Common.Data.Contracts.WorkFlowTargetType" Collapsed="true">
+    <Position X="286.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Contracts\IWorkFlowTarget.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Domain.Policy.Specialized.StepType" Collapsed="true">
+    <Position X="283" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEABBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Domain\Policy\Specialized\ApprovalPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.AnnualAccrualType" Collapsed="true">
+    <Position X="279.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\AnnualAccrualType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.AttendanceCodesImportance" Collapsed="true">
+    <Position X="281.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAACA=</HashCode>
+      <FileName>Model\Enums\AttendanceCodesImportance.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.AttendanceEventStatus" Collapsed="true">
+    <Position X="283" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Model\Enums\AttendanceEventStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.AttendanceEventType" Collapsed="true">
+    <Position X="284.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAACA=</HashCode>
+      <FileName>Model\Enums\AttendanceEventType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.ExcuseStatus" Collapsed="true">
+    <Position X="286.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAAAQ=</HashCode>
+      <FileName>Model\Enums\ExcuseStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.FilterDirection" Collapsed="true">
+    <Position X="279.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\FilterDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.LeaveStatus" Collapsed="true">
+    <Position X="283" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAAAAAAAAAAQAIAAAAAAAAAAAAAIAAAAAQ=</HashCode>
+      <FileName>Model\Enums\LeaveStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.WorkFlowStepStatus" Collapsed="true">
+    <Position X="284.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Model\Enums\LeaveStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.LeaveTypes" Collapsed="true">
+    <Position X="284.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABIAAAAAAAABAAAIAAAAAAABAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Model\Enums\LeaveTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.PersonGender" Collapsed="true">
+    <Position X="286.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Model\Enums\PersonGender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.PersonMaritalStatus" Collapsed="true">
+    <Position X="279.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\PersonMaritalStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.PersonMilitaryStatus" Collapsed="true">
+    <Position X="281.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAEAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Model\Enums\PersonMilitaryStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFieldDataType" Collapsed="true">
+    <Position X="283" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgQAAAAAAAAAAAAAABAAAAAAAgACI=</HashCode>
+      <FileName>Model\Enums\PolicyFieldDataType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.PolicyFieldListDataType" Collapsed="true">
+    <Position X="284.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\PolicyFieldDataType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.IsRepresentative" Collapsed="true">
+    <Position X="281.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\PolicyFieldDataType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.ReviewExcuseStatus" Collapsed="true">
+    <Position X="286.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\ReviewExcuseStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.ReviewLeaveStatus" Collapsed="true">
+    <Position X="279.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\ReviewLeaveStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ADS.Tamam.Common.Data.Model.Enums.SelfServiceMode" Collapsed="true">
+    <Position X="281.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAQAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\SelfServiceMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

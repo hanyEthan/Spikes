@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "adminportalbffapi.fullname" . }}
+  labels:
+    app: {{ template "adminportalbffapi.name" . }}
+    chart: {{ template "adminportalbffapi.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "adminportalbffapi.name" . }}
+    release: {{ .Release.Name }}

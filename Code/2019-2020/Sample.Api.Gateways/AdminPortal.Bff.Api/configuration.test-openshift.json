@@ -1,0 +1,689 @@
+{
+  "ReRoutes": [
+    // Documents State Manager
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-state-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/state/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Package Producer
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-package-producer-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Publisher
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents validation pipeline
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-pipelinevalidation-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/pipeline/validations/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-pipelinevalidation-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/pipeline/validations/documenttypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // audit service route
+    {
+      "DownstreamPathTemplate": "/audit",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "audit-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/audit",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/audit/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "audit-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/audit/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/audit/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "audit-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/audit/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 10
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // code management service route
+    {
+      "DownstreamPathTemplate": "/codetypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "codemanagement-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/codetypes",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/codetypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "codemanagement-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/codetypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/codetypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "codemanagement-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/codetypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+
+    },
+
+    // notification service route
+    {
+      "DownstreamPathTemplate": "/notifications",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "notification-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/notifications",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/notifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "notification-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/notifications/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/notifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "notification-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/notifications/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // document type service route
+    {
+      "DownstreamPathTemplate": "/documenttypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documenttypes",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/documenttypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/documenttypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "documenttypemanager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documenttypes",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // provider management service Type route
+    {
+      "DownstreamPathTemplate": "/intermediaries",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "provider-management-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/intermediaries",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/intermediaries/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "provider-management-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/intermediaries/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/intermediaries",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "provider-management-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/intermediaries",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/intermediaries/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "provider-management-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/intermediaries/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+
+    },
+
+
+
+    // content management service route
+    {
+      "DownstreamPathTemplate": "/inlinecontent",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/inlinecontent",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/inlinecontent/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/inlinecontent/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    //Document Validation
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/processingrequest",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-corefieldsvalidation-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/corefieldsvalidation/api/v{version:apiVersion}/processingrequest",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "Priority": 1,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/processingrequest",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-datastructurevalidation-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/datastructurevalidation/api/v{version:apiVersion}/processingrequest",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "Priority": 1,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    //taxpayers
+    {
+      "DownstreamPathTemplate": "/taxprofile",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/taxprofile",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/taxprofile/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/taxprofile/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/core",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "coretaxpayerregistry-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/core",
+      "UpstreamHttpMethod": [ "GET" ],
+      "Priority": 1,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/core/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "coretaxpayerregistry-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/core/{everything}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/delegations/invitations/{invitationId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/delegations/invitations/{invitationId}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/users/credentials/{credentialID}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/users/credentials/{credentialID}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/users",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/users",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/users/{userid}/contactdetails/validation/{otp}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/users/{userid}/contactdetails/validation/{otp}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/{rin}/contactdetails/validation/{otp}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/{rin}/contactdetails/validation/{otp}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/taxpayers",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/users/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/users/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/users",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "taxpayerprofile-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/users",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    }
+
+  ]
+}

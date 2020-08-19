@@ -1,0 +1,240 @@
+{
+  "ReRoutes": [
+    // Documents State Manager
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-state-manager-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/state/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Package Producer
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-package-producer-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentPackages/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // Documents Publisher
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/public/documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-publisher-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/public/documents/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      }
+    },
+    // Documents Receiver
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "document-submission-receiver-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/documentSubmissions",
+      "UpstreamHttpMethod": [ "Post" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": false,
+        "Period": "30s",
+        "PeriodTimespan": 30,
+        "Limit": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+
+    // provider management service Type route
+    {
+      "DownstreamPathTemplate": "/provider",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "provider-management-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/provider",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/provider/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "provider-management-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/provider/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/provider/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "provider-management-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/provider/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+
+    },
+
+
+
+    // content management service route
+    {
+      "DownstreamPathTemplate": "/inlinecontent",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/inlinecontent",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/inlinecontent/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/inlinecontent/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent/anonymous/view?{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent/anonymous/view?{everything}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent/view?{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "content-manager-external-api.invoicing-apps",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v{version:apiVersion}/inlinecontent/view?{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    }
+
+  ]
+}

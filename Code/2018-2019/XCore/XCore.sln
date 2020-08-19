@@ -1,0 +1,922 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{D824E0A4-E55C-48E1-B208-0A18827EE6B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Framework", "Framework\XCore.Framework\XCore.Framework.csproj", "{1C64499E-F55C-4097-930F-298D3DBAD3EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BD3D1A80-3169-4FD6-A9F4-31CF16944139}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{6F44EA5C-C843-47BF-816D-5B52ED7903D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Geo", "Geo", "{DF41D777-49E9-45E5-A859-0923F38201C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Geo.API", "Services\Geo\XCore.Services.Geo.API\XCore.Services.Geo.API.csproj", "{B28B4FD2-93B6-4D7B-AE58-5D21A20D61B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Geo.Core", "Services\Geo\XCore.Services.Geo.Core\XCore.Services.Geo.Core.csproj", "{25B4FCD9-2E91-425C-8D06-C36F8F0AC6C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services.Tests", "Services.Tests", "{A0F76BA0-3190-48F6-B7F7-C406CAE73EB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Tests", "Services.Tests\XCore.Tests\XCore.Tests.csproj", "{8C5938E3-0AB8-49E5-A8A7-8BDFF6E08A27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{DC6DB9DD-0252-4603-B5C6-41C2DA692BE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{A863FFF9-C89D-465F-9F82-81184F079C35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Jobs", "Services\Jobs\XCore.Services.Jobs\XCore.Services.Jobs.csproj", "{90877444-353D-40D0-8BF3-9B2371A2574A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Jobs.Addons", "Services\Jobs\XCore.Services.Jobs.Addons\XCore.Services.Jobs.Addons.csproj", "{9EED4DCB-3D34-49B0-AF7C-581DD70BF32C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Logging", "Services\Logging\XCore.Services.Logging\XCore.Services.Logging.csproj", "{B789CD93-458A-4806-A032-F2438874E0FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services.UI", "Services.UI", "{982C95C0-EE3A-491A-8A9D-7D5C1C88A59A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Web.Server", "Services.UI\XCore.Services.Web.Server\XCore.Services.Web.Server.csproj", "{E2AE0EE3-B245-45E1-8D58-FE0ED5E8E656}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Web.Client", "Services.UI\XCore.Services.Web.Client\XCore.Services.Web.Client.csproj", "{589DEDE7-17C2-4E48-BEAB-4167810F0DE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audit", "Audit", "{F23516D8-232A-4C60-AE27-515B0C5FBB5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Audit.Core", "Services\Audit\XCore.Services.Audit.Core\XCore.Services.Audit.Core.csproj", "{F464DBFD-F924-42EE-AE10-04565374D645}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Audit.API", "Services\Audit\XCore.Services.Audit.API\XCore.Services.Audit.API.csproj", "{FC746B90-DAD7-4810-BFE5-B0BA253043DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Clients", "Framework\XCore.Services.Clients\XCore.Services.Clients.csproj", "{FDF7F5DE-DF73-4B37-922F-B11EBAC7F689}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Audit.SDK", "Services\Audit\XCore.Services.Audit.SDK\XCore.Services.Audit.SDK.csproj", "{F21CAC2A-2A48-4760-A51D-ADB5F49A037D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{AB54421E-E9D0-484E-8A11-13E7ED01EEAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Configurations.Core", "Services\Configurations\XCore.Services.Configurations.Core\XCore.Services.Configurations.Core.csproj", "{46C577A0-3FDC-4F50-A846-C49C45402438}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Configurations.SDK", "Services\Configurations\XCore.Services.Configurations.SDK\XCore.Services.Configurations.SDK.csproj", "{FEF89ED6-EB82-44AA-83FB-1D9C66F7B72A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Configurations.API", "Services\Configurations\XCore.Services.Configurations.API\XCore.Services.Configurations.API.csproj", "{99F9A421-495F-4C8E-B307-5A517B51C2F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{5B04B822-7AFA-42E7-B56F-AC912C1D5600}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Docs.Core", "Services\Docs\XCore.Services.Docs.Core\XCore.Services.Docs.Core.csproj", "{525C22FB-F08D-48FE-9405-708A42E30B77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Docs.SDK", "Services\Docs\XCore.Services.Docs.SDK\XCore.Services.Docs.SDK.csproj", "{DDB1E506-38D8-434D-BCEC-276DF3B71822}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Docs.API", "Services\Docs\XCore.Services.Docs.API\XCore.Services.Docs.API.csproj", "{CD968F06-B9F4-408C-82C6-BFFC47E99C08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identities", "Identities", "{C3570BEE-82E4-4665-B45C-BDE7FA5C107C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Audit.Test.Integration", "Services\Audit\XCore.Services.Audit.Test.Integration\XCore.Services.Audit.Test.Integration.csproj", "{A0C442C0-D4A0-4758-992E-8E6989039F6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Audit.Test.Console", "Services\Audit\XCore.Services.Audit.Test.Console\XCore.Services.Audit.Test.Console.csproj", "{4A5E7D80-AE46-45D8-87F0-A6ADD196EB9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attachments", "Attachments", "{41F5BA5B-A0FD-4687-B82C-984709CDEB40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Attachments.API", "Services\Attachments\XCore.Services.Attachments.API\XCore.Services.Attachments.API.csproj", "{65FEC21A-863F-45C6-9F23-356D08BB4F77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Attachments.Core", "Services\Attachments\XCore.Services.Attachments.Core\XCore.Services.Attachments.Core.csproj", "{77F370E5-A18C-4F5A-8861-B77632E5B76F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Attachments.SDK", "Services\Attachments\XCore.Services.Attachments.SDK\XCore.Services.Attachments.SDK.csproj", "{9A8383ED-1917-4C69-8BB3-0D4745846C81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{969C5EA8-253B-4A33-96B5-107E6B4DAB8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{1CF1B9B8-23A9-443E-9C14-CB3928245ADA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Audit.Models", "Services\Audit\XCore.Services.Audit.Models\XCore.Services.Audit.Models.csproj", "{9425A43F-D28B-4F44-8667-8BBC3428150D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Organizations", "Organizations", "{2C49E4D1-4AC5-4005-9E54-4AF807C25505}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Organizations.Core", "Services\Organizations\XCore.Services.Organizations.Core\XCore.Services.Organizations.Core.csproj", "{D9243FC8-6033-4183-A492-D76E298FC901}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Organizations.SDK", "Services\Organizations\XCore.Services.Organizations.SDK\XCore.Services.Organizations.SDK.csproj", "{D5EA1920-8487-4EAE-989D-78A6F1A9AF1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Organizations.API", "Services\Organizations\XCore.Services.Organizations.API\XCore.Services.Organizations.API.csproj", "{F14FF297-10A3-4BFF-ADCE-38257ABB5B55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{2CB0253A-04AC-4D13-8F96-0C37874955EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{99BB310E-6164-4465-B77F-95B5A6256456}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Organizations.Test.Console", "Services\Organizations\XCore.Services.Organizations.Test.Console\XCore.Services.Organizations.Test.Console.csproj", "{BD72DAD8-7CFB-45C9-9295-A069314C064B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{FB3342FF-5AB3-4D28-A9A1-B628FDFEBCA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Gateway.API", "Services\Gateway\XCore.Services.Gateway.API\XCore.Services.Gateway.API.csproj", "{4ACE5AF9-D48A-49A5-AA07-E7E415384727}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Clients.Common", "Framework\XCore.Services.Clients.Common\XCore.Services.Clients.Common.csproj", "{60C9187F-8E8F-4D28-AFF8-98A6ADE67198}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services.Clients", "Services.Clients", "{0668F8B9-9B7B-40A1-8067-5AC3174A2A08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{FE993AD6-BAE4-4FF3-B06B-F7DA22D06567}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{604C1ADF-87BB-4E7F-B357-BC2BE671B6FB}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\Docs\services.txt = Assets\Docs\services.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notifications", "Notifications", "{B6F69185-5CAD-4CFF-BCD5-A8C72675FDBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lookups", "Lookups", "{34333326-0BFE-4B43-A6D1-269D5CF86E05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching", "Caching", "{B48EAE5E-8008-433A-A7BA-917D050A38D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Personnel", "Personnel", "{1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Attachments.Test.Console", "Services\Attachments\XCore.Services.Attachments.Test.Console\XCore.Services.Attachments.Test.Console.csproj", "{00D9E1A9-17DC-42FD-B48C-EF299DF9B74C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{0153DE1F-7255-413C-8855-B91495C1E0AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{9CB93EC0-7B44-4F93-8706-35D284D2710D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Security.SDK", "Services\Security\XCore.Services.Security.SDK\XCore.Services.Security.SDK.csproj", "{891C38E4-A96F-4370-ABBE-3F5A057AA75B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Security.Core", "Services\Security\XCore.Services.Security.Core\XCore.Services.Security.Core.csproj", "{0D968459-9B27-427B-8018-0824EBA2C34F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Security.API", "Services\Security\XCore.Services.Security.API\XCore.Services.Security.API.csproj", "{841B1C81-13B0-4701-86D0-A74D27FF034B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Security.Models", "Services\Security\XCore.Services.Security.Models\XCore.Services.Security.Models.csproj", "{216C6C14-5442-49C6-92EA-F8340E64E933}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Personnel.Models", "Services\Personnel\XCore.Services.Personnel.Models\XCore.Services.Personnel.Models.csproj", "{9BB9431C-9BDE-431E-8FD6-A8D6E01AE128}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Personnel.Models.DTO", "Services\Personnel\XCore.Services.Personnel.Models.DTO\XCore.Services.Personnel.Models.DTO.csproj", "{8D91A66C-9CE3-41EE-B088-4A480535BFAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Personnel.SDK", "Services\Personnel\XCore.Services.Personnel.SDK\XCore.Services.Personnel.SDK.csproj", "{288F948C-98D3-49AB-A5F5-361A58960614}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Personnel.DataLayer", "Services\Personnel\XCore.Services.Personnel.DataLayer\XCore.Services.Personnel.DataLayer.csproj", "{53DC6B17-FE4F-46CB-99BC-669E805C8E30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Personnel.Core", "Services\Personnel\XCore.Services.Personnel.Core\XCore.Services.Personnel.Core.csproj", "{75377F97-D11F-43C2-99FC-554DD2AA3B97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Personnel.API", "Services\Personnel\XCore.Services.Personnel.API\XCore.Services.Personnel.API.csproj", "{B57DA63B-A8B2-4D34-8CFB-7BCB73797AFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{1AA27821-3FC4-42A2-8E09-63830743B1AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Personnel.Contracts", "XCore.Services.Personnel.Contracts\XCore.Services.Personnel.Contracts.csproj", "{D56E9787-7D58-4602-99EF-0B0BA86EFB2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lookups.", "Lookups.", "{CD5E0526-4592-4235-BFA1-6850227F3137}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Lookups.Core", "Services\Lookups\XCore.Services.Lookups.Core\XCore.Services.Lookups.Core.csproj", "{B1589603-74B3-4FBA-B71A-6BCA0F9553E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Lookups.API", "Services\Lookups\XCore.Services.Lookups.API\XCore.Services.Lookups.API.csproj", "{C0A305DB-8FE9-4C6D-B250-26144D68C0AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Notifications.API", "Services\Notifications\XCore.Services.Notifications.API\XCore.Services.Notifications.API.csproj", "{DE5D4234-9E99-473E-96C0-31E69DEB8B78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Notifications.Core", "Services\Notifications\XCore.Services.Notifications.Core\XCore.Services.Notifications.Core.csproj", "{9ACEDD45-E566-4B5F-92E9-84248D2528B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Notifications.SDK", "Services\Notifications\XCore.Services.Notifications.SDK\XCore.Services.Notifications.SDK.csproj", "{4271E61B-68D9-47AA-BCAA-738703708F2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Notifications.Models", "Services\Notifications\XCore.Services.Notifications.Models\XCore.Services.Notifications.Models.csproj", "{48ABF040-0617-4360-A89D-34C472001254}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hiring", "Hiring", "{2F89C745-A4F9-4794-8B2A-641D23D67918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Hiring.Core", "Services\Hiring\XCore.Services.Hiring.Core\XCore.Services.Hiring.Core.csproj", "{7745492C-53AE-4C9B-AAA7-35E744A212BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Hiring.API", "Services\Hiring\XCore.Services.Hiring.API\XCore.Services.Hiring.API.csproj", "{1CA033D0-E304-4EF0-A9E1-621B531D82D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Hiring.SDK", "Services\Hiring\XCore.Services.Hiring.SDK\XCore.Services.Hiring.SDK.csproj", "{F1C01F2F-3C4C-4356-A2AB-3A82CD1A5F68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Federated", "Federated", "{5382A8E1-4E16-40AA-AF58-409D2F49C3D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Embedded", "Embedded", "{EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{36BD6CB9-F33F-4196-98C9-CB3DD209D104}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{5CDB515A-C33F-4D40-8D40-E818CAE2B6CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DL", "DL", "{0D9BB854-2DAC-4031-96E4-99E6AC047F13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "STS", "STS", "{FBA5E0E0-7F00-4ADB-BEBC-DF8ECE976574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audit", "Audit", "{78AB7E7D-5CA0-46AE-B1B2-768FA13E9E8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Audit.EntityFramework", "Services\Identities\Embedded\XCore.Identities.Audit.EntityFramework\XCore.Identities.Audit.EntityFramework.csproj", "{F5D76581-BC2C-498E-841D-465D38B68E6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Audit", "Services\Identities\Embedded\XCore.Identities.Audit\XCore.Identities.Audit.csproj", "{F1AC23A1-7335-4B78-817B-9DA02C6BBCA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.EntityFramework", "Services\Identities\Embedded\XCore.Identities.Admin.EntityFramework\XCore.Identities.Admin.EntityFramework.csproj", "{B9A1105C-A52D-4922-9D24-F4FC02E25EA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.EntityFramework.Extensions", "Services\Identities\Embedded\XCore.Identities.Admin.EntityFramework.Extensions\XCore.Identities.Admin.EntityFramework.Extensions.csproj", "{FF8FD4E3-BAC2-44D6-8B5C-D86122E767B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.EntityFramework.Identity", "Services\Identities\Embedded\XCore.Identities.Admin.EntityFramework.Identity\XCore.Identities.Admin.EntityFramework.Identity.csproj", "{7A2DC541-73DD-405A-A603-DD070630FE07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.EntityFramework.MySql", "Services\Identities\Embedded\XCore.Identities.Admin.EntityFramework.MySql\XCore.Identities.Admin.EntityFramework.MySql.csproj", "{9D374F48-4AA3-4151-BC65-C7C20E877C65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.EntityFramework.PostgreSQL", "Services\Identities\Embedded\XCore.Identities.Admin.EntityFramework.PostgreSQL\XCore.Identities.Admin.EntityFramework.PostgreSQL.csproj", "{BEC84459-01C2-4E72-BE82-BBEAD6CE775D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.EntityFramework.Shared", "Services\Identities\Embedded\XCore.Identities.Admin.EntityFramework.Shared\XCore.Identities.Admin.EntityFramework.Shared.csproj", "{90F5A720-BC94-4125-96C1-A2A83A4C82A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.EntityFramework.SqlServer", "Services\Identities\Embedded\XCore.Identities.Admin.EntityFramework.SqlServer\XCore.Identities.Admin.EntityFramework.SqlServer.csproj", "{22BF6D42-7C03-49A4-B030-2288CDE0368A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.BL.Shared", "Services\Identities\Embedded\XCore.Identities.Admin.BL.Shared\XCore.Identities.Admin.BL.Shared.csproj", "{BE05B7BF-84F5-422F-8CDF-0F9566688CE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.BL.Identity", "Services\Identities\Embedded\XCore.Identities.Admin.BL.Identity\XCore.Identities.Admin.BL.Identity.csproj", "{31773360-4B31-4429-B360-5A3273FD2AD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.BL", "Services\Identities\Embedded\XCore.Identities.Admin.BL\XCore.Identities.Admin.BL.csproj", "{D8A14CF1-D467-40A3-B85B-56EB94D9756E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.STS.Identity", "Services\Identities\Embedded\XCore.Identities.STS.Identity\XCore.Identities.STS.Identity.csproj", "{CB44865C-067D-45F6-B412-5AC392058215}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin.Api", "Services\Identities\Embedded\XCore.Identities.Admin.Api\XCore.Identities.Admin.Api.csproj", "{C6B2EC30-D472-405D-A3A2-5655025AB6B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Admin", "Services\Identities\Embedded\XCore.Identities.Admin\XCore.Identities.Admin.csproj", "{05A20326-DDF1-4942-B1E6-F1E6C2DB35DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Identities.Events", "Services\Identities\Embedded\XCore.Identities.Events\XCore.Identities.Events.csproj", "{653A8B81-8ACF-421E-8FE0-333084A36C77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.IntegrationModels", "Framework\XCore.Services.IntegrationModels\XCore.Services.IntegrationModels.csproj", "{1D9B67FA-B8ED-4E16-AF02-3725EA234BED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Services.Docs.Models", "Services\Docs\XCore.Services.Docs.Models\XCore.Services.Docs.Models.csproj", "{4459F7E3-51A3-4036-99A1-BC7005A262C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{8478641F-08A1-4D51-B44D-FCC358E9BA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCore.Services.Events", "Framework\XCore.Services.Events\XCore.Services.Events.csproj", "{FB50247E-7EBE-4F89-8DFF-378996B15041}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C64499E-F55C-4097-930F-298D3DBAD3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C64499E-F55C-4097-930F-298D3DBAD3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C64499E-F55C-4097-930F-298D3DBAD3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C64499E-F55C-4097-930F-298D3DBAD3EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28B4FD2-93B6-4D7B-AE58-5D21A20D61B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28B4FD2-93B6-4D7B-AE58-5D21A20D61B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28B4FD2-93B6-4D7B-AE58-5D21A20D61B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28B4FD2-93B6-4D7B-AE58-5D21A20D61B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B4FCD9-2E91-425C-8D06-C36F8F0AC6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B4FCD9-2E91-425C-8D06-C36F8F0AC6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B4FCD9-2E91-425C-8D06-C36F8F0AC6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B4FCD9-2E91-425C-8D06-C36F8F0AC6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5938E3-0AB8-49E5-A8A7-8BDFF6E08A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5938E3-0AB8-49E5-A8A7-8BDFF6E08A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5938E3-0AB8-49E5-A8A7-8BDFF6E08A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5938E3-0AB8-49E5-A8A7-8BDFF6E08A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90877444-353D-40D0-8BF3-9B2371A2574A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90877444-353D-40D0-8BF3-9B2371A2574A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90877444-353D-40D0-8BF3-9B2371A2574A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90877444-353D-40D0-8BF3-9B2371A2574A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EED4DCB-3D34-49B0-AF7C-581DD70BF32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EED4DCB-3D34-49B0-AF7C-581DD70BF32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EED4DCB-3D34-49B0-AF7C-581DD70BF32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EED4DCB-3D34-49B0-AF7C-581DD70BF32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B789CD93-458A-4806-A032-F2438874E0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B789CD93-458A-4806-A032-F2438874E0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B789CD93-458A-4806-A032-F2438874E0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B789CD93-458A-4806-A032-F2438874E0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2AE0EE3-B245-45E1-8D58-FE0ED5E8E656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2AE0EE3-B245-45E1-8D58-FE0ED5E8E656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2AE0EE3-B245-45E1-8D58-FE0ED5E8E656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2AE0EE3-B245-45E1-8D58-FE0ED5E8E656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589DEDE7-17C2-4E48-BEAB-4167810F0DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589DEDE7-17C2-4E48-BEAB-4167810F0DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589DEDE7-17C2-4E48-BEAB-4167810F0DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589DEDE7-17C2-4E48-BEAB-4167810F0DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F464DBFD-F924-42EE-AE10-04565374D645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F464DBFD-F924-42EE-AE10-04565374D645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F464DBFD-F924-42EE-AE10-04565374D645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F464DBFD-F924-42EE-AE10-04565374D645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC746B90-DAD7-4810-BFE5-B0BA253043DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC746B90-DAD7-4810-BFE5-B0BA253043DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC746B90-DAD7-4810-BFE5-B0BA253043DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC746B90-DAD7-4810-BFE5-B0BA253043DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF7F5DE-DF73-4B37-922F-B11EBAC7F689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF7F5DE-DF73-4B37-922F-B11EBAC7F689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF7F5DE-DF73-4B37-922F-B11EBAC7F689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF7F5DE-DF73-4B37-922F-B11EBAC7F689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21CAC2A-2A48-4760-A51D-ADB5F49A037D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21CAC2A-2A48-4760-A51D-ADB5F49A037D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21CAC2A-2A48-4760-A51D-ADB5F49A037D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21CAC2A-2A48-4760-A51D-ADB5F49A037D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C577A0-3FDC-4F50-A846-C49C45402438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C577A0-3FDC-4F50-A846-C49C45402438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C577A0-3FDC-4F50-A846-C49C45402438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C577A0-3FDC-4F50-A846-C49C45402438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF89ED6-EB82-44AA-83FB-1D9C66F7B72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF89ED6-EB82-44AA-83FB-1D9C66F7B72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF89ED6-EB82-44AA-83FB-1D9C66F7B72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF89ED6-EB82-44AA-83FB-1D9C66F7B72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F9A421-495F-4C8E-B307-5A517B51C2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F9A421-495F-4C8E-B307-5A517B51C2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F9A421-495F-4C8E-B307-5A517B51C2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F9A421-495F-4C8E-B307-5A517B51C2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525C22FB-F08D-48FE-9405-708A42E30B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525C22FB-F08D-48FE-9405-708A42E30B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525C22FB-F08D-48FE-9405-708A42E30B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525C22FB-F08D-48FE-9405-708A42E30B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB1E506-38D8-434D-BCEC-276DF3B71822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB1E506-38D8-434D-BCEC-276DF3B71822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB1E506-38D8-434D-BCEC-276DF3B71822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB1E506-38D8-434D-BCEC-276DF3B71822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD968F06-B9F4-408C-82C6-BFFC47E99C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD968F06-B9F4-408C-82C6-BFFC47E99C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD968F06-B9F4-408C-82C6-BFFC47E99C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD968F06-B9F4-408C-82C6-BFFC47E99C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C442C0-D4A0-4758-992E-8E6989039F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C442C0-D4A0-4758-992E-8E6989039F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C442C0-D4A0-4758-992E-8E6989039F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C442C0-D4A0-4758-992E-8E6989039F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5E7D80-AE46-45D8-87F0-A6ADD196EB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5E7D80-AE46-45D8-87F0-A6ADD196EB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5E7D80-AE46-45D8-87F0-A6ADD196EB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5E7D80-AE46-45D8-87F0-A6ADD196EB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FEC21A-863F-45C6-9F23-356D08BB4F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FEC21A-863F-45C6-9F23-356D08BB4F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FEC21A-863F-45C6-9F23-356D08BB4F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FEC21A-863F-45C6-9F23-356D08BB4F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77F370E5-A18C-4F5A-8861-B77632E5B76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F370E5-A18C-4F5A-8861-B77632E5B76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F370E5-A18C-4F5A-8861-B77632E5B76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F370E5-A18C-4F5A-8861-B77632E5B76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A8383ED-1917-4C69-8BB3-0D4745846C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A8383ED-1917-4C69-8BB3-0D4745846C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A8383ED-1917-4C69-8BB3-0D4745846C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A8383ED-1917-4C69-8BB3-0D4745846C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9425A43F-D28B-4F44-8667-8BBC3428150D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9425A43F-D28B-4F44-8667-8BBC3428150D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9425A43F-D28B-4F44-8667-8BBC3428150D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9425A43F-D28B-4F44-8667-8BBC3428150D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9243FC8-6033-4183-A492-D76E298FC901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9243FC8-6033-4183-A492-D76E298FC901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9243FC8-6033-4183-A492-D76E298FC901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9243FC8-6033-4183-A492-D76E298FC901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EA1920-8487-4EAE-989D-78A6F1A9AF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EA1920-8487-4EAE-989D-78A6F1A9AF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EA1920-8487-4EAE-989D-78A6F1A9AF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EA1920-8487-4EAE-989D-78A6F1A9AF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14FF297-10A3-4BFF-ADCE-38257ABB5B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14FF297-10A3-4BFF-ADCE-38257ABB5B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14FF297-10A3-4BFF-ADCE-38257ABB5B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14FF297-10A3-4BFF-ADCE-38257ABB5B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD72DAD8-7CFB-45C9-9295-A069314C064B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD72DAD8-7CFB-45C9-9295-A069314C064B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD72DAD8-7CFB-45C9-9295-A069314C064B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD72DAD8-7CFB-45C9-9295-A069314C064B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ACE5AF9-D48A-49A5-AA07-E7E415384727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ACE5AF9-D48A-49A5-AA07-E7E415384727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ACE5AF9-D48A-49A5-AA07-E7E415384727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ACE5AF9-D48A-49A5-AA07-E7E415384727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C9187F-8E8F-4D28-AFF8-98A6ADE67198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C9187F-8E8F-4D28-AFF8-98A6ADE67198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C9187F-8E8F-4D28-AFF8-98A6ADE67198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C9187F-8E8F-4D28-AFF8-98A6ADE67198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D9E1A9-17DC-42FD-B48C-EF299DF9B74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D9E1A9-17DC-42FD-B48C-EF299DF9B74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D9E1A9-17DC-42FD-B48C-EF299DF9B74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D9E1A9-17DC-42FD-B48C-EF299DF9B74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891C38E4-A96F-4370-ABBE-3F5A057AA75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891C38E4-A96F-4370-ABBE-3F5A057AA75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891C38E4-A96F-4370-ABBE-3F5A057AA75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891C38E4-A96F-4370-ABBE-3F5A057AA75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D968459-9B27-427B-8018-0824EBA2C34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D968459-9B27-427B-8018-0824EBA2C34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D968459-9B27-427B-8018-0824EBA2C34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D968459-9B27-427B-8018-0824EBA2C34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841B1C81-13B0-4701-86D0-A74D27FF034B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841B1C81-13B0-4701-86D0-A74D27FF034B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841B1C81-13B0-4701-86D0-A74D27FF034B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841B1C81-13B0-4701-86D0-A74D27FF034B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216C6C14-5442-49C6-92EA-F8340E64E933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216C6C14-5442-49C6-92EA-F8340E64E933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216C6C14-5442-49C6-92EA-F8340E64E933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216C6C14-5442-49C6-92EA-F8340E64E933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB9431C-9BDE-431E-8FD6-A8D6E01AE128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB9431C-9BDE-431E-8FD6-A8D6E01AE128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB9431C-9BDE-431E-8FD6-A8D6E01AE128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB9431C-9BDE-431E-8FD6-A8D6E01AE128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D91A66C-9CE3-41EE-B088-4A480535BFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D91A66C-9CE3-41EE-B088-4A480535BFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D91A66C-9CE3-41EE-B088-4A480535BFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D91A66C-9CE3-41EE-B088-4A480535BFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288F948C-98D3-49AB-A5F5-361A58960614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288F948C-98D3-49AB-A5F5-361A58960614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288F948C-98D3-49AB-A5F5-361A58960614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288F948C-98D3-49AB-A5F5-361A58960614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DC6B17-FE4F-46CB-99BC-669E805C8E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DC6B17-FE4F-46CB-99BC-669E805C8E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DC6B17-FE4F-46CB-99BC-669E805C8E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DC6B17-FE4F-46CB-99BC-669E805C8E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75377F97-D11F-43C2-99FC-554DD2AA3B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75377F97-D11F-43C2-99FC-554DD2AA3B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75377F97-D11F-43C2-99FC-554DD2AA3B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75377F97-D11F-43C2-99FC-554DD2AA3B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57DA63B-A8B2-4D34-8CFB-7BCB73797AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57DA63B-A8B2-4D34-8CFB-7BCB73797AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57DA63B-A8B2-4D34-8CFB-7BCB73797AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57DA63B-A8B2-4D34-8CFB-7BCB73797AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56E9787-7D58-4602-99EF-0B0BA86EFB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56E9787-7D58-4602-99EF-0B0BA86EFB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56E9787-7D58-4602-99EF-0B0BA86EFB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56E9787-7D58-4602-99EF-0B0BA86EFB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1589603-74B3-4FBA-B71A-6BCA0F9553E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1589603-74B3-4FBA-B71A-6BCA0F9553E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1589603-74B3-4FBA-B71A-6BCA0F9553E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1589603-74B3-4FBA-B71A-6BCA0F9553E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A305DB-8FE9-4C6D-B250-26144D68C0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A305DB-8FE9-4C6D-B250-26144D68C0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A305DB-8FE9-4C6D-B250-26144D68C0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A305DB-8FE9-4C6D-B250-26144D68C0AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5D4234-9E99-473E-96C0-31E69DEB8B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5D4234-9E99-473E-96C0-31E69DEB8B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5D4234-9E99-473E-96C0-31E69DEB8B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5D4234-9E99-473E-96C0-31E69DEB8B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACEDD45-E566-4B5F-92E9-84248D2528B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACEDD45-E566-4B5F-92E9-84248D2528B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACEDD45-E566-4B5F-92E9-84248D2528B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACEDD45-E566-4B5F-92E9-84248D2528B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4271E61B-68D9-47AA-BCAA-738703708F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4271E61B-68D9-47AA-BCAA-738703708F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4271E61B-68D9-47AA-BCAA-738703708F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4271E61B-68D9-47AA-BCAA-738703708F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48ABF040-0617-4360-A89D-34C472001254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48ABF040-0617-4360-A89D-34C472001254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48ABF040-0617-4360-A89D-34C472001254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48ABF040-0617-4360-A89D-34C472001254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7745492C-53AE-4C9B-AAA7-35E744A212BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7745492C-53AE-4C9B-AAA7-35E744A212BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7745492C-53AE-4C9B-AAA7-35E744A212BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7745492C-53AE-4C9B-AAA7-35E744A212BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA033D0-E304-4EF0-A9E1-621B531D82D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA033D0-E304-4EF0-A9E1-621B531D82D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA033D0-E304-4EF0-A9E1-621B531D82D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA033D0-E304-4EF0-A9E1-621B531D82D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C01F2F-3C4C-4356-A2AB-3A82CD1A5F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C01F2F-3C4C-4356-A2AB-3A82CD1A5F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C01F2F-3C4C-4356-A2AB-3A82CD1A5F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C01F2F-3C4C-4356-A2AB-3A82CD1A5F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D76581-BC2C-498E-841D-465D38B68E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D76581-BC2C-498E-841D-465D38B68E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D76581-BC2C-498E-841D-465D38B68E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D76581-BC2C-498E-841D-465D38B68E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1AC23A1-7335-4B78-817B-9DA02C6BBCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1AC23A1-7335-4B78-817B-9DA02C6BBCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1AC23A1-7335-4B78-817B-9DA02C6BBCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1AC23A1-7335-4B78-817B-9DA02C6BBCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A1105C-A52D-4922-9D24-F4FC02E25EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A1105C-A52D-4922-9D24-F4FC02E25EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A1105C-A52D-4922-9D24-F4FC02E25EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A1105C-A52D-4922-9D24-F4FC02E25EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8FD4E3-BAC2-44D6-8B5C-D86122E767B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8FD4E3-BAC2-44D6-8B5C-D86122E767B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8FD4E3-BAC2-44D6-8B5C-D86122E767B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8FD4E3-BAC2-44D6-8B5C-D86122E767B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2DC541-73DD-405A-A603-DD070630FE07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2DC541-73DD-405A-A603-DD070630FE07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2DC541-73DD-405A-A603-DD070630FE07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2DC541-73DD-405A-A603-DD070630FE07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D374F48-4AA3-4151-BC65-C7C20E877C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D374F48-4AA3-4151-BC65-C7C20E877C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D374F48-4AA3-4151-BC65-C7C20E877C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D374F48-4AA3-4151-BC65-C7C20E877C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC84459-01C2-4E72-BE82-BBEAD6CE775D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC84459-01C2-4E72-BE82-BBEAD6CE775D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC84459-01C2-4E72-BE82-BBEAD6CE775D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC84459-01C2-4E72-BE82-BBEAD6CE775D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F5A720-BC94-4125-96C1-A2A83A4C82A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F5A720-BC94-4125-96C1-A2A83A4C82A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F5A720-BC94-4125-96C1-A2A83A4C82A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F5A720-BC94-4125-96C1-A2A83A4C82A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BF6D42-7C03-49A4-B030-2288CDE0368A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BF6D42-7C03-49A4-B030-2288CDE0368A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BF6D42-7C03-49A4-B030-2288CDE0368A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BF6D42-7C03-49A4-B030-2288CDE0368A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE05B7BF-84F5-422F-8CDF-0F9566688CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE05B7BF-84F5-422F-8CDF-0F9566688CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE05B7BF-84F5-422F-8CDF-0F9566688CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE05B7BF-84F5-422F-8CDF-0F9566688CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31773360-4B31-4429-B360-5A3273FD2AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31773360-4B31-4429-B360-5A3273FD2AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31773360-4B31-4429-B360-5A3273FD2AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31773360-4B31-4429-B360-5A3273FD2AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A14CF1-D467-40A3-B85B-56EB94D9756E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A14CF1-D467-40A3-B85B-56EB94D9756E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A14CF1-D467-40A3-B85B-56EB94D9756E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A14CF1-D467-40A3-B85B-56EB94D9756E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB44865C-067D-45F6-B412-5AC392058215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB44865C-067D-45F6-B412-5AC392058215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB44865C-067D-45F6-B412-5AC392058215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB44865C-067D-45F6-B412-5AC392058215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B2EC30-D472-405D-A3A2-5655025AB6B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B2EC30-D472-405D-A3A2-5655025AB6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B2EC30-D472-405D-A3A2-5655025AB6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B2EC30-D472-405D-A3A2-5655025AB6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A20326-DDF1-4942-B1E6-F1E6C2DB35DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A20326-DDF1-4942-B1E6-F1E6C2DB35DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A20326-DDF1-4942-B1E6-F1E6C2DB35DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A20326-DDF1-4942-B1E6-F1E6C2DB35DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{653A8B81-8ACF-421E-8FE0-333084A36C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653A8B81-8ACF-421E-8FE0-333084A36C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653A8B81-8ACF-421E-8FE0-333084A36C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653A8B81-8ACF-421E-8FE0-333084A36C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9B67FA-B8ED-4E16-AF02-3725EA234BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9B67FA-B8ED-4E16-AF02-3725EA234BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9B67FA-B8ED-4E16-AF02-3725EA234BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9B67FA-B8ED-4E16-AF02-3725EA234BED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4459F7E3-51A3-4036-99A1-BC7005A262C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4459F7E3-51A3-4036-99A1-BC7005A262C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4459F7E3-51A3-4036-99A1-BC7005A262C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4459F7E3-51A3-4036-99A1-BC7005A262C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB50247E-7EBE-4F89-8DFF-378996B15041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB50247E-7EBE-4F89-8DFF-378996B15041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB50247E-7EBE-4F89-8DFF-378996B15041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB50247E-7EBE-4F89-8DFF-378996B15041}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C64499E-F55C-4097-930F-298D3DBAD3EF} = {D824E0A4-E55C-48E1-B208-0A18827EE6B4}
+		{6F44EA5C-C843-47BF-816D-5B52ED7903D4} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{DF41D777-49E9-45E5-A859-0923F38201C0} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{B28B4FD2-93B6-4D7B-AE58-5D21A20D61B0} = {DF41D777-49E9-45E5-A859-0923F38201C0}
+		{25B4FCD9-2E91-425C-8D06-C36F8F0AC6C2} = {DF41D777-49E9-45E5-A859-0923F38201C0}
+		{8C5938E3-0AB8-49E5-A8A7-8BDFF6E08A27} = {A0F76BA0-3190-48F6-B7F7-C406CAE73EB8}
+		{DC6DB9DD-0252-4603-B5C6-41C2DA692BE8} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{A863FFF9-C89D-465F-9F82-81184F079C35} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{90877444-353D-40D0-8BF3-9B2371A2574A} = {6F44EA5C-C843-47BF-816D-5B52ED7903D4}
+		{9EED4DCB-3D34-49B0-AF7C-581DD70BF32C} = {6F44EA5C-C843-47BF-816D-5B52ED7903D4}
+		{B789CD93-458A-4806-A032-F2438874E0FB} = {A863FFF9-C89D-465F-9F82-81184F079C35}
+		{E2AE0EE3-B245-45E1-8D58-FE0ED5E8E656} = {982C95C0-EE3A-491A-8A9D-7D5C1C88A59A}
+		{589DEDE7-17C2-4E48-BEAB-4167810F0DE0} = {982C95C0-EE3A-491A-8A9D-7D5C1C88A59A}
+		{F23516D8-232A-4C60-AE27-515B0C5FBB5F} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{F464DBFD-F924-42EE-AE10-04565374D645} = {1CF1B9B8-23A9-443E-9C14-CB3928245ADA}
+		{FC746B90-DAD7-4810-BFE5-B0BA253043DE} = {1CF1B9B8-23A9-443E-9C14-CB3928245ADA}
+		{FDF7F5DE-DF73-4B37-922F-B11EBAC7F689} = {0668F8B9-9B7B-40A1-8067-5AC3174A2A08}
+		{F21CAC2A-2A48-4760-A51D-ADB5F49A037D} = {1CF1B9B8-23A9-443E-9C14-CB3928245ADA}
+		{AB54421E-E9D0-484E-8A11-13E7ED01EEAC} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{46C577A0-3FDC-4F50-A846-C49C45402438} = {AB54421E-E9D0-484E-8A11-13E7ED01EEAC}
+		{FEF89ED6-EB82-44AA-83FB-1D9C66F7B72A} = {AB54421E-E9D0-484E-8A11-13E7ED01EEAC}
+		{99F9A421-495F-4C8E-B307-5A517B51C2F1} = {AB54421E-E9D0-484E-8A11-13E7ED01EEAC}
+		{5B04B822-7AFA-42E7-B56F-AC912C1D5600} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{525C22FB-F08D-48FE-9405-708A42E30B77} = {5B04B822-7AFA-42E7-B56F-AC912C1D5600}
+		{DDB1E506-38D8-434D-BCEC-276DF3B71822} = {5B04B822-7AFA-42E7-B56F-AC912C1D5600}
+		{CD968F06-B9F4-408C-82C6-BFFC47E99C08} = {5B04B822-7AFA-42E7-B56F-AC912C1D5600}
+		{C3570BEE-82E4-4665-B45C-BDE7FA5C107C} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{A0C442C0-D4A0-4758-992E-8E6989039F6C} = {969C5EA8-253B-4A33-96B5-107E6B4DAB8F}
+		{4A5E7D80-AE46-45D8-87F0-A6ADD196EB9A} = {969C5EA8-253B-4A33-96B5-107E6B4DAB8F}
+		{41F5BA5B-A0FD-4687-B82C-984709CDEB40} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{65FEC21A-863F-45C6-9F23-356D08BB4F77} = {0153DE1F-7255-413C-8855-B91495C1E0AE}
+		{77F370E5-A18C-4F5A-8861-B77632E5B76F} = {0153DE1F-7255-413C-8855-B91495C1E0AE}
+		{9A8383ED-1917-4C69-8BB3-0D4745846C81} = {0153DE1F-7255-413C-8855-B91495C1E0AE}
+		{969C5EA8-253B-4A33-96B5-107E6B4DAB8F} = {F23516D8-232A-4C60-AE27-515B0C5FBB5F}
+		{1CF1B9B8-23A9-443E-9C14-CB3928245ADA} = {F23516D8-232A-4C60-AE27-515B0C5FBB5F}
+		{9425A43F-D28B-4F44-8667-8BBC3428150D} = {1CF1B9B8-23A9-443E-9C14-CB3928245ADA}
+		{2C49E4D1-4AC5-4005-9E54-4AF807C25505} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{D9243FC8-6033-4183-A492-D76E298FC901} = {2CB0253A-04AC-4D13-8F96-0C37874955EC}
+		{D5EA1920-8487-4EAE-989D-78A6F1A9AF1D} = {2CB0253A-04AC-4D13-8F96-0C37874955EC}
+		{F14FF297-10A3-4BFF-ADCE-38257ABB5B55} = {2CB0253A-04AC-4D13-8F96-0C37874955EC}
+		{2CB0253A-04AC-4D13-8F96-0C37874955EC} = {2C49E4D1-4AC5-4005-9E54-4AF807C25505}
+		{99BB310E-6164-4465-B77F-95B5A6256456} = {2C49E4D1-4AC5-4005-9E54-4AF807C25505}
+		{BD72DAD8-7CFB-45C9-9295-A069314C064B} = {99BB310E-6164-4465-B77F-95B5A6256456}
+		{FB3342FF-5AB3-4D28-A9A1-B628FDFEBCA8} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{4ACE5AF9-D48A-49A5-AA07-E7E415384727} = {FB3342FF-5AB3-4D28-A9A1-B628FDFEBCA8}
+		{60C9187F-8E8F-4D28-AFF8-98A6ADE67198} = {0668F8B9-9B7B-40A1-8067-5AC3174A2A08}
+		{604C1ADF-87BB-4E7F-B357-BC2BE671B6FB} = {FE993AD6-BAE4-4FF3-B06B-F7DA22D06567}
+		{B6F69185-5CAD-4CFF-BCD5-A8C72675FDBB} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{34333326-0BFE-4B43-A6D1-269D5CF86E05} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{B48EAE5E-8008-433A-A7BA-917D050A38D5} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{00D9E1A9-17DC-42FD-B48C-EF299DF9B74C} = {9CB93EC0-7B44-4F93-8706-35D284D2710D}
+		{0153DE1F-7255-413C-8855-B91495C1E0AE} = {41F5BA5B-A0FD-4687-B82C-984709CDEB40}
+		{9CB93EC0-7B44-4F93-8706-35D284D2710D} = {41F5BA5B-A0FD-4687-B82C-984709CDEB40}
+		{891C38E4-A96F-4370-ABBE-3F5A057AA75B} = {1AA27821-3FC4-42A2-8E09-63830743B1AD}
+		{0D968459-9B27-427B-8018-0824EBA2C34F} = {1AA27821-3FC4-42A2-8E09-63830743B1AD}
+		{841B1C81-13B0-4701-86D0-A74D27FF034B} = {1AA27821-3FC4-42A2-8E09-63830743B1AD}
+		{216C6C14-5442-49C6-92EA-F8340E64E933} = {1AA27821-3FC4-42A2-8E09-63830743B1AD}
+		{9BB9431C-9BDE-431E-8FD6-A8D6E01AE128} = {1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}
+		{8D91A66C-9CE3-41EE-B088-4A480535BFAD} = {1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}
+		{288F948C-98D3-49AB-A5F5-361A58960614} = {1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}
+		{53DC6B17-FE4F-46CB-99BC-669E805C8E30} = {1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}
+		{75377F97-D11F-43C2-99FC-554DD2AA3B97} = {1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}
+		{B57DA63B-A8B2-4D34-8CFB-7BCB73797AFA} = {1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}
+		{1AA27821-3FC4-42A2-8E09-63830743B1AD} = {DC6DB9DD-0252-4603-B5C6-41C2DA692BE8}
+		{D56E9787-7D58-4602-99EF-0B0BA86EFB2A} = {1FD7DDC9-1D4E-4AC6-A739-BBE3D6F15548}
+		{CD5E0526-4592-4235-BFA1-6850227F3137} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{B1589603-74B3-4FBA-B71A-6BCA0F9553E6} = {CD5E0526-4592-4235-BFA1-6850227F3137}
+		{C0A305DB-8FE9-4C6D-B250-26144D68C0AF} = {CD5E0526-4592-4235-BFA1-6850227F3137}
+		{DE5D4234-9E99-473E-96C0-31E69DEB8B78} = {B6F69185-5CAD-4CFF-BCD5-A8C72675FDBB}
+		{9ACEDD45-E566-4B5F-92E9-84248D2528B6} = {B6F69185-5CAD-4CFF-BCD5-A8C72675FDBB}
+		{4271E61B-68D9-47AA-BCAA-738703708F2C} = {B6F69185-5CAD-4CFF-BCD5-A8C72675FDBB}
+		{48ABF040-0617-4360-A89D-34C472001254} = {B6F69185-5CAD-4CFF-BCD5-A8C72675FDBB}
+		{2F89C745-A4F9-4794-8B2A-641D23D67918} = {BD3D1A80-3169-4FD6-A9F4-31CF16944139}
+		{7745492C-53AE-4C9B-AAA7-35E744A212BC} = {2F89C745-A4F9-4794-8B2A-641D23D67918}
+		{1CA033D0-E304-4EF0-A9E1-621B531D82D8} = {2F89C745-A4F9-4794-8B2A-641D23D67918}
+		{F1C01F2F-3C4C-4356-A2AB-3A82CD1A5F68} = {2F89C745-A4F9-4794-8B2A-641D23D67918}
+		{5382A8E1-4E16-40AA-AF58-409D2F49C3D5} = {C3570BEE-82E4-4665-B45C-BDE7FA5C107C}
+		{EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC} = {C3570BEE-82E4-4665-B45C-BDE7FA5C107C}
+		{36BD6CB9-F33F-4196-98C9-CB3DD209D104} = {EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC}
+		{5CDB515A-C33F-4D40-8D40-E818CAE2B6CA} = {EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC}
+		{0D9BB854-2DAC-4031-96E4-99E6AC047F13} = {EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC}
+		{FBA5E0E0-7F00-4ADB-BEBC-DF8ECE976574} = {EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC}
+		{78AB7E7D-5CA0-46AE-B1B2-768FA13E9E8C} = {EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC}
+		{F5D76581-BC2C-498E-841D-465D38B68E6B} = {78AB7E7D-5CA0-46AE-B1B2-768FA13E9E8C}
+		{F1AC23A1-7335-4B78-817B-9DA02C6BBCA6} = {78AB7E7D-5CA0-46AE-B1B2-768FA13E9E8C}
+		{B9A1105C-A52D-4922-9D24-F4FC02E25EA3} = {0D9BB854-2DAC-4031-96E4-99E6AC047F13}
+		{FF8FD4E3-BAC2-44D6-8B5C-D86122E767B4} = {0D9BB854-2DAC-4031-96E4-99E6AC047F13}
+		{7A2DC541-73DD-405A-A603-DD070630FE07} = {0D9BB854-2DAC-4031-96E4-99E6AC047F13}
+		{9D374F48-4AA3-4151-BC65-C7C20E877C65} = {0D9BB854-2DAC-4031-96E4-99E6AC047F13}
+		{BEC84459-01C2-4E72-BE82-BBEAD6CE775D} = {0D9BB854-2DAC-4031-96E4-99E6AC047F13}
+		{90F5A720-BC94-4125-96C1-A2A83A4C82A1} = {0D9BB854-2DAC-4031-96E4-99E6AC047F13}
+		{22BF6D42-7C03-49A4-B030-2288CDE0368A} = {0D9BB854-2DAC-4031-96E4-99E6AC047F13}
+		{BE05B7BF-84F5-422F-8CDF-0F9566688CE9} = {5CDB515A-C33F-4D40-8D40-E818CAE2B6CA}
+		{31773360-4B31-4429-B360-5A3273FD2AD6} = {5CDB515A-C33F-4D40-8D40-E818CAE2B6CA}
+		{D8A14CF1-D467-40A3-B85B-56EB94D9756E} = {5CDB515A-C33F-4D40-8D40-E818CAE2B6CA}
+		{CB44865C-067D-45F6-B412-5AC392058215} = {FBA5E0E0-7F00-4ADB-BEBC-DF8ECE976574}
+		{C6B2EC30-D472-405D-A3A2-5655025AB6B6} = {36BD6CB9-F33F-4196-98C9-CB3DD209D104}
+		{05A20326-DDF1-4942-B1E6-F1E6C2DB35DC} = {36BD6CB9-F33F-4196-98C9-CB3DD209D104}
+		{653A8B81-8ACF-421E-8FE0-333084A36C77} = {8478641F-08A1-4D51-B44D-FCC358E9BA95}
+		{1D9B67FA-B8ED-4E16-AF02-3725EA234BED} = {0668F8B9-9B7B-40A1-8067-5AC3174A2A08}
+		{4459F7E3-51A3-4036-99A1-BC7005A262C8} = {5B04B822-7AFA-42E7-B56F-AC912C1D5600}
+		{8478641F-08A1-4D51-B44D-FCC358E9BA95} = {EE11BCE5-A3EA-4FCA-88AB-2C910A8071CC}
+		{FB50247E-7EBE-4F89-8DFF-378996B15041} = {0668F8B9-9B7B-40A1-8067-5AC3174A2A08}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABE71325-5510-4337-8286-0F2C3E0F7AE7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 72
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.0.0.15:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Framework\\XCore.Framework\\XCore.Framework.csproj
+		SccProjectTopLevelParentUniqueName1 = XCore.sln
+		SccProjectName1 = Framework/XCore.Framework
+		SccLocalPath1 = Framework\\XCore.Framework
+		SccProjectUniqueName2 = Services\\Geo\\XCore.Services.Geo.API\\XCore.Services.Geo.API.csproj
+		SccProjectTopLevelParentUniqueName2 = XCore.sln
+		SccProjectName2 = Services/Geo/XCore.Services.Geo.API
+		SccLocalPath2 = Services\\Geo\\XCore.Services.Geo.API
+		SccProjectUniqueName3 = Services\\Geo\\XCore.Services.Geo.Core\\XCore.Services.Geo.Core.csproj
+		SccProjectTopLevelParentUniqueName3 = XCore.sln
+		SccProjectName3 = Services/Geo/XCore.Services.Geo.Core
+		SccLocalPath3 = Services\\Geo\\XCore.Services.Geo.Core
+		SccProjectUniqueName4 = Services.Tests\\XCore.Tests\\XCore.Tests.csproj
+		SccProjectTopLevelParentUniqueName4 = XCore.sln
+		SccProjectName4 = Services.Tests/XCore.Tests
+		SccLocalPath4 = Services.Tests\\XCore.Tests
+		SccProjectUniqueName5 = Services\\Jobs\\XCore.Services.Jobs\\XCore.Services.Jobs.csproj
+		SccProjectTopLevelParentUniqueName5 = XCore.sln
+		SccProjectName5 = Services/Jobs/XCore.Services.Jobs
+		SccLocalPath5 = Services\\Jobs\\XCore.Services.Jobs
+		SccProjectUniqueName6 = Services\\Jobs\\XCore.Services.Jobs.Addons\\XCore.Services.Jobs.Addons.csproj
+		SccProjectTopLevelParentUniqueName6 = XCore.sln
+		SccProjectName6 = Services/Jobs/XCore.Services.Jobs.Addons
+		SccLocalPath6 = Services\\Jobs\\XCore.Services.Jobs.Addons
+		SccProjectUniqueName7 = Services\\Logging\\XCore.Services.Logging\\XCore.Services.Logging.csproj
+		SccProjectTopLevelParentUniqueName7 = XCore.sln
+		SccProjectName7 = Services/Logging/XCore.Services.Logging
+		SccLocalPath7 = Services\\Logging\\XCore.Services.Logging
+		SccProjectUniqueName8 = Services.UI\\XCore.Services.Web.Server\\XCore.Services.Web.Server.csproj
+		SccProjectTopLevelParentUniqueName8 = XCore.sln
+		SccProjectName8 = Services.UI/XCore.Services.Web.Server
+		SccLocalPath8 = Services.UI\\XCore.Services.Web.Server
+		SccProjectUniqueName9 = Services.UI\\XCore.Services.Web.Client\\XCore.Services.Web.Client.csproj
+		SccProjectTopLevelParentUniqueName9 = XCore.sln
+		SccProjectName9 = Services.UI/XCore.Services.Web.Client
+		SccLocalPath9 = Services.UI\\XCore.Services.Web.Client
+		SccProjectUniqueName10 = Services\\Audit\\XCore.Services.Audit.Core\\XCore.Services.Audit.Core.csproj
+		SccProjectTopLevelParentUniqueName10 = XCore.sln
+		SccProjectName10 = Services/Audit/XCore.Services.Audit.Core
+		SccLocalPath10 = Services\\Audit\\XCore.Services.Audit.Core
+		SccProjectUniqueName11 = Services\\Audit\\XCore.Services.Audit.API\\XCore.Services.Audit.API.csproj
+		SccProjectTopLevelParentUniqueName11 = XCore.sln
+		SccProjectName11 = Services/Audit/XCore.Services.Audit.API
+		SccLocalPath11 = Services\\Audit\\XCore.Services.Audit.API
+		SccProjectUniqueName12 = Framework\\XCore.Services.Clients\\XCore.Services.Clients.csproj
+		SccProjectTopLevelParentUniqueName12 = XCore.sln
+		SccProjectName12 = Framework/XCore.Services.Clients
+		SccLocalPath12 = Framework\\XCore.Services.Clients
+		SccProjectUniqueName13 = Services\\Audit\\XCore.Services.Audit.SDK\\XCore.Services.Audit.SDK.csproj
+		SccProjectTopLevelParentUniqueName13 = XCore.sln
+		SccProjectName13 = Services/Audit/XCore.Services.Audit.SDK
+		SccLocalPath13 = Services\\Audit\\XCore.Services.Audit.SDK
+		SccProjectUniqueName14 = Services\\Configurations\\XCore.Services.Configurations.Core\\XCore.Services.Configurations.Core.csproj
+		SccProjectTopLevelParentUniqueName14 = XCore.sln
+		SccProjectName14 = Services/Configurations/XCore.Services.Configurations.Core
+		SccLocalPath14 = Services\\Configurations\\XCore.Services.Configurations.Core
+		SccProjectUniqueName15 = Services\\Configurations\\XCore.Services.Configurations.SDK\\XCore.Services.Configurations.SDK.csproj
+		SccProjectTopLevelParentUniqueName15 = XCore.sln
+		SccProjectName15 = Services/Configurations/XCore.Services.Configurations.SDK
+		SccLocalPath15 = Services\\Configurations\\XCore.Services.Configurations.SDK
+		SccProjectUniqueName16 = Services\\Configurations\\XCore.Services.Configurations.API\\XCore.Services.Configurations.API.csproj
+		SccProjectTopLevelParentUniqueName16 = XCore.sln
+		SccProjectName16 = Services/Configurations/XCore.Services.Configurations.API
+		SccLocalPath16 = Services\\Configurations\\XCore.Services.Configurations.API
+		SccProjectUniqueName17 = Services\\Docs\\XCore.Services.Docs.Core\\XCore.Services.Docs.Core.csproj
+		SccProjectTopLevelParentUniqueName17 = XCore.sln
+		SccProjectName17 = Services/Docs/XCore.Services.Docs.Core
+		SccLocalPath17 = Services\\Docs\\XCore.Services.Docs.Core
+		SccProjectUniqueName18 = Services\\Docs\\XCore.Services.Docs.SDK\\XCore.Services.Docs.SDK.csproj
+		SccProjectTopLevelParentUniqueName18 = XCore.sln
+		SccProjectName18 = Services/Docs/XCore.Services.Docs.SDK
+		SccLocalPath18 = Services\\Docs\\XCore.Services.Docs.SDK
+		SccProjectUniqueName19 = Services\\Docs\\XCore.Services.Docs.API\\XCore.Services.Docs.API.csproj
+		SccProjectTopLevelParentUniqueName19 = XCore.sln
+		SccProjectName19 = Services/Docs/XCore.Services.Docs.API
+		SccLocalPath19 = Services\\Docs\\XCore.Services.Docs.API
+		SccProjectUniqueName20 = Services\\Audit\\XCore.Services.Audit.Test.Integration\\XCore.Services.Audit.Test.Integration.csproj
+		SccProjectTopLevelParentUniqueName20 = XCore.sln
+		SccProjectName20 = Services/Audit/XCore.Services.Audit.Test.Integration
+		SccLocalPath20 = Services\\Audit\\XCore.Services.Audit.Test.Integration
+		SccProjectUniqueName21 = Services\\Audit\\XCore.Services.Audit.Test.Console\\XCore.Services.Audit.Test.Console.csproj
+		SccProjectTopLevelParentUniqueName21 = XCore.sln
+		SccProjectName21 = Services/Audit/XCore.Services.Audit.Test.Console
+		SccLocalPath21 = Services\\Audit\\XCore.Services.Audit.Test.Console
+		SccProjectUniqueName22 = Services\\Attachments\\XCore.Services.Attachments.API\\XCore.Services.Attachments.API.csproj
+		SccProjectTopLevelParentUniqueName22 = XCore.sln
+		SccProjectName22 = Services/Attachments/XCore.Services.Attachments.API
+		SccLocalPath22 = Services\\Attachments\\XCore.Services.Attachments.API
+		SccProjectUniqueName23 = Services\\Attachments\\XCore.Services.Attachments.Core\\XCore.Services.Attachments.Core.csproj
+		SccProjectTopLevelParentUniqueName23 = XCore.sln
+		SccProjectName23 = Services/Attachments/XCore.Services.Attachments.Core
+		SccLocalPath23 = Services\\Attachments\\XCore.Services.Attachments.Core
+		SccProjectUniqueName24 = Services\\Attachments\\XCore.Services.Attachments.SDK\\XCore.Services.Attachments.SDK.csproj
+		SccProjectTopLevelParentUniqueName24 = XCore.sln
+		SccProjectName24 = Services/Attachments/XCore.Services.Attachments.SDK
+		SccLocalPath24 = Services\\Attachments\\XCore.Services.Attachments.SDK
+		SccProjectUniqueName25 = Services\\Audit\\XCore.Services.Audit.Models\\XCore.Services.Audit.Models.csproj
+		SccProjectTopLevelParentUniqueName25 = XCore.sln
+		SccProjectName25 = Services/Audit/XCore.Services.Audit.Models
+		SccLocalPath25 = Services\\Audit\\XCore.Services.Audit.Models
+		SccProjectUniqueName26 = Services\\Organizations\\XCore.Services.Organizations.Core\\XCore.Services.Organizations.Core.csproj
+		SccProjectTopLevelParentUniqueName26 = XCore.sln
+		SccProjectName26 = Services/Organizations/XCore.Services.Organizations.Core
+		SccLocalPath26 = Services\\Organizations\\XCore.Services.Organizations.Core
+		SccProjectUniqueName27 = Services\\Organizations\\XCore.Services.Organizations.SDK\\XCore.Services.Organizations.SDK.csproj
+		SccProjectTopLevelParentUniqueName27 = XCore.sln
+		SccProjectName27 = Services/Organizations/XCore.Services.Organizations.SDK
+		SccLocalPath27 = Services\\Organizations\\XCore.Services.Organizations.SDK
+		SccProjectUniqueName28 = Services\\Organizations\\XCore.Services.Organizations.API\\XCore.Services.Organizations.API.csproj
+		SccProjectTopLevelParentUniqueName28 = XCore.sln
+		SccProjectName28 = Services/Organizations/XCore.Services.Organizations.API
+		SccLocalPath28 = Services\\Organizations\\XCore.Services.Organizations.API
+		SccProjectUniqueName29 = Services\\Organizations\\XCore.Services.Organizations.Test.Console\\XCore.Services.Organizations.Test.Console.csproj
+		SccProjectTopLevelParentUniqueName29 = XCore.sln
+		SccProjectName29 = Services/Organizations/XCore.Services.Organizations.Test.Console
+		SccLocalPath29 = Services\\Organizations\\XCore.Services.Organizations.Test.Console
+		SccProjectUniqueName30 = Services\\Gateway\\XCore.Services.Gateway.API\\XCore.Services.Gateway.API.csproj
+		SccProjectTopLevelParentUniqueName30 = XCore.sln
+		SccProjectName30 = Services/Gateway/XCore.Services.Gateway.API
+		SccLocalPath30 = Services\\Gateway\\XCore.Services.Gateway.API
+		SccProjectUniqueName31 = Framework\\XCore.Services.Clients.Common\\XCore.Services.Clients.Common.csproj
+		SccProjectTopLevelParentUniqueName31 = XCore.sln
+		SccProjectName31 = Framework/XCore.Services.Clients.Common
+		SccLocalPath31 = Framework\\XCore.Services.Clients.Common
+		SccProjectUniqueName32 = Services\\Attachments\\XCore.Services.Attachments.Test.Console\\XCore.Services.Attachments.Test.Console.csproj
+		SccProjectTopLevelParentUniqueName32 = XCore.sln
+		SccProjectName32 = Services/Attachments/XCore.Services.Attachments.Test.Console
+		SccLocalPath32 = Services\\Attachments\\XCore.Services.Attachments.Test.Console
+		SccProjectUniqueName33 = Services\\Security\\XCore.Services.Security.SDK\\XCore.Services.Security.SDK.csproj
+		SccProjectTopLevelParentUniqueName33 = XCore.sln
+		SccProjectName33 = Services/Security/XCore.Services.Security.SDK
+		SccLocalPath33 = Services\\Security\\XCore.Services.Security.SDK
+		SccProjectUniqueName34 = Services\\Security\\XCore.Services.Security.Core\\XCore.Services.Security.Core.csproj
+		SccProjectTopLevelParentUniqueName34 = XCore.sln
+		SccProjectName34 = Services/Security/XCore.Services.Security.Core
+		SccLocalPath34 = Services\\Security\\XCore.Services.Security.Core
+		SccProjectUniqueName35 = Services\\Security\\XCore.Services.Security.API\\XCore.Services.Security.API.csproj
+		SccProjectTopLevelParentUniqueName35 = XCore.sln
+		SccProjectName35 = Services/Security/XCore.Services.Security.API
+		SccLocalPath35 = Services\\Security\\XCore.Services.Security.API
+		SccProjectUniqueName36 = Services\\Security\\XCore.Services.Security.Models\\XCore.Services.Security.Models.csproj
+		SccProjectTopLevelParentUniqueName36 = XCore.sln
+		SccProjectName36 = Services/Security/XCore.Services.Security.Models
+		SccLocalPath36 = Services\\Security\\XCore.Services.Security.Models
+		SccProjectUniqueName37 = Services\\Personnel\\XCore.Services.Personnel.Models\\XCore.Services.Personnel.Models.csproj
+		SccProjectTopLevelParentUniqueName37 = XCore.sln
+		SccProjectName37 = Services/Personnel/XCore.Services.Personnel.Models
+		SccLocalPath37 = Services\\Personnel\\XCore.Services.Personnel.Models
+		SccProjectUniqueName38 = Services\\Personnel\\XCore.Services.Personnel.Models.DTO\\XCore.Services.Personnel.Models.DTO.csproj
+		SccProjectTopLevelParentUniqueName38 = XCore.sln
+		SccProjectName38 = Services/Personnel/XCore.Services.Personnel.Models.DTO
+		SccLocalPath38 = Services\\Personnel\\XCore.Services.Personnel.Models.DTO
+		SccProjectUniqueName39 = Services\\Personnel\\XCore.Services.Personnel.SDK\\XCore.Services.Personnel.SDK.csproj
+		SccProjectTopLevelParentUniqueName39 = XCore.sln
+		SccProjectName39 = Services/Personnel/XCore.Services.Personnel.SDK
+		SccLocalPath39 = Services\\Personnel\\XCore.Services.Personnel.SDK
+		SccProjectUniqueName40 = Services\\Personnel\\XCore.Services.Personnel.DataLayer\\XCore.Services.Personnel.DataLayer.csproj
+		SccProjectTopLevelParentUniqueName40 = XCore.sln
+		SccProjectName40 = Services/Personnel/XCore.Services.Personnel.DataLayer
+		SccLocalPath40 = Services\\Personnel\\XCore.Services.Personnel.DataLayer
+		SccProjectUniqueName41 = Services\\Personnel\\XCore.Services.Personnel.Core\\XCore.Services.Personnel.Core.csproj
+		SccProjectTopLevelParentUniqueName41 = XCore.sln
+		SccProjectName41 = Services/Personnel/XCore.Services.Personnel.Core
+		SccLocalPath41 = Services\\Personnel\\XCore.Services.Personnel.Core
+		SccProjectUniqueName42 = Services\\Personnel\\XCore.Services.Personnel.API\\XCore.Services.Personnel.API.csproj
+		SccProjectTopLevelParentUniqueName42 = XCore.sln
+		SccProjectName42 = Services/Personnel/XCore.Services.Personnel.API
+		SccLocalPath42 = Services\\Personnel\\XCore.Services.Personnel.API
+		SccProjectUniqueName43 = XCore.Services.Personnel.Contracts\\XCore.Services.Personnel.Contracts.csproj
+		SccProjectTopLevelParentUniqueName43 = XCore.sln
+		SccProjectName43 = XCore.Services.Personnel.Contracts
+		SccLocalPath43 = XCore.Services.Personnel.Contracts
+		SccProjectUniqueName44 = Services\\Lookups\\XCore.Services.Lookups.Core\\XCore.Services.Lookups.Core.csproj
+		SccProjectTopLevelParentUniqueName44 = XCore.sln
+		SccProjectName44 = Services/Lookups/XCore.Services.Lookups.Core
+		SccLocalPath44 = Services\\Lookups\\XCore.Services.Lookups.Core
+		SccProjectUniqueName45 = Services\\Lookups\\XCore.Services.Lookups.API\\XCore.Services.Lookups.API.csproj
+		SccProjectTopLevelParentUniqueName45 = XCore.sln
+		SccProjectName45 = Services/Lookups/XCore.Services.Lookups.API
+		SccLocalPath45 = Services\\Lookups\\XCore.Services.Lookups.API
+		SccProjectUniqueName46 = Services\\Notifications\\XCore.Services.Notifications.API\\XCore.Services.Notifications.API.csproj
+		SccProjectTopLevelParentUniqueName46 = XCore.sln
+		SccProjectName46 = Services/Notifications/XCore.Services.Notifications.API
+		SccLocalPath46 = Services\\Notifications\\XCore.Services.Notifications.API
+		SccProjectUniqueName47 = Services\\Notifications\\XCore.Services.Notifications.Core\\XCore.Services.Notifications.Core.csproj
+		SccProjectTopLevelParentUniqueName47 = XCore.sln
+		SccProjectName47 = Services/Notifications/XCore.Services.Notifications.Core
+		SccLocalPath47 = Services\\Notifications\\XCore.Services.Notifications.Core
+		SccProjectUniqueName48 = Services\\Notifications\\XCore.Services.Notifications.SDK\\XCore.Services.Notifications.SDK.csproj
+		SccProjectTopLevelParentUniqueName48 = XCore.sln
+		SccProjectName48 = Services/Notifications/XCore.Services.Notifications.SDK
+		SccLocalPath48 = Services\\Notifications\\XCore.Services.Notifications.SDK
+		SccProjectUniqueName49 = Services\\Notifications\\XCore.Services.Notifications.Models\\XCore.Services.Notifications.Models.csproj
+		SccProjectTopLevelParentUniqueName49 = XCore.sln
+		SccProjectName49 = Services/Notifications/XCore.Services.Notifications.Models
+		SccLocalPath49 = Services\\Notifications\\XCore.Services.Notifications.Models
+		SccProjectUniqueName50 = Services\\Hiring\\XCore.Services.Hiring.Core\\XCore.Services.Hiring.Core.csproj
+		SccProjectTopLevelParentUniqueName50 = XCore.sln
+		SccProjectName50 = Services/Hiring/XCore.Services.Hiring.Core
+		SccLocalPath50 = Services\\Hiring\\XCore.Services.Hiring.Core
+		SccProjectUniqueName51 = Services\\Hiring\\XCore.Services.Hiring.API\\XCore.Services.Hiring.API.csproj
+		SccProjectTopLevelParentUniqueName51 = XCore.sln
+		SccProjectName51 = Services/Hiring/XCore.Services.Hiring.API
+		SccLocalPath51 = Services\\Hiring\\XCore.Services.Hiring.API
+		SccProjectUniqueName52 = Services\\Hiring\\XCore.Services.Hiring.SDK\\XCore.Services.Hiring.SDK.csproj
+		SccProjectTopLevelParentUniqueName52 = XCore.sln
+		SccProjectName52 = Services/Hiring/XCore.Services.Hiring.SDK
+		SccLocalPath52 = Services\\Hiring\\XCore.Services.Hiring.SDK
+		SccProjectUniqueName53 = Services\\Identities\\Embedded\\XCore.Identities.Audit.EntityFramework\\XCore.Identities.Audit.EntityFramework.csproj
+		SccProjectTopLevelParentUniqueName53 = XCore.sln
+		SccProjectName53 = Services/Identities/Embedded/XCore.Identities.Audit.EntityFramework
+		SccLocalPath53 = Services\\Identities\\Embedded\\XCore.Identities.Audit.EntityFramework
+		SccProjectUniqueName54 = Services\\Identities\\Embedded\\XCore.Identities.Audit\\XCore.Identities.Audit.csproj
+		SccProjectTopLevelParentUniqueName54 = XCore.sln
+		SccProjectName54 = Services/Identities/Embedded/XCore.Identities.Audit
+		SccLocalPath54 = Services\\Identities\\Embedded\\XCore.Identities.Audit
+		SccProjectUniqueName55 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework\\XCore.Identities.Admin.EntityFramework.csproj
+		SccProjectTopLevelParentUniqueName55 = XCore.sln
+		SccProjectName55 = Services/Identities/Embedded/XCore.Identities.Admin.EntityFramework
+		SccLocalPath55 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework
+		SccProjectUniqueName56 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.Extensions\\XCore.Identities.Admin.EntityFramework.Extensions.csproj
+		SccProjectTopLevelParentUniqueName56 = XCore.sln
+		SccProjectName56 = Services/Identities/Embedded/XCore.Identities.Admin.EntityFramework.Extensions
+		SccLocalPath56 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.Extensions
+		SccProjectUniqueName57 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.Identity\\XCore.Identities.Admin.EntityFramework.Identity.csproj
+		SccProjectTopLevelParentUniqueName57 = XCore.sln
+		SccProjectName57 = Services/Identities/Embedded/XCore.Identities.Admin.EntityFramework.Identity
+		SccLocalPath57 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.Identity
+		SccProjectUniqueName58 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.MySql\\XCore.Identities.Admin.EntityFramework.MySql.csproj
+		SccProjectTopLevelParentUniqueName58 = XCore.sln
+		SccProjectName58 = Services/Identities/Embedded/XCore.Identities.Admin.EntityFramework.MySql
+		SccLocalPath58 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.MySql
+		SccProjectUniqueName59 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.PostgreSQL\\XCore.Identities.Admin.EntityFramework.PostgreSQL.csproj
+		SccProjectTopLevelParentUniqueName59 = XCore.sln
+		SccProjectName59 = Services/Identities/Embedded/XCore.Identities.Admin.EntityFramework.PostgreSQL
+		SccLocalPath59 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.PostgreSQL
+		SccProjectUniqueName60 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.Shared\\XCore.Identities.Admin.EntityFramework.Shared.csproj
+		SccProjectTopLevelParentUniqueName60 = XCore.sln
+		SccProjectName60 = Services/Identities/Embedded/XCore.Identities.Admin.EntityFramework.Shared
+		SccLocalPath60 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.Shared
+		SccProjectUniqueName61 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.SqlServer\\XCore.Identities.Admin.EntityFramework.SqlServer.csproj
+		SccProjectTopLevelParentUniqueName61 = XCore.sln
+		SccProjectName61 = Services/Identities/Embedded/XCore.Identities.Admin.EntityFramework.SqlServer
+		SccLocalPath61 = Services\\Identities\\Embedded\\XCore.Identities.Admin.EntityFramework.SqlServer
+		SccProjectUniqueName62 = Services\\Identities\\Embedded\\XCore.Identities.Admin.BL.Shared\\XCore.Identities.Admin.BL.Shared.csproj
+		SccProjectTopLevelParentUniqueName62 = XCore.sln
+		SccProjectName62 = Services/Identities/Embedded/XCore.Identities.Admin.BL.Shared
+		SccLocalPath62 = Services\\Identities\\Embedded\\XCore.Identities.Admin.BL.Shared
+		SccProjectUniqueName63 = Services\\Identities\\Embedded\\XCore.Identities.Admin.BL.Identity\\XCore.Identities.Admin.BL.Identity.csproj
+		SccProjectTopLevelParentUniqueName63 = XCore.sln
+		SccProjectName63 = Services/Identities/Embedded/XCore.Identities.Admin.BL.Identity
+		SccLocalPath63 = Services\\Identities\\Embedded\\XCore.Identities.Admin.BL.Identity
+		SccProjectUniqueName64 = Services\\Identities\\Embedded\\XCore.Identities.Admin.BL\\XCore.Identities.Admin.BL.csproj
+		SccProjectTopLevelParentUniqueName64 = XCore.sln
+		SccProjectName64 = Services/Identities/Embedded/XCore.Identities.Admin.BL
+		SccLocalPath64 = Services\\Identities\\Embedded\\XCore.Identities.Admin.BL
+		SccProjectUniqueName65 = Services\\Identities\\Embedded\\XCore.Identities.STS.Identity\\XCore.Identities.STS.Identity.csproj
+		SccProjectTopLevelParentUniqueName65 = XCore.sln
+		SccProjectName65 = Services/Identities/Embedded/XCore.Identities.STS.Identity
+		SccLocalPath65 = Services\\Identities\\Embedded\\XCore.Identities.STS.Identity
+		SccProjectUniqueName66 = Services\\Identities\\Embedded\\XCore.Identities.Admin.Api\\XCore.Identities.Admin.Api.csproj
+		SccProjectTopLevelParentUniqueName66 = XCore.sln
+		SccProjectName66 = Services/Identities/Embedded/XCore.Identities.Admin.Api
+		SccLocalPath66 = Services\\Identities\\Embedded\\XCore.Identities.Admin.Api
+		SccProjectUniqueName67 = Services\\Identities\\Embedded\\XCore.Identities.Admin\\XCore.Identities.Admin.csproj
+		SccProjectTopLevelParentUniqueName67 = XCore.sln
+		SccProjectName67 = Services/Identities/Embedded/XCore.Identities.Admin
+		SccLocalPath67 = Services\\Identities\\Embedded\\XCore.Identities.Admin
+		SccProjectUniqueName68 = Services\\Identities\\Embedded\\XCore.Identities.Events\\XCore.Identities.Events.csproj
+		SccProjectTopLevelParentUniqueName68 = XCore.sln
+		SccProjectName68 = Services/Identities/Embedded/XCore.Identities.Events
+		SccLocalPath68 = Services\\Identities\\Embedded\\XCore.Identities.Events
+		SccProjectUniqueName69 = Framework\\XCore.Services.IntegrationModels\\XCore.Services.IntegrationModels.csproj
+		SccProjectTopLevelParentUniqueName69 = XCore.sln
+		SccProjectName69 = Framework/XCore.Services.IntegrationModels
+		SccLocalPath69 = Framework\\XCore.Services.IntegrationModels
+		SccProjectUniqueName70 = Services\\Docs\\XCore.Services.Docs.Models\\XCore.Services.Docs.Models.csproj
+		SccProjectTopLevelParentUniqueName70 = XCore.sln
+		SccProjectName70 = Services/Docs/XCore.Services.Docs.Models
+		SccLocalPath70 = Services\\Docs\\XCore.Services.Docs.Models
+		SccProjectUniqueName71 = Framework\\XCore.Services.Events\\XCore.Services.Events.csproj
+		SccProjectTopLevelParentUniqueName71 = XCore.sln
+		SccProjectName71 = Framework/XCore.Services.Events
+		SccLocalPath71 = Framework\\XCore.Services.Events
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Mcs.Invoicing.Core.Framework</id>
+    <version>__Package.version__</version>
+    <authors>Mcs</authors>
+    <owners>Mcs</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Invoicing Core Framework</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="AutoMapper" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="MassTransit" version="6.2.3" exclude="Build,Analyzers" />
+        <dependency id="MassTransit.AspNetCore" version="6.2.3" exclude="Build,Analyzers" />
+        <dependency id="MassTransit.Extensions.DependencyInjection" version="6.2.3" exclude="Build,Analyzers" />
+        <dependency id="MassTransit.RabbitMQ" version="6.2.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="3.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\__BuildConfiguration__\netstandard2.1\Mcs.Invoicing.Core.Framework.dll" target="lib\netstandard2.1\Mcs.Invoicing.Core.Framework.dll" />
+  </files>
+</package>

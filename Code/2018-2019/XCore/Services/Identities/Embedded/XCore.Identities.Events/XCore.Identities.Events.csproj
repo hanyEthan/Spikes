@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="XCore.Identities.Admin.Events.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Framework\XCore.Services.IntegrationModels\XCore.Services.IntegrationModels.csproj" />
+    <ProjectReference Include="..\..\..\Personnel\XCore.Services.Personnel.Models.DTO\XCore.Services.Personnel.Models.DTO.csproj" />
+    <ProjectReference Include="..\..\..\Personnel\XCore.Services.Personnel.SDK\XCore.Services.Personnel.SDK.csproj" />
+    <ProjectReference Include="..\..\..\Security\XCore.Services.Security.SDK\XCore.Services.Security.SDK.csproj" />
+    <ProjectReference Include="..\XCore.Identities.Admin.BL.Identity\XCore.Identities.Admin.BL.Identity.csproj" />
+  </ItemGroup>
+
+</Project>

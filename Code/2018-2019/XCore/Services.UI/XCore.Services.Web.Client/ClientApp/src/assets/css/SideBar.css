@@ -1,0 +1,17 @@
+body {
+	background-color: #333;
+}
+
+.landing {
+	height: 100vh;
+}
+.main-content {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar {
+	background-color: #e3f2fd;;
+	list-style: none;
+	height: 100vh;
+    top: -639px;
+}

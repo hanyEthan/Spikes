@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ADS.Tamam.Common.Data.Validation.AttendanceCodeValidator">
+    <Position X="1.5" Y="17.25" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.AttendanceCodeValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\AttendanceCodeValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ADS.Tamam.Common.Data.Validation.AttendanceCodeValidator.AttendanceCodeValidationMode">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\AttendanceCodeValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\AttendanceCodeValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.AttendanceValidator">
+    <Position X="14" Y="17.25" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.AttendanceValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\AttendanceValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ADS.Tamam.Common.Data.Validation.AttendanceValidator.ValidationMode">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\AttendanceValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\AttendanceValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.DeleteShiftValidator">
+    <Position X="32.75" Y="17.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.DeleteShiftValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\DeleteShiftValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\DeleteShiftValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ExcuseValidator">
+    <Position X="45" Y="17.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.ExcuseValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ExcuseValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ADS.Tamam.Common.Data.Validation.ExcuseValidator.ExcuseValidationMode">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ExcuseValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ExcuseValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.LeaveValidator">
+    <Position X="5.25" Y="17.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ADS.Tamam.Common.Data.Validation.LeaveValidator.ValidationMode">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\LeaveValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ADS.Tamam.Common.Data.Validation.LeaveValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\LeaveValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\LeaveValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.OrganizationDetailValidator">
+    <Position X="26.5" Y="17.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.OrganizationDetailValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\OrganizationDetailValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\OrganizationDetailValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.OrganizationValidator">
+    <Position X="35.5" Y="17.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.OrganizationValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\OrganizationValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\OrganizationValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.PersonValidator">
+    <Position X="47.75" Y="17.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.PersonValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\PersonValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\PersonValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.PolicyFieldValidator">
+    <Position X="8" Y="17.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.PolicyFieldValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\PolicyFieldValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\PolicyFieldValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.PolicyGroupValidator">
+    <Position X="17.75" Y="17.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.PolicyGroupValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\PolicyGroupValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\PolicyGroupValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.PolicyValidator">
+    <Position X="30" Y="17.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.PolicyValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\PolicyValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ADS.Tamam.Common.Data.Validation.PolicyValidator.ValidationMode">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\PolicyValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\PolicyValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ReviewLeaveValidator">
+    <Position X="38.75" Y="17.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.ReviewLeaveValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ReviewLeaveValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ReviewLeaveValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ScheduleTemplateValidator">
+    <Position X="41.5" Y="17.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.ScheduleTemplateValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ScheduleTemplateValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ScheduleTemplateValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ScheduleValidator">
+    <Position X="11" Y="17.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.ScheduleValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ScheduleValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ScheduleValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ShiftValidator">
+    <Position X="21" Y="17.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ADS.Tamam.Common.Data.Validation.ShiftValidator.ValidationContext">
+        <TypeIdentifier>
+          <NewMemberFileName>Validation\ShiftValidator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ShiftValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADS.Common.Validation.AbstractModelValidator&lt;T&gt;">
+    <Position X="24.75" Y="14.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Object">
+    <Position X="25" Y="11.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FluentValidation.AbstractValidator&lt;T&gt;">
+    <Position X="2.5" Y="27" Width="2.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ADS.Tamam.Common.Data.Validation.ScheduleTemplateDetailsValidator">
+    <Position X="2.5" Y="31.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAA=</HashCode>
+      <FileName>Validation\ScheduleTemplateValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

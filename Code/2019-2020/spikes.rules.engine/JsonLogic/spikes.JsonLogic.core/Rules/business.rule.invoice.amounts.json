@@ -1,0 +1,26 @@
+{
+  "==": [
+    {
+      "+": [
+        {
+          "-": [
+            { "var": "Invoice.totalSales" },
+            { "var": "Invoice.totalDiscount" }
+          ]
+        },
+        {
+          "*": [
+            { "var": "Invoice.netAmount" },
+            {
+              "/": [
+                { "var": "Invoice.taxRate" },
+                100
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "var": "Invoice.totalAmount" }
+  ]
+}

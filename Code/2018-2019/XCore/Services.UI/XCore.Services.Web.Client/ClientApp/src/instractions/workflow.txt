@@ -1,0 +1,8 @@
+1)Starting point from index.js   >>>  The initial Start For rendering
+2)App.js the Root For Our Application >> which is called from index.js
+3)Index.js Page For Each Module In Out Recat JS Project
+4)At The index.js we wrap the project with Provider Container with Call {Store}
+5)Storeage is A redux >>> storege Management system
+6)Saga work with redux to handle end points in async way >>>> to  send to end point API (Server Side)
+7)layouts for   dynamic pages
+8)

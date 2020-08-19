@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C67E2DC0-04F3-4C9C-8CAF-934EEB182EA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XCore.Framework</RootNamespace>
+    <AssemblyName>XCore.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Flurl.2.8.0\lib\net40\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Flurl.Http.2.3.1\lib\net45\Flurl.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Callbacks, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NServiceBus.Callbacks.3.0.0\lib\net452\NServiceBus.Callbacks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NServiceBus.7.0.1\lib\net452\NServiceBus.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Newtonsoft.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NServiceBus.Newtonsoft.Json.2.1.0\lib\net452\NServiceBus.Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Persistence.Sql, Version=4.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NServiceBus.Persistence.Sql.4.2.0\lib\net452\NServiceBus.Persistence.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Transport.SqlServer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NServiceBus.SqlServer.4.1.0\lib\net452\NServiceBus.Transport.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Quartz, Version=3.0.6.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Quartz.3.0.6\lib\net452\Quartz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Data.SqlClient.4.5.1\lib\net461\System.Data.SqlClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Framework\Batches\Contracts\IBatchProcessor.cs" />
+    <Compile Include="Framework\Batches\Handlers\BatchContainer.cs" />
+    <Compile Include="Framework\Captcha\Handlers\CaptchaHandler.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV2Response.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaSettings.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV3Request.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV2Request.cs" />
+    <Compile Include="Framework\Captcha\Models\CaptchaV3Response.cs" />
+    <Compile Include="Framework\Captcha\Models\JSON.cs" />
+    <Compile Include="Framework\Entities\Versioning\IVersionable.cs" />
+    <Compile Include="Framework\Entities\Versioning\Versioning.cs" />
+    <Compile Include="Framework\License\Contracts\IDataProvider.cs" />
+    <Compile Include="Framework\License\Contracts\IFeaturesDefinition.cs" />
+    <Compile Include="Framework\License\Contracts\IKey.cs" />
+    <Compile Include="Framework\License\Contracts\ILicenseDataHandler.cs" />
+    <Compile Include="Framework\License\Contracts\ILicenseHandler.cs" />
+    <Compile Include="Framework\License\Contracts\ILicenseValidator.cs" />
+    <Compile Include="Framework\License\Contracts\IOrgDataProvider.cs" />
+    <Compile Include="Framework\License\Contracts\ITimeLicense.cs" />
+    <Compile Include="Framework\License\Handler\LicenseHandler.cs" />
+    <Compile Include="Framework\License\Models\Feature.cs" />
+    <Compile Include="Framework\License\Models\InfinitTimeLicense.cs" />
+    <Compile Include="Framework\License\Models\LicenseKey.cs" />
+    <Compile Include="Framework\License\Models\LicenseKeyContext.cs" />
+    <Compile Include="Framework\License\Models\LicenseKeyContextMode.cs" />
+    <Compile Include="Framework\License\Models\LicenseModel.cs" />
+    <Compile Include="Framework\License\Models\OrganizationLicense.cs" />
+    <Compile Include="Framework\License\Models\PeriodicTimeLicense.cs" />
+    <Compile Include="Framework\License\Models\TrialTimeLicense.cs" />
+    <Compile Include="Framework\Scheduler\Contracts\IScheduledJob.cs" />
+    <Compile Include="Framework\Scheduler\Handlers\JobsScheduler.cs" />
+    <Compile Include="Framework\Scheduler\Models\DefaultJobConcurrent.cs" />
+    <Compile Include="Framework\Scheduler\Models\Interval.cs" />
+    <Compile Include="Framework\Scheduler\Models\XLogProvider.cs" />
+    <Compile Include="Framework\ServiceBus\Contracts\IServiceBus.cs" />
+    <Compile Include="Framework\ServiceBus\Handlers\ServiceBus.cs" />
+    <Compile Include="Framework\ServiceBus\Models\Constants.cs" />
+    <Compile Include="Framework\ServiceBus\Models\NSXLogger.cs" />
+    <Compile Include="Framework\ServiceBus\Models\NSXLoggerDefinition.cs" />
+    <Compile Include="Framework\ServiceBus\Models\NSXLoggerFactory.cs" />
+    <Compile Include="Framework\ServiceBus\Settings\NSBSqlPersistenceSettings.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityCluster.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityConfigurationsBuilder.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityConfigurationsProvider.cs" />
+    <Compile Include="Framework\Unity\Contracts\IUnityService.cs" />
+    <Compile Include="Framework\Unity\Handlers\Configurations\XUnityConfigurationsBuilder.cs" />
+    <Compile Include="Framework\Unity\Handlers\XUnity.cs" />
+    <Compile Include="Framework\Unity\Handlers\Configurations\XUnityConfigurationsProvider.cs" />
+    <Compile Include="Framework\Unity\Models\UnityCluster.cs" />
+    <Compile Include="Framework\Unity\Models\UnityConfig.cs" />
+    <Compile Include="Framework\Unity\Models\UnityService.cs" />
+    <Compile Include="Framework\Unity\Models\UnityServiceParameter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XCore.Utilities.Logger\XCore.Utilities.Logger.csproj">
+      <Project>{6e2b6a84-7c4f-4e4e-ad7f-deb1683f8af0}</Project>
+      <Name>XCore.Utilities.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XCore.Utilities\XCore.Utilities.csproj">
+      <Project>{C3868EC3-1607-4550-BC35-3BE3F689E739}</Project>
+      <Name>XCore.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\NServiceBus.Persistence.Sql.MsBuild.4.2.0\build\NServiceBus.Persistence.Sql.MsBuild.targets" Condition="Exists('..\..\packages\NServiceBus.Persistence.Sql.MsBuild.4.2.0\build\NServiceBus.Persistence.Sql.MsBuild.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\NServiceBus.Persistence.Sql.MsBuild.4.2.0\build\NServiceBus.Persistence.Sql.MsBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NServiceBus.Persistence.Sql.MsBuild.4.2.0\build\NServiceBus.Persistence.Sql.MsBuild.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

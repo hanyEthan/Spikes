@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e1dda2b-9888-4844-ae54-9a8dd88aab1e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/ADS.Tamam.Services.Configuration/ConfigurationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ConfigurationService.wsdl" MetadataType="Wsdl" ID="3fbfb4fc-fc75-48d6-ba7f-12134f15d65f" SourceId="1" SourceUrl="http://localhost/ADS.Tamam.Services.Configuration/ConfigurationService.svc?wsdl" />
+    <MetadataFile FileName="ConfigurationService.xsd" MetadataType="Schema" ID="a0f82f24-3d70-43a8-b352-bd43bdc49231" SourceId="1" SourceUrl="http://localhost/ADS.Tamam.Services.Configuration/ConfigurationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ConfigurationService1.xsd" MetadataType="Schema" ID="06935bf8-310e-432c-8443-14a7369acb16" SourceId="1" SourceUrl="http://localhost/ADS.Tamam.Services.Configuration/ConfigurationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ConfigurationService2.xsd" MetadataType="Schema" ID="3eae7986-bff3-476c-ac74-b0cd7c50def8" SourceId="1" SourceUrl="http://localhost/ADS.Tamam.Services.Configuration/ConfigurationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ConfigurationService.disco" MetadataType="Disco" ID="a549148c-0ed5-445e-ac13-97bf5400a78b" SourceId="1" SourceUrl="http://localhost/ADS.Tamam.Services.Configuration/ConfigurationService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,299 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/Api/{version}/audit/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44304
+        }
+      ],
+      "UpstreamPathTemplate": "/Api/{version}/Audit/{everything}"
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/Venue/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44316
+        }
+      ],
+      "UpstreamPathTemplate": "/Venues/{version}/Venue/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/Site/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44316
+        }
+      ],
+      "UpstreamPathTemplate": "/Venues/{version}/Site/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/Actor/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44308
+        }
+      ],
+      "UpstreamPathTemplate": "/security/{version}/Actor/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/privilege/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44308
+        }
+      ],
+      "UpstreamPathTemplate": "/security/{version}/privilege/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/role/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44308
+        }
+      ],
+      "UpstreamPathTemplate": "/security/{version}/role/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/target/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44308
+        }
+      ],
+      "UpstreamPathTemplate": "/security/{version}/target/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/department/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "UpstreamPathTemplate": "/organizations/{version}/department/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/Organization/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "UpstreamPathTemplate": "/organizations/{version}/Organization/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/City/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "UpstreamPathTemplate": "/organizations/{version}/City/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/event/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "UpstreamPathTemplate": "/organizations/{version}/event/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/role/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "UpstreamPathTemplate": "/organizations/{version}/role/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/venue/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "UpstreamPathTemplate": "/organizations/{version}/venue/{everything}"
+
+
+
+
+    },
+   
+    {
+      "DownstreamPathTemplate": "/Api/{version}/settings/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "UpstreamPathTemplate": "/organizations/{version}/settings/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/attachment/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44316
+        }
+      ],
+      "UpstreamPathTemplate": "/attachments/{version}/attachment/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/Api/{version}/MessageTemplates/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44301
+        }
+      ],
+      "UpstreamPathTemplate": "/Notifications/{version}/MessageTemplates/{everything}"
+
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/Advertisements/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44317
+        }
+      ],
+      "UpstreamPathTemplate": "/Hiring/{version}/Advertisements/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/Applications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44317
+        }
+      ],
+      "UpstreamPathTemplate": "/Hiring/{version}/Applications/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/Candidates/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44317
+        }
+      ],
+      "UpstreamPathTemplate": "/Hiring/{version}/Candidates/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/HiringProcesses/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44317
+        }
+      ],
+      "UpstreamPathTemplate": "/Hiring/{version}/HiringProcesses/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/Organizations/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44317
+        }
+      ],
+      "UpstreamPathTemplate": "/Hiring/{version}/Organizations/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/Skills/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44317
+        }
+      ],
+      "UpstreamPathTemplate": "/Hiring/{version}/Skills/{everything}"
+    }
+
+  ]
+
+
+}

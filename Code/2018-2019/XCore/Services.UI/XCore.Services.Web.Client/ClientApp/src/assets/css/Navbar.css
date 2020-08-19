@@ -1,0 +1,8 @@
+.NavStyle{
+    background-color: #e3f2fd;
+}
+.FlexDirection{
+    display: flex !important;
+    flex-direction: row !important;
+
+}

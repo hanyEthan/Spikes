@@ -1,0 +1,377 @@
+[2020.01.22 09:46:13.938 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 09:46:13.982 +02:00] [Verbose] [] [] 
+[2020.01.22 09:46:14.037 +02:00] [Verbose] [] [] 
+[2020.01.22 09:47:22.204 +02:00] [Verbose] [] [] 
+[2020.01.22 09:47:22.644 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 09:47:22.650 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":102,"ResponseMessage":"( Status : ValidationError ) (  : [HiringProcesses] is not found. )","Metadata":null,"RequestTime":"2020/01/22 07:46:12","ResponseProcessingTimeInTicks":19610388,"ResponseProcessingTimeInSeconds":1.9610387999999999,"Content":null}
+[2020.01.22 09:47:28.938 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 09:47:28.938 +02:00] [Verbose] [] [] 
+[2020.01.22 09:47:28.939 +02:00] [Verbose] [] [] 
+[2020.01.22 09:53:51.162 +02:00] [Verbose] [] [] 
+[2020.01.22 09:53:51.197 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 09:53:51.197 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":102,"ResponseMessage":"( Status : ValidationError ) (  : [HiringProcesses] is not found. )","Metadata":null,"RequestTime":"2020/01/22 07:47:28","ResponseProcessingTimeInTicks":9386044,"ResponseProcessingTimeInSeconds":0.9386044,"Content":null}
+[2020.01.22 09:53:55.379 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 09:53:55.379 +02:00] [Verbose] [] [] 
+[2020.01.22 09:53:55.379 +02:00] [Verbose] [] [] 
+[2020.01.22 09:54:03.691 +02:00] [Verbose] [] [] 
+[2020.01.22 09:56:57.060 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 09:56:57.060 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":102,"ResponseMessage":"( Status : ValidationError ) (  : [HiringProcesses] is not found. )","Metadata":null,"RequestTime":"2020/01/22 07:53:55","ResponseProcessingTimeInTicks":3794073,"ResponseProcessingTimeInSeconds":0.3794073,"Content":null}
+[2020.01.22 09:57:00.913 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 09:57:00.913 +02:00] [Verbose] [] [] 
+[2020.01.22 09:57:00.914 +02:00] [Verbose] [] [] 
+[2020.01.22 09:57:03.580 +02:00] [Verbose] [] [] 
+[2020.01.22 09:57:32.787 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 09:57:32.787 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":102,"ResponseMessage":"( Status : ValidationError ) (  : [HiringProcesses] is not found. )","Metadata":null,"RequestTime":"2020/01/22 07:57:00","ResponseProcessingTimeInTicks":9134645,"ResponseProcessingTimeInSeconds":0.9134645,"Content":null}
+[2020.01.22 09:57:32.881 +02:00] [Verbose] [] [] 
+[2020.01.22 09:57:34.710 +02:00] [Verbose] [] [] 
+[2020.01.22 09:57:36.312 +02:00] [Information] [] [] Xcore.Hiring.HiringProcesses.Deactivate : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":17}
+[2020.01.22 09:57:36.317 +02:00] [Information] [] [] Xcore.Hiring.HiringProcesses.Deactivate : Response : {"ResponseCode":100,"ResponseMessage":"( Status : Success )","Metadata":null,"RequestTime":"2020/01/22 07:57:32","ResponseProcessingTimeInTicks":43066154,"ResponseProcessingTimeInSeconds":4.3066154,"Content":true}
+[2020.01.22 10:01:21.192 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:01:21.193 +02:00] [Verbose] [] [] 
+[2020.01.22 10:01:21.193 +02:00] [Verbose] [] [] 
+[2020.01.22 10:01:25.018 +02:00] [Verbose] [] [] 
+[2020.01.22 10:01:51.397 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 10:01:51.397 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":102,"ResponseMessage":"( Status : ValidationError ) (  : [HiringProcesses] is not found. )","Metadata":null,"RequestTime":"2020/01/22 08:01:21","ResponseProcessingTimeInTicks":1931246,"ResponseProcessingTimeInSeconds":0.19312459999999998,"Content":null}
+[2020.01.22 10:02:00.682 +02:00] [Verbose] [] [] 
+[2020.01.22 10:02:02.992 +02:00] [Verbose] [] [] 
+[2020.01.22 10:02:04.315 +02:00] [Information] [] [] Xcore.Hiring.HiringProcesses.Activate : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":17}
+[2020.01.22 10:02:04.315 +02:00] [Information] [] [] Xcore.Hiring.HiringProcesses.Activate : Response : {"ResponseCode":100,"ResponseMessage":"( Status : Success )","Metadata":null,"RequestTime":"2020/01/22 08:02:00","ResponseProcessingTimeInTicks":43146184,"ResponseProcessingTimeInSeconds":4.3146184,"Content":true}
+[2020.01.22 10:02:09.906 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:02:09.906 +02:00] [Verbose] [] [] 
+[2020.01.22 10:02:09.907 +02:00] [Verbose] [] [] 
+[2020.01.22 10:02:12.437 +02:00] [Verbose] [] [] 
+[2020.01.22 10:04:33.076 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:04:33.146 +02:00] [Verbose] [] [] 
+[2020.01.22 10:04:33.205 +02:00] [Verbose] [] [] 
+[2020.01.22 10:04:42.492 +02:00] [Verbose] [] [] 
+[2020.01.22 10:06:18.898 +02:00] [Error] [] [] Exception : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Applications_HiringSteps". The conflict occurred in database "XCore.Dev.Hiring", table "hiring.Applications", column 'HiringStepId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreResults(Boolean& moreResults)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryNextResult(Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.<>c__DisplayClass192_0.<NextResultAsync>b__1(Task t)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d35865ea-21a2-40cd-83eb-df2dbfaa5ab1
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at XCore.Services.Hirings.Core.DataLayer.Unity.HiringDataUnity.SaveAsync() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Services\Hiring\XCore.Services.Hiring.Core\DataLayer\Unity\HiringDataUnity.cs:line 61
+   at XCore.Services.Hiring.Core.Handlers.HiringProcessesHandler.<>c__DisplayClass25_0.<<Edit>b__0>d.MoveNext() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Services\Hiring\XCore.Services.Hiring.Core\Handlers\HiringProcessesHandler.cs:line 205
+--- End of stack trace from previous location where exception was thrown ---
+   at XCore.Framework.Infrastructure.Context.Execution.Extensions.LogicContext`1.Process(IActionContext context) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Infrastructure\Context\Execution\Extensions\LogicContext.cs:line 28
+   at XCore.Framework.Infrastructure.Context.Execution.Handler.ExecutionContext`1.Process() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Infrastructure\Context\Execution\Handler\ExecutionContext.cs:line 43
+[2020.01.22 10:06:19.064 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 10:06:19.070 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":101,"ResponseMessage":"!!","Metadata":null,"RequestTime":"2020/01/22 08:04:32","ResponseProcessingTimeInTicks":10944140,"ResponseProcessingTimeInSeconds":1.094414,"Content":null}
+[2020.01.22 10:08:29.460 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:08:29.460 +02:00] [Verbose] [] [] 
+[2020.01.22 10:08:29.461 +02:00] [Verbose] [] [] 
+[2020.01.22 10:08:31.725 +02:00] [Verbose] [] [] 
+[2020.01.22 10:20:49.384 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:20:49.434 +02:00] [Verbose] [] [] 
+[2020.01.22 10:20:49.475 +02:00] [Verbose] [] [] 
+[2020.01.22 10:20:57.509 +02:00] [Verbose] [] [] 
+[2020.01.22 10:27:56.676 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:27:56.721 +02:00] [Verbose] [] [] 
+[2020.01.22 10:27:56.764 +02:00] [Verbose] [] [] 
+[2020.01.22 10:28:02.876 +02:00] [Verbose] [] [] 
+[2020.01.22 10:30:17.403 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:30:17.439 +02:00] [Verbose] [] [] 
+[2020.01.22 10:30:17.478 +02:00] [Verbose] [] [] 
+[2020.01.22 10:30:21.325 +02:00] [Verbose] [] [] 
+[2020.01.22 10:32:10.083 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 10:32:10.127 +02:00] [Verbose] [] [] 
+[2020.01.22 10:32:10.198 +02:00] [Verbose] [] [] 
+[2020.01.22 10:32:14.063 +02:00] [Verbose] [] [] 
+[2020.01.22 11:12:36.404 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:12:36.452 +02:00] [Verbose] [] [] 
+[2020.01.22 11:12:36.504 +02:00] [Verbose] [] [] 
+[2020.01.22 11:12:44.089 +02:00] [Verbose] [] [] 
+[2020.01.22 11:13:13.064 +02:00] [Error] [] [] Exception : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Applications_HiringSteps". The conflict occurred in database "XCore.Dev.Hiring", table "hiring.Applications", column 'HiringStepId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreResults(Boolean& moreResults)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryNextResult(Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.<>c__DisplayClass192_0.<NextResultAsync>b__1(Task t)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:781815f5-fc89-43f8-8a41-32ed389a3178
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at XCore.Services.Hirings.Core.DataLayer.Unity.HiringDataUnity.SaveAsync() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Services\Hiring\XCore.Services.Hiring.Core\DataLayer\Unity\HiringDataUnity.cs:line 61
+   at XCore.Services.Hiring.Core.Handlers.HiringProcessesHandler.<>c__DisplayClass25_0.<<Edit>b__0>d.MoveNext() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Services\Hiring\XCore.Services.Hiring.Core\Handlers\HiringProcessesHandler.cs:line 205
+--- End of stack trace from previous location where exception was thrown ---
+   at XCore.Framework.Infrastructure.Context.Execution.Extensions.LogicContext`1.Process(IActionContext context) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Infrastructure\Context\Execution\Extensions\LogicContext.cs:line 28
+   at XCore.Framework.Infrastructure.Context.Execution.Handler.ExecutionContext`1.Process() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Infrastructure\Context\Execution\Handler\ExecutionContext.cs:line 43
+[2020.01.22 11:17:25.953 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:17:25.995 +02:00] [Verbose] [] [] 
+[2020.01.22 11:17:26.042 +02:00] [Verbose] [] [] 
+[2020.01.22 11:17:30.777 +02:00] [Verbose] [] [] 
+[2020.01.22 11:22:48.457 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:22:48.514 +02:00] [Verbose] [] [] 
+[2020.01.22 11:22:48.571 +02:00] [Verbose] [] [] 
+[2020.01.22 11:22:53.439 +02:00] [Verbose] [] [] 
+[2020.01.22 11:24:22.892 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:24:22.953 +02:00] [Verbose] [] [] 
+[2020.01.22 11:24:23.025 +02:00] [Verbose] [] [] 
+[2020.01.22 11:24:26.804 +02:00] [Verbose] [] [] 
+[2020.01.22 11:26:21.768 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:26:21.856 +02:00] [Verbose] [] [] 
+[2020.01.22 11:26:21.913 +02:00] [Verbose] [] [] 
+[2020.01.22 11:26:26.627 +02:00] [Verbose] [] [] 
+[2020.01.22 11:28:37.327 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:28:37.384 +02:00] [Verbose] [] [] 
+[2020.01.22 11:28:37.445 +02:00] [Verbose] [] [] 
+[2020.01.22 11:28:42.444 +02:00] [Verbose] [] [] 
+[2020.01.22 11:30:06.864 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:30:06.939 +02:00] [Verbose] [] [] 
+[2020.01.22 11:30:06.997 +02:00] [Verbose] [] [] 
+[2020.01.22 11:30:11.018 +02:00] [Verbose] [] [] 
+[2020.01.22 11:32:05.743 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:32:05.795 +02:00] [Verbose] [] [] 
+[2020.01.22 11:32:05.850 +02:00] [Verbose] [] [] 
+[2020.01.22 11:32:11.470 +02:00] [Verbose] [] [] 
+[2020.01.22 11:34:30.162 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:34:30.226 +02:00] [Verbose] [] [] 
+[2020.01.22 11:34:30.270 +02:00] [Verbose] [] [] 
+[2020.01.22 11:34:36.463 +02:00] [Verbose] [] [] 
+[2020.01.22 11:57:10.677 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:57:10.713 +02:00] [Verbose] [] [] 
+[2020.01.22 11:57:10.752 +02:00] [Verbose] [] [] 
+[2020.01.22 11:57:17.251 +02:00] [Verbose] [] [] 
+[2020.01.22 11:58:45.465 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 11:58:45.541 +02:00] [Verbose] [] [] 
+[2020.01.22 11:58:45.592 +02:00] [Verbose] [] [] 
+[2020.01.22 11:58:49.703 +02:00] [Verbose] [] [] 
+[2020.01.22 12:02:05.222 +02:00] [Error] [] [] Exception : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Applications_HiringSteps". The conflict occurred in database "XCore.Dev.Hiring", table "hiring.Applications", column 'HiringStepId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreResults(Boolean& moreResults)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryNextResult(Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.<>c__DisplayClass192_0.<NextResultAsync>b__1(Task t)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:9738188b-c229-4865-823f-2b87b4cc2778
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at XCore.Services.Hirings.Core.DataLayer.Unity.HiringDataUnity.SaveAsync() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Services\Hiring\XCore.Services.Hiring.Core\DataLayer\Unity\HiringDataUnity.cs:line 61
+   at XCore.Services.Hiring.Core.Handlers.HiringProcessesHandler.<>c__DisplayClass25_0.<<Edit>b__0>d.MoveNext() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Services\Hiring\XCore.Services.Hiring.Core\Handlers\HiringProcessesHandler.cs:line 205
+--- End of stack trace from previous location where exception was thrown ---
+   at XCore.Framework.Infrastructure.Context.Execution.Extensions.LogicContext`1.Process(IActionContext context) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Infrastructure\Context\Execution\Extensions\LogicContext.cs:line 28
+   at XCore.Framework.Infrastructure.Context.Execution.Handler.ExecutionContext`1.Process() in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Infrastructure\Context\Execution\Handler\ExecutionContext.cs:line 43
+[2020.01.22 12:02:05.429 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 12:02:05.435 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":101,"ResponseMessage":"!!","Metadata":null,"RequestTime":"2020/01/22 09:58:44","ResponseProcessingTimeInTicks":15053738,"ResponseProcessingTimeInSeconds":1.5053737999999999,"Content":null}
+[2020.01.22 12:02:09.199 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 12:02:09.199 +02:00] [Verbose] [] [] 
+[2020.01.22 12:02:09.200 +02:00] [Verbose] [] [] 
+[2020.01.22 12:02:11.386 +02:00] [Verbose] [] [] 
+[2020.01.22 12:05:46.940 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 12:05:46.977 +02:00] [Verbose] [] [] 
+[2020.01.22 12:05:47.014 +02:00] [Verbose] [] [] 
+[2020.01.22 12:05:51.247 +02:00] [Verbose] [] [] 
+[2020.01.22 12:07:45.906 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 12:07:45.952 +02:00] [Verbose] [] [] 
+[2020.01.22 12:07:46.004 +02:00] [Verbose] [] [] 
+[2020.01.22 12:07:50.956 +02:00] [Verbose] [] [] 
+[2020.01.22 12:09:33.589 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 12:09:33.643 +02:00] [Verbose] [] [] 
+[2020.01.22 12:09:33.699 +02:00] [Verbose] [] [] 
+[2020.01.22 12:09:38.212 +02:00] [Verbose] [] [] 
+[2020.01.22 12:14:09.411 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 12:14:09.481 +02:00] [Verbose] [] [] 
+[2020.01.22 12:14:09.540 +02:00] [Verbose] [] [] 
+[2020.01.22 12:14:15.820 +02:00] [Verbose] [] [] 
+[2020.01.22 12:14:17.731 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 12:14:17.737 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":100,"ResponseMessage":"( Status : Success )","Metadata":null,"RequestTime":"2020/01/22 10:14:08","ResponseProcessingTimeInTicks":14471660,"ResponseProcessingTimeInSeconds":1.447166,"Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T08:57:48.57","ModifiedDate":"2020-01-22T10:14:17.3782476Z","CreatedBy":"string","ModifiedBy":null,"MetaData":"string"}
+[2020.01.22 12:16:20.272 +02:00] [Error] [] [] Exception : System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at XCore.Framework.Utilities.XWeb.GetDestinationIP(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 81
+   at XCore.Framework.Utilities.XWeb.GetHTTPRequestEnvironment(HttpRequest httpRequest) in D:\Workspace\Research\Infrastructure\Branches\XCore-Dev\XCore\Framework\XCore.Framework\Utilities\XWeb.cs:line 22
+[2020.01.22 12:16:20.272 +02:00] [Verbose] [] [] 
+[2020.01.22 12:16:20.272 +02:00] [Verbose] [] [] 
+[2020.01.22 12:16:23.498 +02:00] [Verbose] [] [] 
+[2020.01.22 12:16:27.909 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Request  : {"RequestClientToken":"634a5d14-81c1-4c9b-9484-0b3c21bb2299","RequestUserCode":null,"RequestSessionCode":null,"RequestCorrelationCode":"4557d16f-3dd0-4bfc-a913-70db20e43e08","RequestMetadata":null,"RequestTime":"20191008 13:13:34","RequestCulture":"en-US","RequestAppId":"string","RequestModuleId":"string","Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"1","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.009Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}
+[2020.01.22 12:16:27.909 +02:00] [Information] [] [] xcore.Hiring.HiringProcesses.Edit : Response : {"ResponseCode":100,"ResponseMessage":"( Status : Success )","Metadata":null,"RequestTime":"2020/01/22 10:16:20","ResponseProcessingTimeInTicks":2721773,"ResponseProcessingTimeInSeconds":0.2721773,"Content":{"HiringSteps":[{"HiringProcessId":17,"HiringProcess":null,"Id":14,"Code":"1","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"},{"HiringProcessId":17,"HiringProcess":null,"Id":19,"Code":"string","Name":"string","NameCultured":"string","IsActive":true,"CreatedDate":"2019-12-31T13:21:02.008Z","ModifiedDate":"2019-12-31T13:21:02.009Z","CreatedBy":"string","ModifiedBy":"string","MetaData":"string"}],"OrganizationId":1,"Organization":null,"Id":17,"Code":"1","Name":"hiring 1","NameCultured":"hiring 1","IsActive":true,"CreatedDate":"2019-12-31T08:57:48.57","ModifiedDate":"2020-01-22T10:16:27.8324557Z","CreatedBy":"string","ModifiedBy":null,"MetaData":"string"}
