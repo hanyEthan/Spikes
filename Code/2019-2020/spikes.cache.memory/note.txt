@@ -1,0 +1,1 @@
+note : distributed cache with Redis is currently being prepared for one of the existing projects.
