@@ -1,12 +1,12 @@
 ﻿using Mcs.Invoicing.Core.Framework.Infrastructure.AsyncCommunication.Support;
-using Mcs.Invoicing.Services.Audit.Client.Sdk.Configurations.Constants;
-using Mcs.Invoicing.Services.Audit.Client.Sdk.Configurations.Models;
+using Mcs.Invoicing.Services.Audit.Client.Sdk.IOC.Constants;
+using Mcs.Invoicing.Services.Audit.Client.Sdk.IOC.Models;
 using Mcs.Invoicing.Services.Audit.Client.Sdk.Contracts;
 using Mcs.Invoicing.Services.Audit.Client.Sdk.Handlers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mcs.Invoicing.Services.Audit.Client.Sdk.Configurations
+namespace Mcs.Invoicing.Services.Audit.Client.Sdk.IOC
 {
     public static class DependencyInjection
     {

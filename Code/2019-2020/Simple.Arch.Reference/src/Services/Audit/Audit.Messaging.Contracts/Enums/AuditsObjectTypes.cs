@@ -1,6 +1,6 @@
 ﻿namespace Mcs.Invoicing.Services.Audit.Messaging.Contracts.Enums
 {
-    public enum ObjectTypes : int
+    public enum AuditsObjectTypes : int
     {
         None = 0,
         User = 1,

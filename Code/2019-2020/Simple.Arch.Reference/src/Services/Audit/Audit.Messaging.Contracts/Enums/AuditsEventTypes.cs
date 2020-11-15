@@ -1,6 +1,6 @@
 ﻿namespace Mcs.Invoicing.Services.Audit.Messaging.Contracts.Enums
 {
-    public enum EventTypes : int
+    public enum AuditsEventTypes : int
     {
         None = 0,
         UserCreated = 1,

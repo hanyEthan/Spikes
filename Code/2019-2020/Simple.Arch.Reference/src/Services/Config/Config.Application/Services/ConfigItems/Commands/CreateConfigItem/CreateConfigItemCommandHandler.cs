@@ -49,27 +49,37 @@ namespace Mcs.Invoicing.Services.Config.Application.Services.ConfigItems.Command
 
         public async Task<BaseResponseContext<int>> Handle(CreateConfigItemCommand command, CancellationToken cancellationToken)
         {
-            #region audit.
+            try
+            {
+                #region DL.
 
-            var auditEvent = Map(command, $"Trying to create config item.");
-            await this._auditClient.CreateAsync(auditEvent);
+                var entity = _modelMapper.Map(command);
+                await this._dataHandler.ConfigItems.CreateAsync(entity);
+                await this._dataHandler.SaveAsync(cancellationToken);
 
-            #endregion
-            #region DL.
+                #endregion
+                #region audit.
 
-            var entity = _modelMapper.Map(command);
-            await this._dataHandler.ConfigItems.CreateAsync(entity);
-            await this._dataHandler.SaveAsync(cancellationToken);
+                var auditEvent = Map(command, $"created config item.");
+                await this._auditClient.CreateAsync(auditEvent);
 
-            #endregion
-            #region event.
+                #endregion
+                #region event.
 
-            var domainEvent = Map(command, entity);
-            await this._configEventsPublisher.PublishEvent(domainEvent);
+                var domainEvent = Map(command, entity);
+                await this._configEventsPublisher.PublishEvent(domainEvent);
 
-            #endregion
+                #endregion
 
-            return command.SetResponse(entity.Id);
+                return command.SetResponse(entity.Id);
+            }
+            catch (Exception x)
+            {
+                // todo : log ...
+                // note : exceptions should be handled in the layer above this one,
+                //        (for example, in case APIs were used, a default exception handling should be coded and configured)
+                throw;
+            }
         }
 
         #endregion
@@ -110,10 +120,10 @@ namespace Mcs.Invoicing.Services.Config.Application.Services.ConfigItems.Command
                 Header = command.Header,
                 AuditDateTimeUtc = DateTime.UtcNow,
                 Description = message,
-                ServiceId = Audit.Messaging.Contracts.Enums.ServiceTypes.TaxpayerProfileManagement,  // sample dummy entry, please change it to relevant value.
-                EventTypeId = Audit.Messaging.Contracts.Enums.EventTypes.UserCreated,                // sample dummy entry, please change it to relevant value.
-                ObjectTypeId = Audit.Messaging.Contracts.Enums.ObjectTypes.User,                     // sample dummy entry, please change it to relevant value.
-                ObjectTypeReferenceId = null,                                                        // sample dummy entry, please change it to relevant value.
+                ServiceId = Audit.Messaging.Contracts.Enums.AuditsServiceTypes.TaxpayerProfileManagement,  // sample dummy entry, please change it to relevant value.
+                EventTypeId = Audit.Messaging.Contracts.Enums.AuditsEventTypes.UserCreated,                // sample dummy entry, please change it to relevant value.
+                ObjectTypeId = Audit.Messaging.Contracts.Enums.AuditsObjectTypes.User,                     // sample dummy entry, please change it to relevant value.
+                ObjectTypeReferenceId = null,                                                              // sample dummy entry, please change it to relevant value.
                 MetaData = null,
                 SourceIp = null,
             };

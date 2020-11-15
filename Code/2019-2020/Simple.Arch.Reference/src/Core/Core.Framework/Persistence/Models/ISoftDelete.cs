@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Mcs.Invoicing.Core.Framework.Persistence.Models
+﻿namespace Mcs.Invoicing.Core.Framework.Persistence.Models
 {
     /// <summary>
     /// Used to standardize soft deleting entities.

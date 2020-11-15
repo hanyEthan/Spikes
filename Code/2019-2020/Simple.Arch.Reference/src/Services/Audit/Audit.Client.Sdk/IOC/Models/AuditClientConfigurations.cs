@@ -1,4 +1,4 @@
-﻿namespace Mcs.Invoicing.Services.Audit.Client.Sdk.Configurations.Models
+﻿namespace Mcs.Invoicing.Services.Audit.Client.Sdk.IOC.Models
 {
     public class AuditClientConfigurations
     {

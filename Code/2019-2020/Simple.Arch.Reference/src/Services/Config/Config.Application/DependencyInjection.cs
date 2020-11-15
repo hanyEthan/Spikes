@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
 using Mcs.Invoicing.Core.Framework.Infrastructure.Context.Behaviours;
-using Mcs.Invoicing.Services.Audit.Client.Sdk.Configurations;
 using Mcs.Invoicing.Services.Config.Application.Services.ConfigItems.Commands.CreateConfigItem;
 using Mcs.Invoicing.Services.Config.Application.Services.ConfigItems.Queries.AnyConfigItems;
 using Mcs.Invoicing.Services.Config.Application.Services.ConfigItems.Queries.ListConfigItems;

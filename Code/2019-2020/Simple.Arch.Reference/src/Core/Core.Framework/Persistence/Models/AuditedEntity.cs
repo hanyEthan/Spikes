@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Mcs.Invoicing.Core.Framework.Persistence.Models
 {
-
     public abstract class AuditedEntity : CreationAuditedEntity, IAudited
     {
         /// <summary>

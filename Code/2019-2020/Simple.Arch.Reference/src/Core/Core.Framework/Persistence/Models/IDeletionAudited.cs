@@ -1,6 +1,4 @@
-﻿
-
-namespace Mcs.Invoicing.Core.Framework.Persistence.Models
+﻿namespace Mcs.Invoicing.Core.Framework.Persistence.Models
 {
     public interface IDeletionAudited : IHasDeletionTime
     {

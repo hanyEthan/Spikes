@@ -2,7 +2,6 @@
 
 namespace Mcs.Invoicing.Core.Framework.Persistence.Models
 {
-
     public abstract class CreationAuditedEntity : ICreationAudited
     {
         /// <summary>
