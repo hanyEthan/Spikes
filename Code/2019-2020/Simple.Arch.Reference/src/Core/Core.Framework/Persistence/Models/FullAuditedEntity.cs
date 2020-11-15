@@ -2,7 +2,6 @@
 
 namespace Mcs.Invoicing.Core.Framework.Persistence.Models
 {
-
     public abstract class FullAuditedEntity : AuditedEntity, IFullAudited
     {
         /// <summary>
@@ -20,5 +19,4 @@ namespace Mcs.Invoicing.Core.Framework.Persistence.Models
         /// </summary>
         public virtual DateTime? DeletionDateTimeUtc { get; set; }
     }
-
 }

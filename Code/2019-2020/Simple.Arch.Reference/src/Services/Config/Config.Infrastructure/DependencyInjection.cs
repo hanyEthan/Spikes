@@ -1,5 +1,5 @@
 ﻿using Mcs.Invoicing.Core.Framework.Infrastructure.AsyncCommunication.Support;
-using Mcs.Invoicing.Services.Audit.Client.Sdk.Configurations;
+using Mcs.Invoicing.Services.Audit.Client.Sdk.IOC;
 using Mcs.Invoicing.Services.Config.Application.Common.Contracts;
 using Mcs.Invoicing.Services.Config.Infrastructure.Messaging.Handlers;
 using Mcs.Invoicing.Services.Config.Infrastructure.Persistence.Context;

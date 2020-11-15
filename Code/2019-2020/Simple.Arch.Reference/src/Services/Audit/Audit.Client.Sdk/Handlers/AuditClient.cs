@@ -1,15 +1,24 @@
 ﻿using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Mcs.Invoicing.Core.Framework.Infrastructure.AsyncCommunication.Contracts;
-using Mcs.Invoicing.Services.Audit.Client.Sdk.Configurations.Models;
 using Mcs.Invoicing.Services.Audit.Client.Sdk.Contracts;
+using Mcs.Invoicing.Services.Audit.Client.Sdk.IOC.Models;
 using Mcs.Invoicing.Services.Audit.Messaging.Contracts.Messages;
 
 namespace Mcs.Invoicing.Services.Audit.Client.Sdk.Handlers
 {
     public class AuditClient : IAuditClient
     {
+        #region props.
+
+        public bool Initialized { get; private set; }
+
+        protected IAsyncClient AsyncClient { get; set; }
+        protected virtual AuditClientConfigurations Configurations { get; set; }
+
+        #endregion
+        #region cst.
+
         public AuditClient(IAsyncClient asyncClient, AuditClientConfigurations configurations)
         {
             this.AsyncClient = asyncClient;
@@ -18,24 +27,20 @@ namespace Mcs.Invoicing.Services.Audit.Client.Sdk.Handlers
             this.Initialized = Initialize();
         }
 
-        public bool Initialized { get; private set; }
+        #endregion
 
-        protected virtual AuditClientConfigurations Configurations { get; set; }
-        protected IAsyncClient AsyncClient { get; set; }
-        public static string RandomString(int length)
-        {
-            Random random = new Random();
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            return new string(Enumerable.Repeat(chars, length)
-                       .Select(s => s[random.Next(s.Length)]).ToArray());
-        }
+        #region IAuditClient
 
         public async Task CreateAsync(IAuditMessage request)
         {
-              Check();
-              // var message = Map(request);
-              await this.AsyncClient.Send(request, this.Configurations.ServiceEndpoint);
+            Check();
+            // var message = Map(request);
+            await this.AsyncClient.Send(request, this.Configurations.ServiceEndpoint);
         }
+
+        #endregion
+
+        #region helpers.
 
         private bool Initialize()
         {
@@ -56,5 +61,7 @@ namespace Mcs.Invoicing.Services.Audit.Client.Sdk.Handlers
                 throw new Exception("Client is not properly Initialized. please check the client config configurations.");
             }
         }
+
+        #endregion
     }
 }
