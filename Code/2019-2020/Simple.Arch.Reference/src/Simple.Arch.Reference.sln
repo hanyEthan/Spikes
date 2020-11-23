@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audit.Client.Sdk", "Service
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audit.Messaging.Contracts", "Services\Audit\Audit.Messaging.Contracts\Audit.Messaging.Contracts.csproj", "{0766130F-8E6C-4C10-916C-FB13BF3E9D19}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Config.Tests.Console", "Services\Config\Config.Tests.Console\Config.Tests.Console.csproj", "{488566D9-0474-4DC6-856E-EC39352A5845}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{0766130F-8E6C-4C10-916C-FB13BF3E9D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0766130F-8E6C-4C10-916C-FB13BF3E9D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0766130F-8E6C-4C10-916C-FB13BF3E9D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488566D9-0474-4DC6-856E-EC39352A5845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488566D9-0474-4DC6-856E-EC39352A5845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488566D9-0474-4DC6-856E-EC39352A5845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488566D9-0474-4DC6-856E-EC39352A5845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{F948DD2B-D532-4543-B019-1B0DA502B220} = {8EA7A679-1546-4501-9D2A-132FF169BDF5}
 		{AE99DBEB-F8A7-44F5-BB4F-3B4219155238} = {F948DD2B-D532-4543-B019-1B0DA502B220}
 		{0766130F-8E6C-4C10-916C-FB13BF3E9D19} = {F948DD2B-D532-4543-B019-1B0DA502B220}
+		{488566D9-0474-4DC6-856E-EC39352A5845} = {3B3DBE16-77D3-4130-B5CB-AE95BBEE5547}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B5E3720-0538-4013-9F20-38C918485CA7}
